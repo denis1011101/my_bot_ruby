@@ -17,9 +17,7 @@ def shuffle_and_show_ten_words
   shuffle_words_without_head = read_file[1..-1].shuffle
   ten_shuffle_words_without_head = shuffle_words_without_head[0..9]
   ten_shuffle_words_with_head = ten_shuffle_words_without_head.unshift(head_by_file)
-  ten_shuffle_words_with_head = ten_shuffle_words_with_head.flat_map { |x| [x, ""] }.tap(&:pop)
-  
-  ten_shuffle_words_with_head
+  ten_shuffle_words_with_head.flat_map { |x| [x, ""] }.tap(&:pop)
 end
 
 Telegram::Bot::Client.run(TOKEN, logger: Logger.new($stderr)) do |bot|
