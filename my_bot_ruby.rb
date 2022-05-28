@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'telegram/bot'
+require 'faraday'
 
 TOKEN = ENV['TOKEN']
 FILE = 'unknownEnglishWords'
@@ -22,16 +23,26 @@ def shuffle_and_show_ten_words
   ten_shuffle_words_with_head.flat_map { |x| [x, ''] }.tap(&:pop)
 end
 
+def send_telegram_message(chat_id = '85611094', message)
+  puts 'send telegram message'
+  Faraday.get("https://api.telegram.org/bot#{TOKEN}/sendMessage",
+              { chat_id: chat_id, text: message })
+end
+
+send_telegram_message(shuffle_and_show_ten_words.join("\n"))
+
 Telegram::Bot::Client.run(TOKEN, logger: Logger.new($stderr)) do |bot|
   bot.logger.info('Bot has been started')
   bot.listen do |message|
     case message.text
     when '/start'
       bot.api.send_message(chat_id: message.chat.id, text: "Hello, #{message.from.first_name}, ")
-    when 'auth'
+    when 'words'
       bot.api.send_message(chat_id: message.chat.id, text: "let's go")
-      bot.api.send_message(chat_id: message.chat.id, text: shuffle_and_show_ten_words.to_s)
+      bot.api.send_message(chat_id: message.chat.id, text: shuffle_and_show_ten_words.join("\n"))
     when '/stop'
+      bot.api.send_message(chat_id: message.chat.id, text: "Bye, #{message.from.first_name}")
+    else
       bot.api.send_message(chat_id: message.chat.id, text: "Bye, #{message.from.first_name}")
     end
   end
