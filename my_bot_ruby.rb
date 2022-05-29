@@ -32,7 +32,6 @@ def send_telegram_message(message, chat_id = '85611094')
   puts 'send telegram message'
   Faraday.get("https://api.telegram.org/bot#{TOKEN}/sendMessage",
               { chat_id: chat_id, text: message, parse_mode: 'Markdown' })
-
 end
 
 send_telegram_message(format_message(shuffle_and_show_some_words))
