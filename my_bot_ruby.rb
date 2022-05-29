@@ -32,9 +32,9 @@ def send_telegram_message(message, chat_id = '85611094')
   puts 'send telegram message'
   Faraday.get("https://api.telegram.org/bot#{TOKEN}/sendMessage",
               { chat_id: chat_id, text: message, parse_mode: 'Markdown' })
+
 end
 
-# #<Faraday::Response:0x0000561a4c3d0218>
 send_telegram_message(format_message(shuffle_and_show_some_words))
 
 Telegram::Bot::Client.run(TOKEN, logger: Logger.new($stderr)) do |bot|
@@ -44,9 +44,8 @@ Telegram::Bot::Client.run(TOKEN, logger: Logger.new($stderr)) do |bot|
     when '/start'
       bot.api.send_message(chat_id: message.chat.id, text: "Hello, #{message.from.first_name}, ")
     when 'words'
-      bot.api.send_message(chat_id: message.chat.id, text: "let's go")
-      bot.api.send_message(chat_id: message.chat.id,
-                           text: send_telegram_message(format_message(shuffle_and_show_some_words)))
+      bot.api.send_message(chat_id: message.chat.id, text: format_message(shuffle_and_show_some_words),
+                           parse_mode: 'Markdown')
     when '/stop'
       bot.api.send_message(chat_id: message.chat.id, text: "Bye, #{message.from.first_name}")
     else
