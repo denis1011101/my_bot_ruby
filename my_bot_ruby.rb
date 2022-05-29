@@ -28,7 +28,7 @@ def format_message(some_words)
   some_words.map { |x| "#{x}\n" }.join
 end
 
-def send_telegram_message(chat_id = '85611094', message)
+def send_telegram_message(message, chat_id = '85611094')
   puts 'send telegram message'
   Faraday.get("https://api.telegram.org/bot#{TOKEN}/sendMessage",
               { chat_id: chat_id, text: message, parse_mode: 'Markdown' })
