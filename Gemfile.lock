@@ -67,11 +67,14 @@ GEM
       descendants_tracker (~> 0.0, >= 0.0.3)
 
 PLATFORMS
-  x86_64-linux
+  ruby
 
 DEPENDENCIES
   rubocop
   telegram-bot-ruby
 
+RUBY VERSION
+   ruby 2.7.0p0
+
 BUNDLED WITH
-   2.2.3
+   2.1.2

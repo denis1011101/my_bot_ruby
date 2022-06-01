@@ -5,4 +5,4 @@ source 'https://rubygems.org'
 gem 'rubocop', group: 'development'
 gem 'telegram-bot-ruby'
 
-ruby '3.0.0'
+ruby '2.7.0'

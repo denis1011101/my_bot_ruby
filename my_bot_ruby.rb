@@ -37,7 +37,13 @@ def help
   %w[/start /words /stop]
 end
 
-send_telegram_message(format_message(shuffle_some_words, flag: true))
+Thread.new do
+  loop do
+    puts Time.now
+    send_telegram_message(format_message(shuffle_some_words, flag: true)) if Time.now.hour <= 0o0 && Time.now.hour >= 11
+    sleep(3 * 60 * 60)
+  end
+end
 
 Telegram::Bot::Client.run(TOKEN, logger: Logger.new($stderr)) do |bot|
   bot.logger.info('Bot has been started')
