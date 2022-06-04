@@ -40,9 +40,13 @@ end
 Thread.new do
   loop do
     puts Time.now
-    send_telegram_message(format_message(shuffle_some_words, flag: true)) if Time.now.hour <= 0o0 && Time.now.hour >= 11
+    send_telegram_message(format_message(shuffle_some_words, flag: true)) if valid_time_for_message?
     sleep(3 * 60 * 60)
   end
+end
+
+def valid_time_for_message?
+  Time.now.localtime('+05:00').hour >= 8 && Time.now.localtime('+05:00').hour <= 23
 end
 
 Telegram::Bot::Client.run(TOKEN, logger: Logger.new($stderr)) do |bot|
