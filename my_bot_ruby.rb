@@ -41,7 +41,7 @@ Thread.new do
   loop do
     puts Time.now
     send_telegram_message(format_message(shuffle_some_words, flag: true)) if valid_time_for_message?
-    sleep(3 * 60 * 60)
+    sleep(1 * 60 * 60)
   end
 end
 
