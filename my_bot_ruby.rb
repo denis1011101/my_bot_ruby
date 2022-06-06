@@ -4,6 +4,7 @@ require 'telegram/bot'
 
 TOKEN = ENV['TOKEN']
 FILE = 'unknownEnglishWords'
+ADMIN_CHAT_ID = '85611094'
 
 def read_file
   file = File.open(FILE, 'r')
@@ -27,7 +28,7 @@ def format_message(some_words, flag: false)
   some_words.flat_map { |x| [x, ''] }.tap(&:pop).join("\n")
 end
 
-def send_telegram_message(message, chat_id = '85611094')
+def send_telegram_message(message, chat_id = ADMIN_CHAT_ID)
   puts 'send telegram message'
   Faraday.get("https://api.telegram.org/bot#{TOKEN}/sendMessage",
               { chat_id: chat_id, text: message, parse_mode: 'Markdown' })
@@ -37,16 +38,20 @@ def help
   %w[/start /words /stop]
 end
 
-Thread.new do
+def valid_time_for_message?
+  Time.now.localtime('+05:00').hour >= 8 && Time.now.localtime('+05:00').hour <= 23
+end
+
+def validation_user_message?(message)
+  message.chat.id == ADMIN_CHAT_ID
+end
+
+Thread.new do # не работает на do
   loop do
     puts Time.now
     send_telegram_message(format_message(shuffle_some_words, flag: true)) if valid_time_for_message?
-    sleep(1 * 60 * 60)
+    sleep(3 * 60 * 60)
   end
-end
-
-def valid_time_for_message?
-  Time.now.localtime('+05:00').hour >= 8 && Time.now.localtime('+05:00').hour <= 23
 end
 
 Telegram::Bot::Client.run(TOKEN, logger: Logger.new($stderr)) do |bot|
@@ -58,6 +63,10 @@ Telegram::Bot::Client.run(TOKEN, logger: Logger.new($stderr)) do |bot|
     when '/words'
       bot.api.send_message(chat_id: message.chat.id, text: format_message(shuffle_some_words, flag: true),
                            parse_mode: 'Markdown')
+    when '/write_word' # запись слов в файл которые идут после /write_word
+      bot.api.send_message(chat_id: message.chat.id, text: 'write word')
+      File.open(FILE, 'a') { |f| f.write("#{message.text}\n") } # вынести в метод
+      bot.api.send_message(chat_id: message.chat.id, text: 'write word success')
     when '/help'
       bot.api.send_message(chat_id: message.chat.id, text: format_message(help))
     when '/stop'
