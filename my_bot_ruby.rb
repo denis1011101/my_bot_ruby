@@ -35,7 +35,7 @@ def send_telegram_message(message, chat_id = ADMIN_CHAT_ID)
 end
 
 def help
-  %w[/start /words /stop /write_word:]
+  %w[/start /words /stop /write_word /add_note]
 end
 
 def valid_time_for_message?
@@ -50,7 +50,7 @@ Thread.new do # doesn't work for do
   loop do
     puts Time.now
     send_telegram_message(format_message(shuffle_some_words, flag: true)) if valid_time_for_message?
-    sleep(3 * 60 * 60) # 3 hours
+    sleep(10_800) # 3 hours
   end
 end
 
