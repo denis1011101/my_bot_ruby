@@ -35,7 +35,7 @@ def send_telegram_message(message, chat_id = ADMIN_CHAT_ID)
 end
 
 def help
-  %w[/start /words /stop]
+  %w[/start /words /stop /write_word:]
 end
 
 def valid_time_for_message?
@@ -46,11 +46,11 @@ def validation_user_message?(message)
   message.chat.id == ADMIN_CHAT_ID
 end
 
-Thread.new do # не работает на do
+Thread.new do # doesn't work for do
   loop do
     puts Time.now
     send_telegram_message(format_message(shuffle_some_words, flag: true)) if valid_time_for_message?
-    sleep(3 * 60 * 60)
+    sleep(3 * 60 * 60) # 3 hours
   end
 end
 
@@ -63,10 +63,11 @@ Telegram::Bot::Client.run(TOKEN, logger: Logger.new($stderr)) do |bot|
     when '/words'
       bot.api.send_message(chat_id: message.chat.id, text: format_message(shuffle_some_words, flag: true),
                            parse_mode: 'Markdown')
-    when '/write_word' # запись слов в файл которые идут после /write_word
+    when '/write_word'
       bot.api.send_message(chat_id: message.chat.id, text: 'write word')
-      File.open(FILE, 'a') { |f| f.write("#{message.text}\n") } # вынести в метод
+      File.open(FILE, 'a') { |f| f.write("#{message.text}\n") } # move to method
       bot.api.send_message(chat_id: message.chat.id, text: 'write word success')
+    when '/add_note'
     when '/help'
       bot.api.send_message(chat_id: message.chat.id, text: format_message(help))
     when '/stop'
