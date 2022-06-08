@@ -3,7 +3,7 @@
 require 'telegram/bot'
 
 TOKEN = ENV['TOKEN']
-FILE = 'unknownEnglishWords'
+FILE = 'commonlist.yml'
 ADMIN_CHAT_ID = '85611094'
 
 def read_file
@@ -33,6 +33,10 @@ def send_telegram_message(message, chat_id = ADMIN_CHAT_ID)
   Faraday.get("https://api.telegram.org/bot#{TOKEN}/sendMessage",
               { chat_id: chat_id, text: message, parse_mode: 'Markdown' })
 end
+
+# def write
+
+# def repeat validation
 
 def help
   %w[/start /words /stop /write_word /add_note]
@@ -68,6 +72,7 @@ Telegram::Bot::Client.run(TOKEN, logger: Logger.new($stderr)) do |bot|
       File.open(FILE, 'a') { |f| f.write("#{message.text}\n") } # move to method
       bot.api.send_message(chat_id: message.chat.id, text: 'write word success')
     when '/add_note'
+    when '/show_notes'
     when '/help'
       bot.api.send_message(chat_id: message.chat.id, text: format_message(help))
     when '/stop'
