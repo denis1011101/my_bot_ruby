@@ -1,30 +1,24 @@
 # frozen_string_literal: true
 
 require 'telegram/bot'
+require 'yaml'
 
 TOKEN = ENV['TOKEN']
-FILE = 'commonlist.yml'
+FILE = 'common_list.yml'
 ADMIN_CHAT_ID = '85611094'
-
-def read_file
-  file = File.open(FILE, 'r')
-  file_data = file.readlines.map(&:chomp)
-  file_data = file_data.reject(&:empty?)
-  file.close
-
-  file_data
-end
+READ_YML = Proc.new { YAML.load_file(FILE).transform_keys!(&:to_sym) }
 
 def shuffle_some_words(count_words = 3)
   count_words -= 1
-  head_by_file = read_file.first
-  shuffle_words_without_head = read_file[1..].shuffle
-  some_shuffle_words_ex_head = shuffle_words_without_head[0..count_words]
-  some_shuffle_words_ex_head.unshift(head_by_file)
+  shuffle_words = READ_YML.call[:english_words].shuffle
+
+  shuffle_words[0..count_words]
 end
 
-def format_message(some_words, flag: false)
-  some_words[0] = "*#{some_words[0]}*" if flag == true
+def format_message(some_words, flag: false) # add argument - name list
+  some_words.unshift("english words")
+  some_words[0] = "*#{some_words[0]}*" if flag == true # first word a header and bold font
+
   some_words.flat_map { |x| [x, ''] }.tap(&:pop).join("\n")
 end
 
