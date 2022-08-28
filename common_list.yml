@@ -5,10 +5,87 @@ videos:
   - алгоритмы - https://youtu.be/ux2MQ2DJAXk?t=326
 debtors:
   - Анастасия - книга Артёма
-  - Рафаэль - 15 тысяч рублей + билет на самолёт 7500 + хука в мск 2300 (минус расходы Рафаэля - аэроэкспресс, блек стар бургер в аэропорту)
+  - Рафаэль - 15 тысяч рублей + билет на самолёт 7500 + хука в мск 2300 (минус расходы Рафаэля - аэроэкспресс, блек стар бургер в аэропорту = около 900р)
 birthdays:
   - 31.08.1993 - Левенко Денис
 notes:
   - new_note - start robot vacuum in evening
-english_words:
+english_words_from_duo:
   - get from api duolingo
+my_english_phrases:
+  - a whale of a - очень много, куча, уйма, большой, отличный, выдающийся
+  - a bargain is a bargain - уговор дороже денег, сделака есть сделка, уговор - святое дело
+  - drop a line - черкнуть пару строк
+my_english_words:
+  - indentation - отступ
+  - digestible - усваиваемый, удобоваримый
+  - receive - получать, принимать
+  - instead - вместо
+  - a bit - немного
+  - confused - смущённый
+  - violent - жестокий, насильственный
+  - eternal - вечный, постоянный
+  - suggest - предлагать, говорить о
+  - implementation - реализация
+  - another - очередной, ещё один, другой
+  - timestamps - временные метки
+  - hang - висеть, вешать
+  - explain - объяснять, разъяснять
+  - litter - мусор
+  - funeral - похороны
+  - cute - милый
+  - underaged - несовершеннолетний
+  - noun - существительное
+  - sharp - острый
+  - claws - когти
+  - pronoun - местоимение
+  - avoid - избегать
+  - hungry - голодный
+  - bark - лаять 
+  - would - будет
+  - roommate - товарищ по комнате / по команде
+  - nonspecific - неопределенный
+  - gambles - азарные игры
+  - take - брать
+  - verb - глагол
+  - consist - состоять
+  - leather - кожа
+  - weatherman - метеоролог
+  - dedicat - посвящать, преданный
+  - prevent - предотвращать
+  - accurate - точный, тщательный, меткий
+  - slander - клевета
+  - least one - хотя бы один
+  - accusation - обвинение
+  - buzz - гул, шумиха
+  - hope - надеяться
+  - revenge - месть, реванш
+  - wealth - богатство
+  - stolen - украденный
+  - Bidirectional - двухнаправленный
+  - Mistake - ошибка, заблуждение
+  - bold - смелый, дерзкий
+  - bond - облигация, связь
+  - countdown - обратный отсчёт, отсчёт времени перед запуском
+  - hedgehog - ёж, дикообраз
+  - supposed - предполагаемый, мнимый
+  - Middleware - промежуточное ПО
+  - corresponding - соответствующий, подобный
+  - pick - выбор, отбор
+  - First of all - прежде всего, в первую очередь
+  - experiment - эксперимент
+  - apologies - извинения
+  - invocation - призыв, вызов, заключение
+  - Redundant - избыточный
+  - Obtain - получать, приобретать, достигать
+  - assume - предполагать
+  - comma - запятая
+  - pretty - симпатичный
+  - wrongdoings - проступки
+  - significance - значение
+  - decid - решить, принять решение
+  - exist - существует
+  - tenses - времена
+  - audience - аудитория, зрители
+  - predominantly - преимущественно
+
