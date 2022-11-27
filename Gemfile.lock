@@ -25,6 +25,7 @@ GEM
     parser (3.1.3.0)
       ast (~> 2.4.1)
     rainbow (3.1.1)
+    rake (11.3.0)
     regexp_parser (2.6.1)
     rexml (3.2.5)
     rubocop (1.39.0)
@@ -56,9 +57,10 @@ GEM
       chronic (>= 0.6.3)
 
 PLATFORMS
-  ruby
+  x86_64-linux
 
 DEPENDENCIES
+  rake (~> 11.2, >= 11.2.2)
   rubocop (~> 1.39)
   telegram-bot-ruby (~> 0.22.0)
   whenever (~> 0.9.4)
@@ -67,4 +69,4 @@ RUBY VERSION
    ruby 3.1.3p185
 
 BUNDLED WITH
-   2.1.2
+   2.3.26

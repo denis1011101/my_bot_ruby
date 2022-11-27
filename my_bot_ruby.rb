@@ -10,7 +10,7 @@ READ_YML = Proc.new { YAML.load_file(FILE).transform_keys!(&:to_sym) }
 
 def shuffle_some_words(count_words = 3)
   count_words -= 1
-  shuffle_words = READ_YML.call[:english_words].shuffle
+  shuffle_words = READ_YML.call[:my_english_words].shuffle
 
   shuffle_words[0..count_words]
 end
@@ -36,21 +36,11 @@ def help
   %w[/start /words /stop /write_word /add_note]
 end
 
-def valid_time_for_message?
-  Time.now.localtime('+05:00').hour >= 8 && Time.now.localtime('+05:00').hour <= 23
-end
-
 def validation_user_message?(message)
   message.chat.id == ADMIN_CHAT_ID
 end
 
-Thread.new do # doesn't work for do
-  loop do
-    puts Time.now
-    send_telegram_message(format_message(shuffle_some_words, flag: true)) if valid_time_for_message?
-    sleep(10_800) # 3 hours
-  end
-end
+send_telegram_message(format_message(shuffle_some_words, flag: true))
 
 Telegram::Bot::Client.run(TOKEN, logger: Logger.new($stderr)) do |bot|
   bot.logger.info('Bot has been started')
