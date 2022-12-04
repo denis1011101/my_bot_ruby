@@ -41,7 +41,7 @@ def validation_user_message?(message)
 end
 
 send_telegram_message(format_message(shuffle_some_words, flag: true))
-
+=begin
 Telegram::Bot::Client.run(TOKEN, logger: Logger.new($stderr)) do |bot|
   bot.logger.info('Bot has been started')
   bot.listen do |message|
@@ -66,3 +66,4 @@ Telegram::Bot::Client.run(TOKEN, logger: Logger.new($stderr)) do |bot|
     end
   end
 end
+=end
