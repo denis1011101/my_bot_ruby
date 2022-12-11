@@ -3,6 +3,7 @@
 require 'telegram/bot'
 require 'yaml'
 
+ENV["TZ"] = 'Asia/Yekaterinburg'
 TOKEN = ENV['TOKEN']
 FILE = 'common_list.yml'
 ADMIN_CHAT_ID = '85611094'
@@ -36,11 +37,25 @@ def help
   %w[/start /words /stop /write_word /add_note]
 end
 
+# дописать
 def validation_user_message?(message)
   message.chat.id == ADMIN_CHAT_ID
 end
 
-send_telegram_message(format_message(shuffle_some_words, flag: true))
+def valdation_time?
+  Time.now.hour.between?(11, 23)
+end
+
+def start_send_telegram_message
+  if valdation_time?
+    send_telegram_message(format_message(shuffle_some_words, flag: true))
+  else
+    puts 'sleep'
+  end
+end
+
+start_send_telegram_message
+
 =begin
 Telegram::Bot::Client.run(TOKEN, logger: Logger.new($stderr)) do |bot|
   bot.logger.info('Bot has been started')
