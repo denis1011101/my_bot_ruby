@@ -8,6 +8,7 @@ courses:
     - курс - https://ru.hexlet.io/my
     - slack - https://app.slack.com/client/T019FJ8M43H/C025HANHFEF
 debtors:
+  - Денис - 114 лари для Ярослава
   - Денис - 45 тр для Славы
   - Денис - две книги Артёма (сапиенс и хомо)
   - Рафаэль - 15 тысяч рублей + билет на самолёт 7500 + хука в мск 2300 (минус расходы Рафаэля - аэроэкспресс, блек стар бургер в аэропорту = около 900р)
@@ -19,6 +20,12 @@ notes:
 english_words_from_duo:
   - get from api duolingo
 my_english_phrases:
+  - receive - Получать
+  - to refuse - отказываться
+  - likely - вероятно
+  - notice - уведомление
+  - improvement -улучшение
+  - Among - среди, между
   - a whale of a - очень много, куча, уйма, большой, отличный, выдающийся
   - a bargain is a bargain - уговор дороже денег, сделака есть сделка, уговор - святое дело
   - drop a line - черкнуть пару строк
@@ -37,6 +44,7 @@ my_english_phrases:
   - I want to climb over that wall - Я хочу перелезть через эту стену
   - This street goes along the river - Эта улица идет вдоль реки
 my_english_words:
+  - decide - принять решение, решать 
   - cupboard - буфет, шкаф, чулан
   - bakery - пекарня
   - across - через, поперёк
