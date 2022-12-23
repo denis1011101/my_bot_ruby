@@ -3,6 +3,10 @@ videos:
   - cs50 - 6. - https://www.youtube.com/watch?v=Et-RXxyC6WM
   - введение в Vim - Урок 1.1 Введение. - https://www.youtube.com/watch?v=jkxLIFVGfd4&list=PL8hRAtHSjAgZv7WFVDvQzzU-WoL-7jZGJ
   - алгоритмы - https://youtu.be/ux2MQ2DJAXk?t=326
+books_in_progress:
+  - 
+unread_books:
+  - Catcher in the rye - very fun and style
 courses:
   - ruby + rails:
     - курс - https://ru.hexlet.io/my
