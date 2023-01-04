@@ -68,7 +68,7 @@ def validation_user_message?(message)
 end
 
 def valid_send_time?
-  Time.now.hour.between?(11, 23) && Time.now.min == 30
+  Time.now.hour.between?(11, 23)# && Time.now.min == 30
 end
 
 def start_send_telegram_message
