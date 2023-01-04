@@ -36,6 +36,7 @@ my_english_phrases:
   - Hold the lift - придержите лифт
   - The lift takes up to fifteen people. - Лифт вмещает до пятнадцати человек
   - the need for businesses to reduce costs - потребность бизнеса в снижении издержек
+  - you got - ты получил
   - a whale of a - очень много, куча, уйма, большой, отличный, выдающийся
   - a bargain is a bargain - уговор дороже денег, сделака есть сделка, уговор - святое дело
   - drop a line - черкнуть пару строк
@@ -128,6 +129,29 @@ my_english_words:
   - notice - уведомление
   - improvement -улучшение
   - Among - среди, между
+  - afraid - бояться
+  - stairs - лестница
+  - foreigner - иностранец
+  - Among - среди, между
+  - improvement - улучшение
+  - notice - уведомление
+  - likely - вероятно
+  - to refuse - отказываться
+  - receive - Получать
+  - frequency - частота
+  - fleat - гладкий
+  - flea - блока
+  - kind - добрый, любезный, вид
+  - smell - запах
+  - unusual - необычный
+  - scale - шкала, масштаб
+  - tail - хвост, конец
+  - paint - красить, писать
+  - painting - картина
+  - portrait - портрет
+  - draw - рисовать
+  - plural - множественное число
+  - singular - единственное число
   - decide - принять решение, решать 
   - cupboard - буфет, шкаф, чулан
   - bakery - пекарня
@@ -138,7 +162,7 @@ my_english_words:
   - climb - подъём, восхождение, набор высоты
   - over - над, за, по
   - around - вокруг, около
-  - holding - удерживание, влаление
+  - holding - удерживание, владение
   - towards - к, в направлении, по отношению к
   - hiring - найм
   - hir - наёмник
@@ -199,7 +223,7 @@ my_english_words:
   - tape - лента
   - behave - вести себя
   - shave - бриться
-  - lack = недостаток, нехватка чего-либо
+  - lack - недостаток, нехватка чего-либо
   - mane - грива
   - cape - мыс, плащ, накидка
   - cater - обслуживать
@@ -329,7 +353,6 @@ my_english_words:
   - pretty - симпатичный
   - wrongdoings - проступки
   - significance - значение
-  - decid - решить, принять решение
   - exist - существует
   - tenses - времена
   - audience - аудитория, зрители

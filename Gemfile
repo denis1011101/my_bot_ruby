@@ -3,8 +3,9 @@
 source 'https://rubygems.org'
 
 gem 'rubocop', '~> 1.39', group: 'development'
-gem 'telegram-bot-ruby', '~> 0.22.0'
-gem 'whenever', '~> 0.9.4', require: false
-gem 'rake', '~> 11.2', '>= 11.2.2'
+gem 'faraday', '~> 2.7', '>= 2.7.2'
+gem 'json', '~> 2.6', '>= 2.6.3'
 
-ruby '3.1.3'
+group :test do
+  gem 'rspec', '~> 3.4'
+end

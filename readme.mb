@@ -1,0 +1,1 @@
+*/10 * * * * /bin/bash -l -c 'cd /home/my_bot_ruby && '\''./start.sh'\'''

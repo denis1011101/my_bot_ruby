@@ -1,84 +1,83 @@
 # frozen_string_literal: true
 
-require 'telegram/bot'
 require 'yaml'
+require 'faraday'
+require 'json'
 
 ENV["TZ"] = 'Asia/Yekaterinburg'
 TOKEN = ENV['TOKEN']
 FILE = 'common_list.yml'
 ADMIN_CHAT_ID = '85611094'
-READ_YML = Proc.new { YAML.load_file(FILE).transform_keys!(&:to_sym) }
 
-def shuffle_some_words(count_words = 3)
-  count_words -= 1
-  shuffle_words = READ_YML.call[:my_english_words].shuffle
+def read_yml; YAML.load_file(FILE).transform_keys!(&:to_sym) end
 
-  shuffle_words[0..count_words]
+def shuffle_some_words(count_words = 2, count_phrases = 1)
+  shuffle_words = read_yml[:my_english_words].shuffle
+  shuffle_phrases = read_yml[:my_english_phrases].shuffle
+  shuffle_words[0...count_words] + shuffle_phrases[0...count_phrases]
 end
 
-def format_message(some_words, flag: false) # add argument - name list
-  some_words.unshift("english words")
-  some_words[0] = "*#{some_words[0]}*" if flag == true # first word a header and bold font
+def format_message(words, header: false)
+  words.unshift("english words:")
+  words[0] = "*#{words[0]}*" if header
 
-  some_words.flat_map { |x| [x, ''] }.tap(&:pop).join("\n")
+  words.flat_map { |x| [x, ''] }.tap(&:pop).join("\n")
 end
 
-def send_telegram_message(message, chat_id = ADMIN_CHAT_ID)
+def send_telegram_message(message, chat_id: ADMIN_CHAT_ID)
   puts 'send telegram message'
   Faraday.get("https://api.telegram.org/bot#{TOKEN}/sendMessage",
               { chat_id: chat_id, text: message, parse_mode: 'Markdown' })
 end
 
-# def write
+def receive_message
+  puts 'receive message'
+  response = Faraday.get("https://api.telegram.org/bot#{TOKEN}/getupdates")
 
-# def repeat validation
+  return puts 'not messages' if response.nil?
+
+  json = JSON.parse(response.body)
+
+  return puts 'invalid json' unless json['ok']
+
+  # when not messages a long time: my_bot_ruby.rb:44:in `receive_message': undefined method `[]' for nil:NilClass (NoMethodError)
+
+  return puts 'invalid chat' unless json['result'][-1]['message']['from']['id'] == ADMIN_CHAT_ID.to_i
+
+  update_id_now = json['result'][-1]['update_id']
+  data = read_yml
+  update_id_last = data['update_id']
+  return puts 'old message' if update_id_last == update_id_now
+  data['update_id'] = update_id_now
+  File.write('common_list.yml', YAML.dump(data))
+
+  text_from_message = json['result'][-1]['message']['text']
+end
+
+def write_new_word
+  receive_message
+  data = read_yml
+end
 
 def help
   %w[/start /words /stop /write_word /add_note]
 end
 
-# дописать
 def validation_user_message?(message)
   message.chat.id == ADMIN_CHAT_ID
 end
 
-def valdation_time?
-  Time.now.hour.between?(11, 23)
+def valid_send_time?
+  Time.now.hour.between?(11, 23) && Time.now.min == 30
 end
 
 def start_send_telegram_message
-  if valdation_time?
-    send_telegram_message(format_message(shuffle_some_words, flag: true))
+  if valid_send_time?
+    send_telegram_message(format_message(shuffle_some_words, header: true))
   else
     puts 'sleep'
   end
 end
 
 start_send_telegram_message
-
-=begin
-Telegram::Bot::Client.run(TOKEN, logger: Logger.new($stderr)) do |bot|
-  bot.logger.info('Bot has been started')
-  bot.listen do |message|
-    case message.text
-    when '/start'
-      bot.api.send_message(chat_id: message.chat.id, text: "Hello, #{message.from.first_name}, ")
-    when '/words'
-      bot.api.send_message(chat_id: message.chat.id, text: format_message(shuffle_some_words, flag: true),
-                           parse_mode: 'Markdown')
-    when '/write_word'
-      bot.api.send_message(chat_id: message.chat.id, text: 'write word')
-      File.open(FILE, 'a') { |f| f.write("#{message.text}\n") } # move to method
-      bot.api.send_message(chat_id: message.chat.id, text: 'write word success')
-    when '/add_note'
-    when '/show_notes'
-    when '/help'
-      bot.api.send_message(chat_id: message.chat.id, text: format_message(help))
-    when '/stop'
-      bot.api.send_message(chat_id: message.chat.id, text: "Bye, #{message.from.first_name}")
-    else
-      bot.api.send_message(chat_id: message.chat.id, text: "Bye, #{message.from.first_name}")
-    end
-  end
-end
-=end
+receive_message
