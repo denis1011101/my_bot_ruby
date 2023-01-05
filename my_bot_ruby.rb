@@ -37,7 +37,7 @@ def receive_message
   return puts 'not messages' if response.nil?
 
   json = JSON.parse(response.body)
-
+  # binding.break
   return puts 'invalid json' unless json['ok']
 
   # when not messages a long time: my_bot_ruby.rb:44:in `receive_message': undefined method `[]' for nil:NilClass (NoMethodError)
