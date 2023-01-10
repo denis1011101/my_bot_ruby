@@ -9,6 +9,7 @@ TOKEN = ENV['TOKEN']
 FILE = 'common_list.yml'
 ADMIN_CHAT_ID = '85611094'
 
+# TODO: refactoring by crud: create, read, update, delete
 def read_yml; YAML.load_file(FILE).transform_keys!(&:to_sym) end
 
 def shuffle_some_words(count_words = 2, count_phrases = 1)
