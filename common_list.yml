@@ -1,844 +1,874 @@
-videos:
-  - блокчейн из MIT - 7 лекция MIT - https://youtu.be/ogCj24ip6uM?t=912
-  - cs50 - 6. - https://www.youtube.com/watch?v=Et-RXxyC6WM
-  - введение в Vim - Урок 1.1 Введение. - https://www.youtube.com/watch?v=jkxLIFVGfd4&list=PL8hRAtHSjAgZv7WFVDvQzzU-WoL-7jZGJ
-  - алгоритмы - https://youtu.be/ux2MQ2DJAXk?t=326
-books_in_progress:
-  - 
-unread_books:
-  - Catcher in the rye - very fun and style
-courses:
-  - ruby + rails:
-    - курс - https://ru.hexlet.io/my
-    - slack - https://app.slack.com/client/T019FJ8M43H/C025HANHFEF
-debtors:
-  - Денис - 45.5 тр для Славы - отправить 30тр, останется 15.5тр
-  - Денис - две книги Артёма (сапиенс и хомо)
-  - Рафаэль - 15 тысяч рублей + билет на самолёт 7500 + хука в мск 2300 (минус расходы Рафаэля - аэроэкспресс, блек стар бургер в аэропорту = около 900р)
-birthdays:
-  - 31.08.1993 - Левенко Денис
-notes:
-  - new_note - start robot vacuum in evening
-  - потыкать альтернативы хероку - https://dokku.com/, https://render.com/
-english_words_from_duo:
-  - get from api duolingo
-my_english_phrases:
-  - It’s so nice today, isn’t it? - Сегодня так приятно, правда?
-  - Click here to connect to the internet. - Нажмите сюда, чтобы подключиться к интернету.
-  - I shop on the internet a lot. - Я часто делаю покупки в интернете.
-  - Not really - не совсем
-  - slow down a bit - немного помедленнее
-  - slow down the time - замедлить время
-  - slow down please - помедленнее, пожалуйста
-  - slow down - замедлять
-  - jacked body - измученное тело
-  - jacked potato - жаренный картофель
-  - jacked up - вздёрнутый
-  - we're told he regularly sleeps at twitter - нам сказали, что он регулярно спит в твиттере
-  - for stuff - для вещей
-  - get lost - свали
-  - naked eyes - невооруженным глазом
-  - I wouldn't risk - я бы не рискнул
-  - one hundred percent right - сто процентов прав
-  - Hold the lift - придержите лифт
-  - The lift takes up to fifteen people. - Лифт вмещает до пятнадцати человек
-  - the need for businesses to reduce costs - потребность бизнеса в снижении издержек
-  - you got - ты получил
-  - a whale of a - очень много, куча, уйма, большой, отличный, выдающийся
-  - a bargain is a bargain - уговор дороже денег, сделака есть сделка, уговор - святое дело
-  - drop a line - черкнуть пару строк
-  - order supplies - заказ товара (расходных материалов)
-  - cline of activity -направление деятельности
-  - don't, uncle - не надо, дядя
-  - piece of cake - кусок пирога, пару пустяков
-  - a little too hard - слишком сложно
-  - I had a blast. I enjoyed.. - у меня был взрыв, я наслаждался..
-  - Thank you all for having and have a good evening - Спасибо всем за то, что хорошо провели вечер
-  - it was great to talk to you - было здорово поговорить с тобой
-  - a crime scene - место преступления
-  - 20 degrees above zero - 20 градусов выше нуля
-  - few minutes - несколько минут
-  - They walked around the lake holding hands - Они шли вокруг озера, держась за руки
-  - I want to climb over that wall - Я хочу перелезть через эту стену
-  - This street goes along the river - Эта улица идет вдоль реки
-  - How do I get to the train station? - Как мне добраться до железнодорожного вокзала?
-  - get to - добраться, приняться за, уговаривать
-  - What kind? - Какого типа
-  - insecure person - неуверенный в себе человек
-  - insecure about - не уверен в себе
-  - insecure content - небезопасный контент
-  - literally me - буквально я
-  - literally no one - буквально никто
-  - literally us - буквально мы
-  - back up using cellular - резервное копирование с помощью сотовой связи
-  - punished for - наказан за
-  - punished him - наказал его
-  - punished by - наказан
-  - retrace my step - повторить мои шаги
-  - retrace your step - повторить свои шаги
-  - doesn't that make you russian - это не делает тебя русским
-  - health insurance - медицинская страховка
-  - to make an appointment - записаться на приём
-  - Twenty years ago I was a lazy teenager. - Двадцать лет назад я был ленивым подростком.
-  - I am lazy now sometimes. - Я сейчас порой ленивый.
-  - I had young children five years ago. - У меня были маленькие дети пять лет назад.
-  - I wasn’t old twenty years ago. - Я не был старым двадцать лет назад.
-  - I do not know for sure - я не знаю наверняка
-  - I wanted to, I tried to, so many times. - Я хотела, я пыталась, так много раз.
-my_english_words:
-  - coy - застенчивый
-  - brown - коричневая
-  - celling - погребение
-  - carpet - ковровая дорожка
-  - precise - точный
-  - smock - толстовка
-  - cyanide - цианид
-  - cilantro - кинза
-  - grass - трава
-  - wet - мокрый
-  - freezing - очень холодный
-  - Spring - весна
-  - autimn - осень
-  - attraction - привлечение
-  - attractions - достопримечательности 
-  - uncle - дядя
-  - aunt - тётя
-  - infinity - бесконечность
-  - slim - тонкий, стройный
-  - lazy - ленивый
-  - intelligent - умный
-  - colleague - коллега
-  - introduce - вводить
-  - tote - тотализатор, перевозка, груз
-  - tot - малыш, карапуз
-  - fever - жар, лихорадка
-  - stomach-ache - боль в животе
-  - stomach - желудок, живот, аппетит
-  - toothache - зубная боль
-  - headache - головная боль, неприятность
-  - chord - аккорд, хорда
-  - stir - размешивать, переполох
-  - fir - пихта
-  - far - далеко
-  - horn - рог, рожок, сигнал
-  - turn - повернуть
-  - chore - работа по дому, случайная работа
-  - smirk - ухмыляться
-  - torn - порванный, разорванный
-  - herb - трава, растение
-  - burp - отрыжка
-  - barn - сарай
-  - barter - товарообмен
-  - parrot - попугай
-  - raft - плот
-  - rating - рейтинг
-  - frown - хмуриться
-  - hill - холм
-  - pipe - трубка
-  - weirdos - чудаки
-  - weirdest - самый странный
-  - weirdo - чудак
-  - weird - странный
-  - retrace - возвращаться
-  - punished - накатан
-  - literally - в прямом смысле 
-  - insecure - ненадёжный, неуверенный
-  - slaying - убийство
-  - slayed - убит
-  - slayer - убийца
-  - slay - убить
-  - prefer - предпочитать
-  - lesson - урок
-  - sunset - закат, заход солнца
-  - revise - пересматривать
-  - mension - упомянуть
-  - a sip - потягивать
-  - jacked - измученный
-  - disappeared - исчезнувший
-  - injustice - несправедливость
-  - themselves - сами себя
-  - whatsoever - что угодно
-  - to defend - защищать
-  - guessing - угадывание
-  - loss - потеря
-  - lose - терять
-  - comb - гребень, расчёска
-  - come - прийти, приехать
-  - rough - грубый
-  - entertain - развлекать, принимать, угощать
-  - note - примечание, записка
-  - brain - мозг
-  - drain - осушать
-  - hurt - повредить, боль
-  - heard - слышал
-  - sit - сидеть
-  - sight - зрение
-  - wrote - написал
-  - throat - горло
-  - feed - подача, кормить
-  - fed - кормили
-  - told - сказал
-  - wardrobe - гардероб
-  - investigating - расследование
-  - obtained  - полученный
-  - hope - надеяться
-  - Consider - рассмотреть возможность
-  - snore - храпеть
-  - a coastal - прибрежный
-  - stubble - щетина
-  - cheek - щека
-  - wheels - колёса
-  - altere - изменение
-  - certainly - конечно
-  - purpose - цель
-  - ownership - владение
-  - allow - позволять
-  - a hundred - 100
-  - one hundred thousand - 100 000
-  - sheep - овца
-  - pen - ручка
-  - brunette - брюнетка
-  - there - там
-  - loud - громкий
-  - chanson - шансон
-  - comic book - комикс
-  - collect - собирать
-  - newspaper - газета
-  - get in - входить
-  - got it, see - понятно
-  - grandded - дедушка
-  - nephew - племянник
-  - grandson - внук
-  - cart - тележка
-  - turtle - черепаха
-  - decrease - уменьшить
-  - increase - увеличить
-  - slash, forward slash - слеш, косая черта 
-  - underline - подчеркнуть
-  - underscore - нижнее подчёркивание
-  - at - @
-  - dash - тире, бросать
-  - almost - почти
-  - redundant - избыточный
-  - receive - Получать
-  - to refuse - отказываться
-  - likely - вероятно
-  - notice - уведомление
-  - improvement -улучшение
-  - Among - среди, между
-  - afraid - бояться
-  - stairs - лестница
-  - foreigner - иностранец
-  - Among - среди, между
-  - improvement - улучшение
-  - notice - уведомление
-  - likely - вероятно
-  - to refuse - отказываться
-  - receive - Получать
-  - frequency - частота
-  - fleat - гладкий
-  - flea - блока
-  - kind - добрый, любезный, вид
-  - smell - запах
-  - unusual - необычный
-  - scale - шкала, масштаб
-  - tail - хвост, конец
-  - paint - красить, писать
-  - painting - картина
-  - portrait - портрет
-  - draw - рисовать
-  - plural - множественное число
-  - singular - единственное число
-  - decide - принять решение, решать 
-  - cupboard - буфет, шкаф, чулан
-  - bakery - пекарня
-  - across - через, поперёк
-  - through - через, сквозь
-  - along - вдоль, вместе
-  - past - мимо, после
-  - climb - подъём, восхождение, набор высоты
-  - over - над, за, по
-  - around - вокруг, около
-  - holding - удерживание, владение
-  - towards - к, в направлении, по отношению к
-  - hiring - найм
-  - hir - наёмник
-  - discuss - обсуждать, дискутировать
-  - couple - пара, два
-  - Forecast - прогноз, предсказание
-  - Spread - распространять, размах
-  - Raise - поднимать, повышение, увеличение
-  - immediate - немедленный, непосредственный, срочный, спешный
-  - siblings - братья и сёстры, дети одних родителей
-  - hear - слышать
-  - lovely - чудесный
-  - nap - вздремнуть, дремать, сон
-  - assume - предполагать
-  - exec shirt - служебная рубашка
-  - on a night out - на вечеринке
-  - curve - изгиб
-  - urge - побуждать
-  - awesome - потрясающий, устрашающий
-  - advertiser - рекламодатель
-  - through - через, по средствам
-  - theming - тематика
-  - implement - осуществлять
-  - are met - которые встретились
-  - early - рано, преждевременно
-  - explicit - явный
-  - however - однако, впрочем
-  - mind - разум, ум, дух, мнение
-  - porch - крыльцо, порог, подъезд
-  - principal - основной, главный, ведущий, директор
-  - 5th grader - пятиклассник
-  - cane - трость, палка, прут
-  - probably - вероятно
-  - probably not - возможно нет
-  - decide - решать
-  - decide to - решить
-  - decide on - принять решение
-  - decide whether - решать ли
-  - whether - будь то, ли
-  - rough - грубый
-  - isn't he? - не так ли, разве он не
-  - Whenever - всякий раз когда, когда бы ни
-  - Whim - каприз, прихоть
-  - mugs - чашки
-  - curt - краткий, резкий
-  - purr - мурлыкать
-  - fur - шерсть
-  - chuck - патрон
-  - puke - тошнить
-  - funeral - похороны
-  - puberty - пубертатный период
-  - mug - кружка
-  - uncle - дядя
-  - rug - коврик
-  - rat - крыса
-  - pale - бледный
-  - gaze - посмотреть, взор, пристальный взгляд
-  - tape - лента
-  - behave - вести себя
-  - shave - бриться
-  - lack - недостаток, нехватка чего-либо
-  - mane - грива
-  - cape - мыс, плащ, накидка
-  - cater - обслуживать
-  - cane - трость
-  - figs - инжир
-  - flick - щелчок
-  - fit - поместиться, соответствовать
-  - shin - голень
-  - shine - светить
-  - chin - подбородок
-  - wheels - колёса
-  - fridge - холодильник
-  - rainbow - радуга
-  - gap - зазор, разрыв
-  - dri - сухой
-  - revision - ревизия, пересмотр, проверка
-  - regarding - касательно, относительно
-  - appeal - обращение
-  - urgent - срочный
-  - Below - ниже
-  - through - через, по средствам
-  - prompt - незамедлительный
-  - resumption - возобновление
-  - appear - появляться, казаться
-  - rest assured - будьте уверены
-  - sure - уверенность
-  - Statement -заявление, утверждение
-  - genuine - подлинный, настоящий
-  - altered - изменённый
-  - misleading - вводящий в заблуждение
-  - prohibit - запрещать
-  - ability - способность
-  - consider - рассматривать
-  - Once received - после получения
-  - clever, smart - умный
-  - ill, sick - больной
-  - rough - грубый
-  - tutor - репетитор
-  - you got me wrong - ты неправильно меня понял
-  - you got me in depression - ты ввёл меня в депрессию
-  - you got me - ты поймал меня
-  - brave - смелый
-  - public house - место встречи с друзьями
-  - artist - художник
-  - chef - шеф повар
-  - fabric - ткань
-  - Exclamation point - восклицательный знак
-  - cow - корова
-  - savage - дикий
-  - put on - надевать
-  - cuisine - кухня
-  - wrong - неправильно
-  - keep up - успевать
-  - spell - по буквам
-  - peer - всматриваться
-  - pear - груша
-  - enough - достаточно
-  - shoe - обувь
-  - crowded - переполненный
-  - shore - берег
-  - stairs - лестница
-  - fleat - блоха
-  - even - даже
-  - indentation - отступ
-  - digestible - усваиваемый, удобоваримый
-  - receive - получать, принимать
-  - instead - вместо
-  - a bit - немного
-  - confused - смущённый
-  - violent - жестокий, насильственный
-  - eternal - вечный, постоянный
-  - suggest - предлагать, говорить о
-  - implementation - реализация
-  - another - очередной, ещё один, другой
-  - timestamps - временные метки
-  - hang - висеть, вешать
-  - explain - объяснять, разъяснять
-  - litter - мусор
-  - funeral - похороны
-  - cute - милый
-  - underaged - несовершеннолетний
-  - noun - существительное
-  - sharp - острый
-  - claws - когти
-  - pronoun - местоимение
-  - avoid - избегать
-  - hungry - голодный
-  - bark - лаять 
-  - would - будет
-  - roommate - товарищ по комнате / по команде
-  - nonspecific - неопределенный
-  - gambles - азарные игры
-  - take - брать
-  - verb - глагол
-  - consist - состоять
-  - leather - кожа
-  - weatherman - метеоролог
-  - dedicat - посвящать, преданный
-  - prevent - предотвращать
-  - accurate - точный, тщательный, меткий
-  - slander - клевета
-  - least one - хотя бы один
-  - accusation - обвинение
-  - buzz - гул, шумиха
-  - hope - надежда
-  - revenge - месть, реванш
-  - wealth - богатство
-  - stolen - украденный
-  - Bidirectional - двухнаправленный, двусторонний
-  - Mistake - ошибка, заблуждение
-  - bold - смелый, дерзкий
-  - bond - облигация, связь
-  - countdown - обратный отсчёт, отсчёт времени перед запуском
-  - hedgehog - ёж, дикообраз
-  - supposed - предполагаемый, мнимый
-  - Middleware - промежуточное ПО
-  - corresponding - соответствующий, подобный
-  - pick - выбор, отбор
-  - First of all - прежде всего, в первую очередь
-  - experiment - эксперимент
-  - apologies - извинения
-  - invocation - призыв, вызов, заключение
-  - Redundant - избыточный
-  - Obtain - получать, приобретать, достигать
-  - assume - предполагать
-  - comma - запятая
-  - pretty - симпатичный
-  - wrongdoings - проступки
-  - significance - значение
-  - exist - существует
-  - tenses - времена
-  - audience - аудитория, зрители
-  - predominantly - преимущественно
-irregular verbs (INFINITIVE / PAST SIMPLE / PAST PARTICIPLE - ПЕРЕВОД):
-  - abide / abode/abided / abode/abided - терпеть, выносить; придерживаться чего-либо, быть верным
-  - arise /	arose / arisen -	возникать, подниматься
-  - awake /	awaked/awoke /	awaked/awoken - будить,  вызывать, просыпаться, понимать
-  - backslide /	backslid /	backslidden/backslid -	отступаться от веры, снова предаваться пороку
-  - be /	was, were /	been -	быть, являться
-  - bear /	bore/beared /	born/borne/beared - нести, выносить, держать, питать чувство
-  - beat /	beat /	beaten/beat - бить, побеждать
-  - become /	became /	become -	становиться, делаться
-  - befall /	befell /	befallen -	случаться, приключаться
-  - begin /	began /	begun -	начинать
-  - behold /	beheld /	beheld -	увидеть, заметить, созерцать, наблюдать
-  - bend /	bent /	bent -	гнуть, сгибать
-  - bereave /	bereft/bereaved /	bereft/bereaved -	лишать, отнимать, отбирать
-  - beseech /	besought/beseeched /	besought/beseeched -	умолять, просить, упрашивать
-  - beset /	beset /	beset - окружать, осаждать, преграждать
-  - bet /	bet/betted / 	bet/betted - держать пари, быть уверенным
-  - bid /	bid/bade /	bidden -	приглашать, приветствовать, прощаться
-  - bid /	bid /	bid -	предлагать цену, велеть, просить
-  - bide /	bode/bided /	bided -	ждать, выжидать, оставаться, находиться
-  - bind /	bound /	bound -	связывать, граница
-  - bite /	bit /	bitten -	кусать, клевать, жалить
-  - bleed /	bled /	bled -	кровоточить, истекать кровью
-  - bless /	blessed/blest /	blessed/blest -	благословлять, одаривать, перекрестить
-  - blow /	blew /	blown -	дуть, веять, задувать, выдувать, взрывать
-  - break /	broke /	broken -	ломать, прерывать, разбивать
-  - breed /	bred /	bred -	выводить, вскармливать, размножаться, порождать
-  - bring /	brought /	brought -	приносить, приводить, доводить
-  - broadcast /	broadcast/broadcasted /	broadcast/broadcasted -	вещать, распространять, передавать по радио
-  - build /	built /	built -	строить, сооружать
-  - burn /	burned/burnt /	burned/burnt - гореть, сжигать
-  - burst /	burst /	burst -	лопаться, взрываться, быть переполненным, появиться
-  - bust /	busted/bust /	busted/bust -	сломать, разрушать, разориться, бить
-  - buy /	bought /	bought -	покупать
-  - cast /	cast /	cast -	бросать, отбрасывать, уволить, отливать (метал)
-  - catch /	caught /	caught -	поймать, ловить, догнать
-  - chide /	chided/chid /	chided/chid/ chidden -	распекать, ругать, бранить, реветь
-  - choose /	chose /	chosen -	выбирать
-  - cleave /	cleft/clove /	cleft/cloven -	раскалывать, рассекать
-  - cling /	clung /	clung -	цепляться, держаться, липнуть
-  - clothe /	clothed/clad /	clothed/clad - одеть, одевать, выражать, одарять
-  - come	came	come	приходить
-  - cost	cost	cost	оценивать, стоить
-  - creep	crept	crept	ползать, красться, охватывать, наводить ужас
-  - crossbreed	crossbred	crossbred	скрещивать
-  - cut	cut	cut	резать, обрезать
-  - dare	durst 	dared 	сметь, бросать вызов, рисковать
-  - daydream	daydreamed / daydreamt	daydreamed / daydreamt - грезить наяву, мечтать, фантазировать
-  - deal	dealt	dealt	иметь дело, торговать, рассматривать вопрос
-  - dig	dug	dug	копать, рыть, искать
-  - disprove	disproved	disproved / disproven	опровергать, доказывать ложность
-  - dive	dove / dived	dived	нырять, прыгать вниз, окунаться
-  - do	did	done	делать, выполнять
-  - draw	drew	drawn	чертить, рисовать, представлять; тащить, тянуть
-  - dream	dreamed / dreamt	dreamed / dreamt - видеть сны, мечтать
-  - drink	drank	drunk	пить, выпивать
-  - drive	drove	driven	водить (машину), управлять, ездить
-  - dwell	dwelt / dwelled	dwelt / dwelled - жить, обитать, пребывать, останавливаться
-  - eat	ate	eaten	есть, принимать пищу, кушать
-  - fall	fell	fallen	падать, опадать, опускаться
-  - feed	fed	fed	кормить
-  - feel	felt	felt	чувствовать
-  - fight	fought	fought	бороться, сражаться
-  - find	found	found	находить, обнаруживать
-  - fit	fitted / fit	fitted / fit - подгонять, прилаживать, приспосабливать, оснащать
-  - flee	fled	fled	бежать, спасаться бегством
-  - fling	flung	flung	кидать, бросать
-  - fly	flew	flown	летать, пролетать
-  - forbear	forbore	forborne	сдерживаться, воздерживаться, быть выдержанным
-  - forbid	forbade	forbidden	запрещать
-  - forecast	forecast	forecast	прогнозировать, предсказывать
-  - forego	forewent	foregone	предшествовать, идти впереди
-  - foresee	foresaw	foreseen	предвидеть, предугадывать
-  - foretell	foretold	foretold	предсказывать, прогнозировать
-  - forget	forgot	forgotten / forgot - забывать
-  - forgive	forgave	forgiven	прощать, забыть (долг)
-  - forgo	forwent 	forgone 	отказываться, воздерживаться
-  - forsake	forsook	forsaken	бросать, оставлять, отказываться
-  - forswear	forswore	forsworn	отказываться, отрекаться
-  - freeze	froze	frozen	замерзать, замораживать
-  - frostbite	frostbit	frostbitten	обморозить, отморозить
-  - get	got	gotten / got - получать, становиться
-  - gild	gilded / gilt	gilded / gilt	золотить, покрывать позолотой, украшать
-  - give	gave	given	давать
-  - go	went	gone	идти, ехать
-  - grind	ground	ground	молоть, растереть, шлифовать, точить
-  - grow	grew	grown	расти, выращивать
-  - hand-feed	hand-fed	hand-fed	подавать вручную
-  - handwrite	handwrote	handwritten	писать вручную
-  - hang	hung	hung	висеть, вешать
-  - have	had	had	иметь, обладать
-  - hear	heard	heard	слышать, слушать
-  - heave	heaved / hove	heaved / hove - поднимать, перемещать, вздыматься, напрягаться
-  - hew	hewed	hewn / hewed	рубить, тесать, отбывать, согласовываться
-  - hide	hid	hidden	прятать, прятаться
-  - hit	hit	hit	ударять, поражать
-  - hold	held	held	занимать, держать, удерживать
-  - hurt	hurt	hurt	повредить, причинять боль, ранить
-  - inbreed	inbred	inbred	взращивать, воспитывать что-то в ком-то
-  - inlay	inlaid	inlaid	инкрустировать, делать вставку
-  - input	input / inputted	input / inputted	ввести, вводить, вкладывать (деньги)
-  - interbreed	interbred	interbred	скрещивать, скрещиваться
-  - interweave	interwove / interweaved	interwoven / interweaved	cплетать, переплетать, смешивать, воткать
-  - interwind	interwound	interwound	переплетать, перематывать
-  - jerry-build	jerry-built	jerry-built	построить на скорую руку, кое-как
-  - keep	kept	kept	держать, сохранять, хранить
-  - kneel	knelt / kneeled	knelt / kneeled	становиться на колени
-  - knit	knitted / knit	knitted / knit	вязать, штопать
-  - know	knew	known	знать, уметь, быть знакомым
-  - lay	laid	laid	класть, валить, накрывать
-  - lead	led	led	вести, сопровождать
-  - lean	leaned / leant 	leaned / leant - опираться, наклоняться, прислоняться
-  - leap	leaped / leapt	leaped / leapt - прыгать, скакать
-  - learn	learned / learnt	learned / learn - учиться, узнавать
-  - leave	left	left	оставлять, уезжать
-  - lend	lent	lent	одалживать, давать взаймы, занимать
-  - let	let	let	позволять, допускать, выпускать, проливать
-  - lie	lay	lain - лежать, распологаться, находиться
-  - light	lit / lighted	lit / lighted	натолкнуться, обрушиться, освещать, зажигать, светиться
-  - lip-read	lip-read	lip-read	читать с губ, понимать по губам
-  - lose	lost	lost	терять, утрачивать, избавляться, пропадать
-  - make	made	made	делать, производить, совершать
-  - mean	meant	meant	значить, подразумевать
-  - meet	met	met	встречать, знакомиться
-  - miscast	miscast	miscast	неправильно распределять роли
-  - misdeal	misdealt	misdealt	ошибаться при сдаче
-  - misdo	misdid	misdone	делать неправильно, небрежно
-  - mishear	misheard	misheard	ослышаться, не расслышать
-  - mislay	mislaid	mislaid	положить не на место, затерять
-  - mislead	misled	misled	вводить в заблуждение, сбивать с пути
-  - mislearn	mislearned / mislearnt	mislearned / mislearnt - обучаться, учить неправильно
-  - misread	misread	misread	прочитать неправильно, неправильно понять
-  - missay	missaid	missaid	оговориться, сказать неправильно
-  - misset	misset	misset	неправильно установить
-  - misspeak	misspoke	misspoken	говорить, произносить неправильно
-  - misspell	misspelled / misspelt	misspelled / misspelt - писать с ошибками, делать орфографические ошибки
-  - misspend	misspent	misspent	неразумно тратить, транжирить
-  - misswear	misswore	missworn	давать ложную клятву
-  - mistake	mistook	mistaken	ошибаться, заблуждаться
-  - misteach	mistaught	mistaught	неправильно обучать
-  - misunderstand	misunderstood	misunderstood	не понимать, понять неправильно
-  - miswrite	miswrote	miswritten	неправильно писать
-  - mow	mowed	mowed / mown	косить, стричь (газон), жать
-  - offset	offset	offset	возмещать, компенсировать, ответвляться
-  - outbid	outbid	outbid	перебивать цену, превзойти, затмить
-  - outdo	outdid	outdone	превзойти, поражать, побороть
-  - outdraw	outdrew	outdrawn	добиться большей популярности, превзойти конкурентов
-  - outdrink	outdrank	outdrunk	перепить (кого-то), выпить больше, чем кто-то
-  - outdrive	outdrove	outdriven	обогнать, опередить
-  - outfight	outfought	outfought	иметь перевес над противником, побеждать
-  - outfly	outflew	outflown	вылетать, летать быстрее, дальше (чем кто-либо)
-  - outgrow	outgrew	outgrown	опережать в росте, перерастать, избавляться с возрастом
-  - outleap	outleaped / outleapt	outleaped / outleapt - перепрыгивать, выпрыгивать, прыгать лучше
-  - outlie	outlay	outlain - находиться снаружи, вне, простираться
-  - outrun	outran	outrun	перегонять, опережать, убежать, сбежать
-  - outsell	outsold	outsold	продавать, продаваться лучше, превосходить в цене
-  - outshine	outshined / outshone	outshined / outshone - затмить
-  - outshoot	outshot	outshot	стрелять лучше, отбрасывать, выбрасывать
-  - outsing	outsang	outsung	превзойти в пении
-  - outsit	outsat	outsat	пересидеть, засидеться
-  - outsleep	outslept	outslept	проспать, прозевать
-  - outsmell	outsmelled / outsmelt	outsmelled / outsmelt - пахнуть сильнее, чем что-то
-  - outspeak	outspoke	outspoken	говорить лучше, высказаться, заявить
-  - outspeed	outsped / outspeeded	outsped / outspeeded	перегонять, быть, действовать быстрее
-  - outspend	outspent	outspent	превзойти по расходам, тратить больше
-  - outstand	outstood	outstood	выделяться, бросаться в глаза, выдержать
-  - outswear	outswore	outsworn	превосходить в ругани
-  - outswim	outswam	outswum	превосходить в плавании
-  - outthink	outthought	outthought	превосходить разумом, перехитрить
-  - outthrow	outthrew	outthrown	выбрасывать, извергать, бросать лучше
-  - outwear	outwore	worn	изнашивать, служить дольше остальных вещей
-  - outwrite	outwrote	outwritten	писать лучше
-  - overbid	overbid	overbid	перебивать цену, взятку
-  - overbreed	overbred	overbred	разводить, выращивать животных в чрезмерном количестве
-  - overbuild	overbuilt	overbuilt	чрезмерно застраивать, надстраивать
-  - overbuy	overbought	overbought	покупать слишком много, слишком дорого
-  - overcome	overcame	overcome	преодолеть, побороть
-  - overdo	overdid	overdone	перестараться, переборщить, утрировать, переутомляться
-  - overdraw	overdrew	overdrawn	превысить кредит, гиперболизировать
-  - overdrink	overdrank	overdrunk	перепить, слишком много пить
-  - overeat	overate	overeaten	переесть, есть слишком много
-  - overfeed	overfed	overfed	перекармливать, объедаться
-  - overfly	overflew	overflown	перелетать, пролетать над чем-то
-  - overhang	overhung	overhung	выступать, нависать, угрожать, вешать драпировку
-  - overhear	overheard	overheard	подслушивать, нечаянно услышать
-  - overlay	overlaid	overlaid	покрывать, перекрывать, оказывать влияние
-  - overlie	overlay	overlain	лежать, залегать над чем-то, перекрывать
-  - overpay	overpaid	overpaid	переплачивать, возмещать с избытком
-  - override	overrode	overridden	отменять, перевешивать, преобладать, переехать
-  - overrun	overran	overrun	переходить пределы, захватывать, заполонять
-  - oversee	oversaw	overseen	наблюдать, надзирать, следить, подсмотреть
-  - oversell	oversold	oversold	перехваливать, навязывать продукцию, продать больше своих запасов
-  - overset	overset	overset	нарушать порядок, расстраивать, опрокидываться
-  - oversew	oversewed	oversewn / oversewed	сшивать через край
-  - overshoot	overshot	overshot	промахнуться, перейти границы, стрелять до изнеможения
-  - oversleep	overslept	overslept	проспать, заспаться
-  - overspeak	overspoke	overspoken	слишком много разговаривать
-  - overspend	overspent	overspent	сорить деньгами, расстраивать свое здоровье
-  - overspill	overspilled / overspilt	overspilled / overspilt - проливать, переполнять, перенаселять
-  - overtake	overtook	overtaken	догнать, настигать, овладевать, обогнать
-  - overthink	overthought	overthought	надумать лишнего, слишком много думать
-  - overthrow	overthrew	overthrown	бросать слишком далеко, свергать, разрушать
-  - overwind	overwound	overwound	перекрутить, крутить слишком сильно, быстро
-  - overwrite	overwrote	overwritten	переписывать, писать поверх текста, много писать
-  - partake	partook	partaken	принимать участие, разделять, отведать, воспользоваться
-  - pay	paid	paid	платить, вознаграждать, отомстить
-  - plead	pleaded / pled	pleaded / pled	защищать подсудимого, ходатайствовать, простить
-  - prebuild	prebuilt	prebuilt	предварительно собрать, выстроить
-  - predo	predid	predone	сделать заранее, подготовить
-  - premake	premade	premade	подготовить, сделать наперед, заранее
-  - prepay	prepaid	prepaid	предоплачивать, платить наперед
-  - presell	presoldpreset	prespresetold	рекламировать товар, организовать предпродажу, продавать наперед
-  - preshrink	preshrank	preshrunk	обрабатывать ткань для предотвращения ее стяжки
-  - proofread	proofread	proofread	читать корректуру, корректировать, вычитывать
-  - prove	proved	proven / proved	доказывать, удостоверять
-  - put	put	put	класть, положить
-  - quick-freeze	quick-froze	quick-frozen	быстро замораживать, замерзать
-  - quit	quit / quitted 	quit / quitted - оставлять, покидать, выходить
-  - read	read [red]	read [red]	читать
-  - reawake	reawoke	reawaken	снова пробуждать
-  - rebid	rebid	rebid	делать повторную ставку
-  - rebind	rebound	rebound	переплетать заново (книгу)
-  - rebroadcast	rebroadcast / rebroadcasted	rebroadcast / rebroadcasted	ретранслировать, показывать (передачу) заново
-  - rebuild	rebuilt	rebuilt	перестраивать
-  - recast	recast	recast	переделывать, изменять, пересчитывать
-  - recut	recut	recut	вторично нарезать, повторно вырезать (сцены из фильма)
-  - redeal	redealt	redealt	перераздавать карты в игре
-  - redo	redid	redone	переделывать, делать ремонт
-  - redraw	redrew	redrawn	перерисовывать, обновлять рисунок, выставлять обратный вексель
-  - refit	refitted / refit	refitted / refit - перекраивать, подгонять заново (по размеру)
-  - regrind	reground	reground	перешлифовывать, перетачивать, притирать
-  - regrow	regrew	regrown	отрастать снова
-  - rehang	rehung	rehung	перевешивать
-  - rehear	reheard	reheard	услышать снова, рассматривать дело повторно
-  - reknit	reknitted / reknit	reknitted / reknit	вязать заново, соединять заново
-  - relay 	relaid	relaid - класть заново, заменять (черепицу, кафель)
-  - relearn	relearned / relearnt	relearned / relearnt - учиться заново, переучиваться
-  - relight	relit / relighted	relit / relighted	зажечь, зажечься снова, загореться
-  - remake	remade	remade	переделывать, делать заново
-  - rend	rent / rended	rent / rended - отрывать, раздирать, дробить, расщеплять
-  - repay	repaid	repaid	отдавать, возвращать, возмещать, отплачивать
-  - reread	reread	reread	перечитывать
-  - rerun	reran	rerun	перезапускать, повторно проводить, показывать
-  - resell	resold	resold	перепродавать
-  - resend	resent	resent	переотправлять, посылать заново
-  - reset	reset	reset	повторно включать, устанавливать, сбрасывать
-  - resew	resewed	resewn / resewed	пришивать заново, перешивать
-  - retake	retook	retaken	снова взять, переснимать, пересдавать (экзамен)
-  - reteach	retaught	retaught	переучивать, учить заново
-  - retear	retore	retorn	снова разрывать, отрывать
-  - retell	retold	retold	пересказывать, рассказывать снова
-  - rethink	rethought	rethought	пересматривать, заново осмыслить
-  - retread	retread	retread	сменить покрышку, переобучать, заново давать работу
-  - retrofit	retrofitted / retrofit	retrofitted / retrofit - модифицировать, подгонять, настраивать
-  - rewake	rewoke / rewaked	rewaken / rewaked	будить, пробуждаться заново
-  - rewear	rewore	reworn	носить заново
-  - reweave	rewove / reweaved	rewoven / reweaved	переткать, плести, ткать заново, снова соединяться
-  - rewed	rewed / rewedded	rewed / rewedded	жениться во второй раз
-  - rewet	rewet / rewetted	rewet / rewetted - повторно увлажнять, мочить снова
-  - rewin	rewon	rewon	снова победить, победить после проигрыша
-  - rewind	rewound	rewound	перематывать (назад)
-  - rewrite	rewrote	rewritten	переписывать, редактировать, отвечать письменно
-  - rid	rid	rid	освобождать, избавлять
-  - ride	rode	ridden	ехать верхом, кататься, ехать (в транспорте)
-  - ring	rang	rung	звонить, звенеть
-  - rise	rose	risen	подниматься, восходить
-  - roughcast	roughcast	roughcast	набрасывать план, намечать, грубо штукатурить
-  - run	ran	run	бежать, гнать, управлять, течь
-  - sand-cast	sand-cast	sand-cast	отливать металл в песчаную форму
-  - saw	sawed	sawed / sawn	пилить, распилить
-  - say	said	said	говорить, сказать
-  - see	saw	seen	видеть, смотреть
-  - seek	sought	sought	искать, добиваться
-  - sell	sold	sold	продавать
-  - send	sent	sent	посылать, отправлять
-  - set	set	set	помещать, ставить
-  - sew	sewed	sewn / sewed	шить, штопать
-  - shake	shook	shaken	трясти, встряхивать
-  - shave	shaved	shaved / shaven	бриться
-  - shear	sheared	sheared / shorn	резать, выстригать, рассекать
-  - shed	shed	shed	проливать, терять, сбрасывать
-  - shine	shined / shone	shined / shone - сиять, светить
-  - shit	shit / shat / shitted	shit/ shat / shitted	какать, гадить, срать
-  - shoe	shod	shod	обувать, подковывать, подбивать
-  - shoot	shot	shot	стрелять, охотиться
-  - show	showed	shown / showed - показывать, показываться, выставлять напоказ
-  - shrink	shrank / shrunk	shrunk / shrunken	уменьшать, уменьшаться, сжиматься, давать усадку
-  - shut	shut	shut	закрывать
-  - sight-read	sight-read	sight-read	играть, петь с листа, читать ноты, текст с листа
-  - sing	sang	sung	петь
-  - sink	sank / sunk	sunk	тонуть, опускаться, погружаться
-  - sit	sat	sat	сидеть, сажать, находиться
-  - slay	slew / slayed	slain / slayed - убивать, уничтожать
-  - sleep	slept	slept	спать
-  - slide	slid	slid	скользить, ползать, кататься
-  - sling	slung	slung	швырять, вешать через плечо, подвешивать
-  - slink	slinked / slunk	slinked / slunk	красться, подкрадываться, рожать преждевременно
-  - slit	slit	slit	разрезать, перерезать
-  - smell	smelled / smelt	smelled / smelt - пахнуть, нюхать
-  - smite	smote	smitten	поражать, бить, наказывать
-  - sneak	sneaked / snuck	sneaked / snuck	красться, подкрадываться, красть, ускользать
-  - sow	sowed	sown / sowed	сеять, засевать, распространять
-  - speak	spoke	spoken	говорить
-  - speed	sped / speeded	sped / speeded	спешить, ускорять, торопить
-  - spell	spelled / spelt	spelled / spelt - заколдовать; сменить, дать отдохнуть; писать, произносить слово по буквам
-  - spend	spent	spent	тратить, истощать
-  - spill	spilled / spilt	spilled / spilt - проливать, разливаться
-  - spin	spun	spun	прясть, крутить, вертеть, плести
-  - spit	spit / spat	spit / spat	плевать, пронзать, натыкать, моросить
-  - spoil	spoiled / spoilt	spoiled / spoilt - портить, баловать
-  - spread	spread	spread	распространяться, расстилать
-  - spring	sprang / sprung	sprung	прыгать, вскочить
-  - stand	stood	stood	стоять, быть расположенным
-  - stave	staved / stove	staved / stove	проламывать, разбивать
-  - steal	stole	stolen	воровать, красть
-  - stick	stuck	stuck	втыкать, колоть, приклеивать, липнуть
-  - sting	stung	stung	жалить, причинять боль, обманывать
-  - stink	stunk / stank	stunk	вонять, пахнуть
-  - strew	strewed	strewn / strewed	усеять, разбрасывать, посыпать
-  - stride	strode	stridden	шагать, сидеть верхом
-  - strike	struck	struck / stricken	ударять, поражать, бастовать
-  - string	strung	strung	связывать, натягивать, нанизывать
-  - strive	strove / strived	striven / strived	стремиться, стараться, пытаться
-  - sublet	sublet	sublet	сдавать в поднаём
-  - sunburn	sunburned / sunburnt	sunburned / sunburnt - обгорать на солнце
-  - swear	swore	sworn	клясться, присягать, ругаться
-  - sweat	sweat / sweated	sweat / sweated	потеть, сыреть, запотевать
-  - sweep	swept	swept	мести, прочищать, сметать, мчаться
-  - swell	swelled	swollen / swelled	пухнуть, раздуваться, набухать
-  - swim	swam	swum	плавать, плыть
-  - swing	swung	swung	качать, размахивать
-  - take	took	taken	брать, взять
-  - teach	taught	taught	обучать, учить
-  - tear	tore	torn	рвать, сорвать, разорвать
-  - telecast	telecast	telecast	передавать по телевидению
-  - tell	told	told	говорить, рассказывать, сообщать
-  - test-drive	test-drove	test-driven	делать пробную поездку, тестировать
-  - test-fly	test-flew	test-flown	испытывать самолет в воздухе
-  - think	thought	thought	думать, полагать
-  - thrive	throve / thrived	thrived / thriven	процветать, преуспевать, буйно расти
-  - throw	threw	thrown	кидать, бросать
-  - thrust	thrust	thrust	колоть, засовывать, толкать, лезть
-  - tread	trod	trodden / trod	идти, ступать, топтать, давить
-  - typecast	typecast	typecast	подбирать актеров по типажности
-  - typeset	typeset	typeset	набирать текст для печати, определять тип
-  - typewrite	typewrote	typewritten	печатать на пишущей машинке, набирать текст
-  - unbend	unbent	unbent	разгибаться, выпрямляться, смягчаться
-  - unbind	unbound	unbound	развязать, распуска, ослаблять
-  - unclothe	unclothed / unclad	unclothed / unclad - раздеваться, раздевать, обнажать
-  - underbid	underbid	underbid	перебивать цену, назначать более низкую цену
-  - undercut	undercut	undercut	подрезать, сбивать цены, делать подсечку
-  - underfeed	underfed	underfed	недокармливать, недоедать
-  - undergo	underwent	undergone	испытывать, переносить
-  - underlie	underlay	underlain	подчеркивать, выделять
-  - undersell	undersold	undersold	продавать дешевле других
-  - underspend	underspent	underspent	тратить недостаточно, очень мало
-  - understand	understood	understood	понимать, осознавать
-  - undertake	undertook	undertaken	предпринимать, гарантировать, совершать
-  - underwrite	underwrote	underwritten	подписывать, гарантировать, ручаться
-  - undo	undid	undone	расстегивать, уничтожать, отменять, разбирать
-  - unfreeze	unfroze	unfrozen	разморозить, размораживаться
-  - unhang	unhung	unhung	снимать (висящее)
-  - unhide	unhid	unhidden	показывать скрытые элементы
-  - unknit	unknitted / unknit	unknitted / unknit	распускать (вязанье), распутывать, разъединять
-  - unlearn	unlearned / unlearnt	unlearned / unlearnt - разучиться, забыть то, что знал
-  - unsew	unsewed	unsewn / unsewed	распарывать сшитое
-  - unsling	unslung	unslung	отвязывать, снимать, осовобождать от ремня
-  - unspin	unspun	unspun	распускать, расплетать,распутывать
-  - unstick	unstuck	unstuck	отдирать, отклеивать, взлетать (самолет)
-  - unstring	unstrung	unstrung	снимать, ослаблять, распускать, огорчать
-  - unweave	unwove / unweaved	unwoven / unweaved	распускать, расплетать (ткань)
-  - unwind	unwound	unwound	расматывать, раскручивать, развивать
-  - uphold	upheld	upheld	поддерживать, помогать, удерживать
-  - upset	upset	upset	опрокидывать, расстраивать, огорчать
-  - wake	woke / waked	woken / waked	будить, просыпаться
-  - waylay	waylaid	waylaid	подстерегать, устраивать засаду
-  - wear	wore	worn	носить (одежду)
-  - weave	wove / weaved	woven / weaved	ткать, плести
-  - wed	wed / wedded	wed / wedded	венчать, выдавать замуж, жениться, выходить замуж
-  - weep	wept	wept	плакать, тосковать, запотевать
-  - wet	wet / wetted	wet / wetted - мочить, промочить, мокнуть
-  - win	won	won	выигрывать, побеждать
-  - wind	wound	wound	чуять, дуть, наматывать, заводить (механизм), извиваться
-  - withdraw	withdrew	withdrawn	брать назад, отнимать, отзывать, извлекать
-  - withhold	withheld	withheld	воздерживаться, удерживать, скрывать
-  - withstand	withstood	withstood	устоять, выдерживать, сопротивляться
-  - wring	wrung	wrung	крутить, терзать, выжимать, скручивать
-  - write	wrote	written	писать
+---
+:update_id: 72850574
+:videos:
+- блокчейн из MIT - 7 лекция MIT - https://youtu.be/ogCj24ip6uM?t=912
+- cs50 - 6. - https://www.youtube.com/watch?v=Et-RXxyC6WM
+- введение в Vim - Урок 1.1 Введение. - https://www.youtube.com/watch?v=jkxLIFVGfd4&list=PL8hRAtHSjAgZv7WFVDvQzzU-WoL-7jZGJ
+- алгоритмы - https://youtu.be/ux2MQ2DJAXk?t=326
+:books_in_progress:
+- 
+:unread_books:
+- Catcher in the rye - very fun and style
+:courses:
+- ruby + rails:
+  - курс - https://ru.hexlet.io/my
+  - slack - https://app.slack.com/client/T019FJ8M43H/C025HANHFEF
+:debtors:
+- Денис - 45.5 тр для Славы - отправить 30тр, останется 15.5тр
+- Денис - две книги Артёма (сапиенс и хомо)
+- Рафаэль - 15 тысяч рублей + билет на самолёт 7500 + хука в мск 2300 (минус расходы
+  Рафаэля - аэроэкспресс, блек стар бургер в аэропорту = около 900р)
+:birthdays:
+- 31.08.1993 - Левенко Денис
+:notes:
+- new_note - start robot vacuum in evening
+- потыкать альтернативы хероку - https://dokku.com/, https://render.com/
+:english_words_from_duo:
+- get from api duolingo
+:my_english_phrases:
+- It’s so nice today, isn’t it? - Сегодня так приятно, правда?
+- Click here to connect to the internet. - Нажмите сюда, чтобы подключиться к интернету.
+- I shop on the internet a lot. - Я часто делаю покупки в интернете.
+- Not really - не совсем
+- slow down a bit - немного помедленнее
+- slow down the time - замедлить время
+- slow down please - помедленнее, пожалуйста
+- slow down - замедлять
+- jacked body - измученное тело
+- jacked potato - жаренный картофель
+- jacked up - вздёрнутый
+- we're told he regularly sleeps at twitter - нам сказали, что он регулярно спит в
+  твиттере
+- for stuff - для вещей
+- get lost - свали
+- naked eyes - невооруженным глазом
+- I wouldn't risk - я бы не рискнул
+- one hundred percent right - сто процентов прав
+- Hold the lift - придержите лифт
+- The lift takes up to fifteen people. - Лифт вмещает до пятнадцати человек
+- the need for businesses to reduce costs - потребность бизнеса в снижении издержек
+- you got - ты получил
+- a whale of a - очень много, куча, уйма, большой, отличный, выдающийся
+- a bargain is a bargain - уговор дороже денег, сделака есть сделка, уговор - святое
+  дело
+- drop a line - черкнуть пару строк
+- order supplies - заказ товара (расходных материалов)
+- cline of activity -направление деятельности
+- don't, uncle - не надо, дядя
+- piece of cake - кусок пирога, пару пустяков
+- a little too hard - слишком сложно
+- I had a blast. I enjoyed.. - у меня был взрыв, я наслаждался..
+- Thank you all for having and have a good evening - Спасибо всем за то, что хорошо
+  провели вечер
+- it was great to talk to you - было здорово поговорить с тобой
+- a crime scene - место преступления
+- 20 degrees above zero - 20 градусов выше нуля
+- few minutes - несколько минут
+- They walked around the lake holding hands - Они шли вокруг озера, держась за руки
+- I want to climb over that wall - Я хочу перелезть через эту стену
+- This street goes along the river - Эта улица идет вдоль реки
+- How do I get to the train station? - Как мне добраться до железнодорожного вокзала?
+- get to - добраться, приняться за, уговаривать
+- What kind? - Какого типа
+- insecure person - неуверенный в себе человек
+- insecure about - не уверен в себе
+- insecure content - небезопасный контент
+- literally me - буквально я
+- literally no one - буквально никто
+- literally us - буквально мы
+- back up using cellular - резервное копирование с помощью сотовой связи
+- punished for - наказан за
+- punished him - наказал его
+- punished by - наказан
+- retrace my step - повторить мои шаги
+- retrace your step - повторить свои шаги
+- doesn't that make you russian - это не делает тебя русским
+- health insurance - медицинская страховка
+- to make an appointment - записаться на приём
+- Twenty years ago I was a lazy teenager. - Двадцать лет назад я был ленивым подростком.
+- I am lazy now sometimes. - Я сейчас порой ленивый.
+- I had young children five years ago. - У меня были маленькие дети пять лет назад.
+- I wasn’t old twenty years ago. - Я не был старым двадцать лет назад.
+- I do not know for sure - я не знаю наверняка
+- I wanted to, I tried to, so many times. - Я хотела, я пыталась, так много раз.
+:my_english_words:
+- coy - застенчивый
+- brown - коричневая
+- celling - погребение
+- carpet - ковровая дорожка
+- precise - точный
+- smock - толстовка
+- cyanide - цианид
+- cilantro - кинза
+- grass - трава
+- wet - мокрый
+- freezing - очень холодный
+- Spring - весна
+- autimn - осень
+- attraction - привлечение
+- attractions - достопримечательности
+- uncle - дядя
+- aunt - тётя
+- infinity - бесконечность
+- slim - тонкий, стройный
+- lazy - ленивый
+- intelligent - умный
+- colleague - коллега
+- introduce - вводить
+- tote - тотализатор, перевозка, груз
+- tot - малыш, карапуз
+- fever - жар, лихорадка
+- stomach-ache - боль в животе
+- stomach - желудок, живот, аппетит
+- toothache - зубная боль
+- headache - головная боль, неприятность
+- chord - аккорд, хорда
+- stir - размешивать, переполох
+- fir - пихта
+- far - далеко
+- horn - рог, рожок, сигнал
+- turn - повернуть
+- chore - работа по дому, случайная работа
+- smirk - ухмыляться
+- torn - порванный, разорванный
+- herb - трава, растение
+- burp - отрыжка
+- barn - сарай
+- barter - товарообмен
+- parrot - попугай
+- raft - плот
+- rating - рейтинг
+- frown - хмуриться
+- hill - холм
+- pipe - трубка
+- weirdos - чудаки
+- weirdest - самый странный
+- weirdo - чудак
+- weird - странный
+- retrace - возвращаться
+- punished - накатан
+- literally - в прямом смысле
+- insecure - ненадёжный, неуверенный
+- slaying - убийство
+- slayed - убит
+- slayer - убийца
+- slay - убить
+- prefer - предпочитать
+- lesson - урок
+- sunset - закат, заход солнца
+- revise - пересматривать
+- mension - упомянуть
+- a sip - потягивать
+- jacked - измученный
+- disappeared - исчезнувший
+- injustice - несправедливость
+- themselves - сами себя
+- whatsoever - что угодно
+- to defend - защищать
+- guessing - угадывание
+- loss - потеря
+- lose - терять
+- comb - гребень, расчёска
+- come - прийти, приехать
+- rough - грубый
+- entertain - развлекать, принимать, угощать
+- note - примечание, записка
+- brain - мозг
+- drain - осушать
+- hurt - повредить, боль
+- heard - слышал
+- sit - сидеть
+- sight - зрение
+- wrote - написал
+- throat - горло
+- feed - подача, кормить
+- fed - кормили
+- told - сказал
+- wardrobe - гардероб
+- investigating - расследование
+- obtained  - полученный
+- hope - надеяться
+- Consider - рассмотреть возможность
+- snore - храпеть
+- a coastal - прибрежный
+- stubble - щетина
+- cheek - щека
+- wheels - колёса
+- altere - изменение
+- certainly - конечно
+- purpose - цель
+- ownership - владение
+- allow - позволять
+- a hundred - 100
+- one hundred thousand - 100 000
+- sheep - овца
+- pen - ручка
+- brunette - брюнетка
+- there - там
+- loud - громкий
+- chanson - шансон
+- comic book - комикс
+- collect - собирать
+- newspaper - газета
+- get in - входить
+- got it, see - понятно
+- grandded - дедушка
+- nephew - племянник
+- grandson - внук
+- cart - тележка
+- turtle - черепаха
+- decrease - уменьшить
+- increase - увеличить
+- slash, forward slash - слеш, косая черта
+- underline - подчеркнуть
+- underscore - нижнее подчёркивание
+- at - @
+- dash - тире, бросать
+- almost - почти
+- redundant - избыточный
+- receive - Получать
+- to refuse - отказываться
+- likely - вероятно
+- notice - уведомление
+- improvement -улучшение
+- Among - среди, между
+- afraid - бояться
+- stairs - лестница
+- foreigner - иностранец
+- Among - среди, между
+- improvement - улучшение
+- notice - уведомление
+- likely - вероятно
+- to refuse - отказываться
+- receive - Получать
+- frequency - частота
+- fleat - гладкий
+- flea - блока
+- kind - добрый, любезный, вид
+- smell - запах
+- unusual - необычный
+- scale - шкала, масштаб
+- tail - хвост, конец
+- paint - красить, писать
+- painting - картина
+- portrait - портрет
+- draw - рисовать
+- plural - множественное число
+- singular - единственное число
+- decide - принять решение, решать
+- cupboard - буфет, шкаф, чулан
+- bakery - пекарня
+- across - через, поперёк
+- through - через, сквозь
+- along - вдоль, вместе
+- past - мимо, после
+- climb - подъём, восхождение, набор высоты
+- over - над, за, по
+- around - вокруг, около
+- holding - удерживание, владение
+- towards - к, в направлении, по отношению к
+- hiring - найм
+- hir - наёмник
+- discuss - обсуждать, дискутировать
+- couple - пара, два
+- Forecast - прогноз, предсказание
+- Spread - распространять, размах
+- Raise - поднимать, повышение, увеличение
+- immediate - немедленный, непосредственный, срочный, спешный
+- siblings - братья и сёстры, дети одних родителей
+- hear - слышать
+- lovely - чудесный
+- nap - вздремнуть, дремать, сон
+- assume - предполагать
+- exec shirt - служебная рубашка
+- on a night out - на вечеринке
+- curve - изгиб
+- urge - побуждать
+- awesome - потрясающий, устрашающий
+- advertiser - рекламодатель
+- through - через, по средствам
+- theming - тематика
+- implement - осуществлять
+- are met - которые встретились
+- early - рано, преждевременно
+- explicit - явный
+- however - однако, впрочем
+- mind - разум, ум, дух, мнение
+- porch - крыльцо, порог, подъезд
+- principal - основной, главный, ведущий, директор
+- 5th grader - пятиклассник
+- cane - трость, палка, прут
+- probably - вероятно
+- probably not - возможно нет
+- decide - решать
+- decide to - решить
+- decide on - принять решение
+- decide whether - решать ли
+- whether - будь то, ли
+- rough - грубый
+- isn't he? - не так ли, разве он не
+- Whenever - всякий раз когда, когда бы ни
+- Whim - каприз, прихоть
+- mugs - чашки
+- curt - краткий, резкий
+- purr - мурлыкать
+- fur - шерсть
+- chuck - патрон
+- puke - тошнить
+- funeral - похороны
+- puberty - пубертатный период
+- mug - кружка
+- uncle - дядя
+- rug - коврик
+- rat - крыса
+- pale - бледный
+- gaze - посмотреть, взор, пристальный взгляд
+- tape - лента
+- behave - вести себя
+- shave - бриться
+- lack - недостаток, нехватка чего-либо
+- mane - грива
+- cape - мыс, плащ, накидка
+- cater - обслуживать
+- cane - трость
+- figs - инжир
+- flick - щелчок
+- fit - поместиться, соответствовать
+- shin - голень
+- shine - светить
+- chin - подбородок
+- wheels - колёса
+- fridge - холодильник
+- rainbow - радуга
+- gap - зазор, разрыв
+- dri - сухой
+- revision - ревизия, пересмотр, проверка
+- regarding - касательно, относительно
+- appeal - обращение
+- urgent - срочный
+- Below - ниже
+- through - через, по средствам
+- prompt - незамедлительный
+- resumption - возобновление
+- appear - появляться, казаться
+- rest assured - будьте уверены
+- sure - уверенность
+- Statement -заявление, утверждение
+- genuine - подлинный, настоящий
+- altered - изменённый
+- misleading - вводящий в заблуждение
+- prohibit - запрещать
+- ability - способность
+- consider - рассматривать
+- Once received - после получения
+- clever, smart - умный
+- ill, sick - больной
+- rough - грубый
+- tutor - репетитор
+- you got me wrong - ты неправильно меня понял
+- you got me in depression - ты ввёл меня в депрессию
+- you got me - ты поймал меня
+- brave - смелый
+- public house - место встречи с друзьями
+- artist - художник
+- chef - шеф повар
+- fabric - ткань
+- Exclamation point - восклицательный знак
+- cow - корова
+- savage - дикий
+- put on - надевать
+- cuisine - кухня
+- wrong - неправильно
+- keep up - успевать
+- spell - по буквам
+- peer - всматриваться
+- pear - груша
+- enough - достаточно
+- shoe - обувь
+- crowded - переполненный
+- shore - берег
+- stairs - лестница
+- fleat - блоха
+- even - даже
+- indentation - отступ
+- digestible - усваиваемый, удобоваримый
+- receive - получать, принимать
+- instead - вместо
+- a bit - немного
+- confused - смущённый
+- violent - жестокий, насильственный
+- eternal - вечный, постоянный
+- suggest - предлагать, говорить о
+- implementation - реализация
+- another - очередной, ещё один, другой
+- timestamps - временные метки
+- hang - висеть, вешать
+- explain - объяснять, разъяснять
+- litter - мусор
+- funeral - похороны
+- cute - милый
+- underaged - несовершеннолетний
+- noun - существительное
+- sharp - острый
+- claws - когти
+- pronoun - местоимение
+- avoid - избегать
+- hungry - голодный
+- bark - лаять
+- would - будет
+- roommate - товарищ по комнате / по команде
+- nonspecific - неопределенный
+- gambles - азарные игры
+- take - брать
+- verb - глагол
+- consist - состоять
+- leather - кожа
+- weatherman - метеоролог
+- dedicat - посвящать, преданный
+- prevent - предотвращать
+- accurate - точный, тщательный, меткий
+- slander - клевета
+- least one - хотя бы один
+- accusation - обвинение
+- buzz - гул, шумиха
+- hope - надежда
+- revenge - месть, реванш
+- wealth - богатство
+- stolen - украденный
+- Bidirectional - двухнаправленный, двусторонний
+- Mistake - ошибка, заблуждение
+- bold - смелый, дерзкий
+- bond - облигация, связь
+- countdown - обратный отсчёт, отсчёт времени перед запуском
+- hedgehog - ёж, дикообраз
+- supposed - предполагаемый, мнимый
+- Middleware - промежуточное ПО
+- corresponding - соответствующий, подобный
+- pick - выбор, отбор
+- First of all - прежде всего, в первую очередь
+- experiment - эксперимент
+- apologies - извинения
+- invocation - призыв, вызов, заключение
+- Redundant - избыточный
+- Obtain - получать, приобретать, достигать
+- assume - предполагать
+- comma - запятая
+- pretty - симпатичный
+- wrongdoings - проступки
+- significance - значение
+- exist - существует
+- tenses - времена
+- audience - аудитория, зрители
+- predominantly - преимущественно
+- i'm pissed - я зол
+- a ball - мяч
+:irregular verbs (INFINITIVE / PAST SIMPLE / PAST PARTICIPLE - ПЕРЕВОД):
+- abide / abode/abided / abode/abided - терпеть, выносить; придерживаться чего-либо,
+  быть верным
+- "arise /\tarose / arisen -\tвозникать, подниматься"
+- "awake /\tawaked/awoke /\tawaked/awoken - будить,  вызывать, просыпаться, понимать"
+- "backslide /\tbackslid /\tbackslidden/backslid -\tотступаться от веры, снова предаваться
+  пороку"
+- "be /\twas, were /\tbeen -\tбыть, являться"
+- "bear /\tbore/beared /\tborn/borne/beared - нести, выносить, держать, питать чувство"
+- "beat /\tbeat /\tbeaten/beat - бить, побеждать"
+- "become /\tbecame /\tbecome -\tстановиться, делаться"
+- "befall /\tbefell /\tbefallen -\tслучаться, приключаться"
+- "begin /\tbegan /\tbegun -\tначинать"
+- "behold /\tbeheld /\tbeheld -\tувидеть, заметить, созерцать, наблюдать"
+- "bend /\tbent /\tbent -\tгнуть, сгибать"
+- "bereave /\tbereft/bereaved /\tbereft/bereaved -\tлишать, отнимать, отбирать"
+- "beseech /\tbesought/beseeched /\tbesought/beseeched -\tумолять, просить, упрашивать"
+- "beset /\tbeset /\tbeset - окружать, осаждать, преграждать"
+- "bet /\tbet/betted / \tbet/betted - держать пари, быть уверенным"
+- "bid /\tbid/bade /\tbidden -\tприглашать, приветствовать, прощаться"
+- "bid /\tbid /\tbid -\tпредлагать цену, велеть, просить"
+- "bide /\tbode/bided /\tbided -\tждать, выжидать, оставаться, находиться"
+- "bind /\tbound /\tbound -\tсвязывать, граница"
+- "bite /\tbit /\tbitten -\tкусать, клевать, жалить"
+- "bleed /\tbled /\tbled -\tкровоточить, истекать кровью"
+- "bless /\tblessed/blest /\tblessed/blest -\tблагословлять, одаривать, перекрестить"
+- "blow /\tblew /\tblown -\tдуть, веять, задувать, выдувать, взрывать"
+- "break /\tbroke /\tbroken -\tломать, прерывать, разбивать"
+- "breed /\tbred /\tbred -\tвыводить, вскармливать, размножаться, порождать"
+- "bring /\tbrought /\tbrought -\tприносить, приводить, доводить"
+- "broadcast /\tbroadcast/broadcasted /\tbroadcast/broadcasted -\tвещать, распространять,
+  передавать по радио"
+- "build /\tbuilt /\tbuilt -\tстроить, сооружать"
+- "burn /\tburned/burnt /\tburned/burnt - гореть, сжигать"
+- "burst /\tburst /\tburst -\tлопаться, взрываться, быть переполненным, появиться"
+- "bust /\tbusted/bust /\tbusted/bust -\tсломать, разрушать, разориться, бить"
+- "buy /\tbought /\tbought -\tпокупать"
+- "cast /\tcast /\tcast -\tбросать, отбрасывать, уволить, отливать (метал)"
+- "catch /\tcaught /\tcaught -\tпоймать, ловить, догнать"
+- "chide /\tchided/chid /\tchided/chid/ chidden -\tраспекать, ругать, бранить, реветь"
+- "choose /\tchose /\tchosen -\tвыбирать"
+- "cleave /\tcleft/clove /\tcleft/cloven -\tраскалывать, рассекать"
+- "cling /\tclung /\tclung -\tцепляться, держаться, липнуть"
+- "clothe /\tclothed/clad /\tclothed/clad - одеть, одевать, выражать, одарять"
+- "come\tcame\tcome\tприходить"
+- "cost\tcost\tcost\tоценивать, стоить"
+- "creep\tcrept\tcrept\tползать, красться, охватывать, наводить ужас"
+- "crossbreed\tcrossbred\tcrossbred\tскрещивать"
+- "cut\tcut\tcut\tрезать, обрезать"
+- "dare\tdurst \tdared \tсметь, бросать вызов, рисковать"
+- "daydream\tdaydreamed / daydreamt\tdaydreamed / daydreamt - грезить наяву, мечтать,
+  фантазировать"
+- "deal\tdealt\tdealt\tиметь дело, торговать, рассматривать вопрос"
+- "dig\tdug\tdug\tкопать, рыть, искать"
+- "disprove\tdisproved\tdisproved / disproven\tопровергать, доказывать ложность"
+- "dive\tdove / dived\tdived\tнырять, прыгать вниз, окунаться"
+- "do\tdid\tdone\tделать, выполнять"
+- "draw\tdrew\tdrawn\tчертить, рисовать, представлять; тащить, тянуть"
+- "dream\tdreamed / dreamt\tdreamed / dreamt - видеть сны, мечтать"
+- "drink\tdrank\tdrunk\tпить, выпивать"
+- "drive\tdrove\tdriven\tводить (машину), управлять, ездить"
+- "dwell\tdwelt / dwelled\tdwelt / dwelled - жить, обитать, пребывать, останавливаться"
+- "eat\tate\teaten\tесть, принимать пищу, кушать"
+- "fall\tfell\tfallen\tпадать, опадать, опускаться"
+- "feed\tfed\tfed\tкормить"
+- "feel\tfelt\tfelt\tчувствовать"
+- "fight\tfought\tfought\tбороться, сражаться"
+- "find\tfound\tfound\tнаходить, обнаруживать"
+- "fit\tfitted / fit\tfitted / fit - подгонять, прилаживать, приспосабливать, оснащать"
+- "flee\tfled\tfled\tбежать, спасаться бегством"
+- "fling\tflung\tflung\tкидать, бросать"
+- "fly\tflew\tflown\tлетать, пролетать"
+- "forbear\tforbore\tforborne\tсдерживаться, воздерживаться, быть выдержанным"
+- "forbid\tforbade\tforbidden\tзапрещать"
+- "forecast\tforecast\tforecast\tпрогнозировать, предсказывать"
+- "forego\tforewent\tforegone\tпредшествовать, идти впереди"
+- "foresee\tforesaw\tforeseen\tпредвидеть, предугадывать"
+- "foretell\tforetold\tforetold\tпредсказывать, прогнозировать"
+- "forget\tforgot\tforgotten / forgot - забывать"
+- "forgive\tforgave\tforgiven\tпрощать, забыть (долг)"
+- "forgo\tforwent \tforgone \tотказываться, воздерживаться"
+- "forsake\tforsook\tforsaken\tбросать, оставлять, отказываться"
+- "forswear\tforswore\tforsworn\tотказываться, отрекаться"
+- "freeze\tfroze\tfrozen\tзамерзать, замораживать"
+- "frostbite\tfrostbit\tfrostbitten\tобморозить, отморозить"
+- "get\tgot\tgotten / got - получать, становиться"
+- "gild\tgilded / gilt\tgilded / gilt\tзолотить, покрывать позолотой, украшать"
+- "give\tgave\tgiven\tдавать"
+- "go\twent\tgone\tидти, ехать"
+- "grind\tground\tground\tмолоть, растереть, шлифовать, точить"
+- "grow\tgrew\tgrown\tрасти, выращивать"
+- "hand-feed\thand-fed\thand-fed\tподавать вручную"
+- "handwrite\thandwrote\thandwritten\tписать вручную"
+- "hang\thung\thung\tвисеть, вешать"
+- "have\thad\thad\tиметь, обладать"
+- "hear\theard\theard\tслышать, слушать"
+- "heave\theaved / hove\theaved / hove - поднимать, перемещать, вздыматься, напрягаться"
+- "hew\thewed\thewn / hewed\tрубить, тесать, отбывать, согласовываться"
+- "hide\thid\thidden\tпрятать, прятаться"
+- "hit\thit\thit\tударять, поражать"
+- "hold\theld\theld\tзанимать, держать, удерживать"
+- "hurt\thurt\thurt\tповредить, причинять боль, ранить"
+- "inbreed\tinbred\tinbred\tвзращивать, воспитывать что-то в ком-то"
+- "inlay\tinlaid\tinlaid\tинкрустировать, делать вставку"
+- "input\tinput / inputted\tinput / inputted\tввести, вводить, вкладывать (деньги)"
+- "interbreed\tinterbred\tinterbred\tскрещивать, скрещиваться"
+- "interweave\tinterwove / interweaved\tinterwoven / interweaved\tcплетать, переплетать,
+  смешивать, воткать"
+- "interwind\tinterwound\tinterwound\tпереплетать, перематывать"
+- "jerry-build\tjerry-built\tjerry-built\tпостроить на скорую руку, кое-как"
+- "keep\tkept\tkept\tдержать, сохранять, хранить"
+- "kneel\tknelt / kneeled\tknelt / kneeled\tстановиться на колени"
+- "knit\tknitted / knit\tknitted / knit\tвязать, штопать"
+- "know\tknew\tknown\tзнать, уметь, быть знакомым"
+- "lay\tlaid\tlaid\tкласть, валить, накрывать"
+- "lead\tled\tled\tвести, сопровождать"
+- "lean\tleaned / leant \tleaned / leant - опираться, наклоняться, прислоняться"
+- "leap\tleaped / leapt\tleaped / leapt - прыгать, скакать"
+- "learn\tlearned / learnt\tlearned / learn - учиться, узнавать"
+- "leave\tleft\tleft\tоставлять, уезжать"
+- "lend\tlent\tlent\tодалживать, давать взаймы, занимать"
+- "let\tlet\tlet\tпозволять, допускать, выпускать, проливать"
+- "lie\tlay\tlain - лежать, распологаться, находиться"
+- "light\tlit / lighted\tlit / lighted\tнатолкнуться, обрушиться, освещать, зажигать,
+  светиться"
+- "lip-read\tlip-read\tlip-read\tчитать с губ, понимать по губам"
+- "lose\tlost\tlost\tтерять, утрачивать, избавляться, пропадать"
+- "make\tmade\tmade\tделать, производить, совершать"
+- "mean\tmeant\tmeant\tзначить, подразумевать"
+- "meet\tmet\tmet\tвстречать, знакомиться"
+- "miscast\tmiscast\tmiscast\tнеправильно распределять роли"
+- "misdeal\tmisdealt\tmisdealt\tошибаться при сдаче"
+- "misdo\tmisdid\tmisdone\tделать неправильно, небрежно"
+- "mishear\tmisheard\tmisheard\tослышаться, не расслышать"
+- "mislay\tmislaid\tmislaid\tположить не на место, затерять"
+- "mislead\tmisled\tmisled\tвводить в заблуждение, сбивать с пути"
+- "mislearn\tmislearned / mislearnt\tmislearned / mislearnt - обучаться, учить неправильно"
+- "misread\tmisread\tmisread\tпрочитать неправильно, неправильно понять"
+- "missay\tmissaid\tmissaid\tоговориться, сказать неправильно"
+- "misset\tmisset\tmisset\tнеправильно установить"
+- "misspeak\tmisspoke\tmisspoken\tговорить, произносить неправильно"
+- "misspell\tmisspelled / misspelt\tmisspelled / misspelt - писать с ошибками, делать
+  орфографические ошибки"
+- "misspend\tmisspent\tmisspent\tнеразумно тратить, транжирить"
+- "misswear\tmisswore\tmissworn\tдавать ложную клятву"
+- "mistake\tmistook\tmistaken\tошибаться, заблуждаться"
+- "misteach\tmistaught\tmistaught\tнеправильно обучать"
+- "misunderstand\tmisunderstood\tmisunderstood\tне понимать, понять неправильно"
+- "miswrite\tmiswrote\tmiswritten\tнеправильно писать"
+- "mow\tmowed\tmowed / mown\tкосить, стричь (газон), жать"
+- "offset\toffset\toffset\tвозмещать, компенсировать, ответвляться"
+- "outbid\toutbid\toutbid\tперебивать цену, превзойти, затмить"
+- "outdo\toutdid\toutdone\tпревзойти, поражать, побороть"
+- "outdraw\toutdrew\toutdrawn\tдобиться большей популярности, превзойти конкурентов"
+- "outdrink\toutdrank\toutdrunk\tперепить (кого-то), выпить больше, чем кто-то"
+- "outdrive\toutdrove\toutdriven\tобогнать, опередить"
+- "outfight\toutfought\toutfought\tиметь перевес над противником, побеждать"
+- "outfly\toutflew\toutflown\tвылетать, летать быстрее, дальше (чем кто-либо)"
+- "outgrow\toutgrew\toutgrown\tопережать в росте, перерастать, избавляться с возрастом"
+- "outleap\toutleaped / outleapt\toutleaped / outleapt - перепрыгивать, выпрыгивать,
+  прыгать лучше"
+- "outlie\toutlay\toutlain - находиться снаружи, вне, простираться"
+- "outrun\toutran\toutrun\tперегонять, опережать, убежать, сбежать"
+- "outsell\toutsold\toutsold\tпродавать, продаваться лучше, превосходить в цене"
+- "outshine\toutshined / outshone\toutshined / outshone - затмить"
+- "outshoot\toutshot\toutshot\tстрелять лучше, отбрасывать, выбрасывать"
+- "outsing\toutsang\toutsung\tпревзойти в пении"
+- "outsit\toutsat\toutsat\tпересидеть, засидеться"
+- "outsleep\toutslept\toutslept\tпроспать, прозевать"
+- "outsmell\toutsmelled / outsmelt\toutsmelled / outsmelt - пахнуть сильнее, чем что-то"
+- "outspeak\toutspoke\toutspoken\tговорить лучше, высказаться, заявить"
+- "outspeed\toutsped / outspeeded\toutsped / outspeeded\tперегонять, быть, действовать
+  быстрее"
+- "outspend\toutspent\toutspent\tпревзойти по расходам, тратить больше"
+- "outstand\toutstood\toutstood\tвыделяться, бросаться в глаза, выдержать"
+- "outswear\toutswore\toutsworn\tпревосходить в ругани"
+- "outswim\toutswam\toutswum\tпревосходить в плавании"
+- "outthink\toutthought\toutthought\tпревосходить разумом, перехитрить"
+- "outthrow\toutthrew\toutthrown\tвыбрасывать, извергать, бросать лучше"
+- "outwear\toutwore\tworn\tизнашивать, служить дольше остальных вещей"
+- "outwrite\toutwrote\toutwritten\tписать лучше"
+- "overbid\toverbid\toverbid\tперебивать цену, взятку"
+- "overbreed\toverbred\toverbred\tразводить, выращивать животных в чрезмерном количестве"
+- "overbuild\toverbuilt\toverbuilt\tчрезмерно застраивать, надстраивать"
+- "overbuy\toverbought\toverbought\tпокупать слишком много, слишком дорого"
+- "overcome\tovercame\tovercome\tпреодолеть, побороть"
+- "overdo\toverdid\toverdone\tперестараться, переборщить, утрировать, переутомляться"
+- "overdraw\toverdrew\toverdrawn\tпревысить кредит, гиперболизировать"
+- "overdrink\toverdrank\toverdrunk\tперепить, слишком много пить"
+- "overeat\toverate\tovereaten\tпереесть, есть слишком много"
+- "overfeed\toverfed\toverfed\tперекармливать, объедаться"
+- "overfly\toverflew\toverflown\tперелетать, пролетать над чем-то"
+- "overhang\toverhung\toverhung\tвыступать, нависать, угрожать, вешать драпировку"
+- "overhear\toverheard\toverheard\tподслушивать, нечаянно услышать"
+- "overlay\toverlaid\toverlaid\tпокрывать, перекрывать, оказывать влияние"
+- "overlie\toverlay\toverlain\tлежать, залегать над чем-то, перекрывать"
+- "overpay\toverpaid\toverpaid\tпереплачивать, возмещать с избытком"
+- "override\toverrode\toverridden\tотменять, перевешивать, преобладать, переехать"
+- "overrun\toverran\toverrun\tпереходить пределы, захватывать, заполонять"
+- "oversee\toversaw\toverseen\tнаблюдать, надзирать, следить, подсмотреть"
+- "oversell\toversold\toversold\tперехваливать, навязывать продукцию, продать больше
+  своих запасов"
+- "overset\toverset\toverset\tнарушать порядок, расстраивать, опрокидываться"
+- "oversew\toversewed\toversewn / oversewed\tсшивать через край"
+- "overshoot\tovershot\tovershot\tпромахнуться, перейти границы, стрелять до изнеможения"
+- "oversleep\toverslept\toverslept\tпроспать, заспаться"
+- "overspeak\toverspoke\toverspoken\tслишком много разговаривать"
+- "overspend\toverspent\toverspent\tсорить деньгами, расстраивать свое здоровье"
+- "overspill\toverspilled / overspilt\toverspilled / overspilt - проливать, переполнять,
+  перенаселять"
+- "overtake\tovertook\tovertaken\tдогнать, настигать, овладевать, обогнать"
+- "overthink\toverthought\toverthought\tнадумать лишнего, слишком много думать"
+- "overthrow\toverthrew\toverthrown\tбросать слишком далеко, свергать, разрушать"
+- "overwind\toverwound\toverwound\tперекрутить, крутить слишком сильно, быстро"
+- "overwrite\toverwrote\toverwritten\tпереписывать, писать поверх текста, много писать"
+- "partake\tpartook\tpartaken\tпринимать участие, разделять, отведать, воспользоваться"
+- "pay\tpaid\tpaid\tплатить, вознаграждать, отомстить"
+- "plead\tpleaded / pled\tpleaded / pled\tзащищать подсудимого, ходатайствовать, простить"
+- "prebuild\tprebuilt\tprebuilt\tпредварительно собрать, выстроить"
+- "predo\tpredid\tpredone\tсделать заранее, подготовить"
+- "premake\tpremade\tpremade\tподготовить, сделать наперед, заранее"
+- "prepay\tprepaid\tprepaid\tпредоплачивать, платить наперед"
+- "presell\tpresoldpreset\tprespresetold\tрекламировать товар, организовать предпродажу,
+  продавать наперед"
+- "preshrink\tpreshrank\tpreshrunk\tобрабатывать ткань для предотвращения ее стяжки"
+- "proofread\tproofread\tproofread\tчитать корректуру, корректировать, вычитывать"
+- "prove\tproved\tproven / proved\tдоказывать, удостоверять"
+- "put\tput\tput\tкласть, положить"
+- "quick-freeze\tquick-froze\tquick-frozen\tбыстро замораживать, замерзать"
+- "quit\tquit / quitted \tquit / quitted - оставлять, покидать, выходить"
+- "read\tread [red]\tread [red]\tчитать"
+- "reawake\treawoke\treawaken\tснова пробуждать"
+- "rebid\trebid\trebid\tделать повторную ставку"
+- "rebind\trebound\trebound\tпереплетать заново (книгу)"
+- "rebroadcast\trebroadcast / rebroadcasted\trebroadcast / rebroadcasted\tретранслировать,
+  показывать (передачу) заново"
+- "rebuild\trebuilt\trebuilt\tперестраивать"
+- "recast\trecast\trecast\tпеределывать, изменять, пересчитывать"
+- "recut\trecut\trecut\tвторично нарезать, повторно вырезать (сцены из фильма)"
+- "redeal\tredealt\tredealt\tперераздавать карты в игре"
+- "redo\tredid\tredone\tпеределывать, делать ремонт"
+- "redraw\tredrew\tredrawn\tперерисовывать, обновлять рисунок, выставлять обратный
+  вексель"
+- "refit\trefitted / refit\trefitted / refit - перекраивать, подгонять заново (по
+  размеру)"
+- "regrind\treground\treground\tперешлифовывать, перетачивать, притирать"
+- "regrow\tregrew\tregrown\tотрастать снова"
+- "rehang\trehung\trehung\tперевешивать"
+- "rehear\treheard\treheard\tуслышать снова, рассматривать дело повторно"
+- "reknit\treknitted / reknit\treknitted / reknit\tвязать заново, соединять заново"
+- "relay \trelaid\trelaid - класть заново, заменять (черепицу, кафель)"
+- "relearn\trelearned / relearnt\trelearned / relearnt - учиться заново, переучиваться"
+- "relight\trelit / relighted\trelit / relighted\tзажечь, зажечься снова, загореться"
+- "remake\tremade\tremade\tпеределывать, делать заново"
+- "rend\trent / rended\trent / rended - отрывать, раздирать, дробить, расщеплять"
+- "repay\trepaid\trepaid\tотдавать, возвращать, возмещать, отплачивать"
+- "reread\treread\treread\tперечитывать"
+- "rerun\treran\trerun\tперезапускать, повторно проводить, показывать"
+- "resell\tresold\tresold\tперепродавать"
+- "resend\tresent\tresent\tпереотправлять, посылать заново"
+- "reset\treset\treset\tповторно включать, устанавливать, сбрасывать"
+- "resew\tresewed\tresewn / resewed\tпришивать заново, перешивать"
+- "retake\tretook\tretaken\tснова взять, переснимать, пересдавать (экзамен)"
+- "reteach\tretaught\tretaught\tпереучивать, учить заново"
+- "retear\tretore\tretorn\tснова разрывать, отрывать"
+- "retell\tretold\tretold\tпересказывать, рассказывать снова"
+- "rethink\trethought\trethought\tпересматривать, заново осмыслить"
+- "retread\tretread\tretread\tсменить покрышку, переобучать, заново давать работу"
+- "retrofit\tretrofitted / retrofit\tretrofitted / retrofit - модифицировать, подгонять,
+  настраивать"
+- "rewake\trewoke / rewaked\trewaken / rewaked\tбудить, пробуждаться заново"
+- "rewear\trewore\treworn\tносить заново"
+- "reweave\trewove / reweaved\trewoven / reweaved\tпереткать, плести, ткать заново,
+  снова соединяться"
+- "rewed\trewed / rewedded\trewed / rewedded\tжениться во второй раз"
+- "rewet\trewet / rewetted\trewet / rewetted - повторно увлажнять, мочить снова"
+- "rewin\trewon\trewon\tснова победить, победить после проигрыша"
+- "rewind\trewound\trewound\tперематывать (назад)"
+- "rewrite\trewrote\trewritten\tпереписывать, редактировать, отвечать письменно"
+- "rid\trid\trid\tосвобождать, избавлять"
+- "ride\trode\tridden\tехать верхом, кататься, ехать (в транспорте)"
+- "ring\trang\trung\tзвонить, звенеть"
+- "rise\trose\trisen\tподниматься, восходить"
+- "roughcast\troughcast\troughcast\tнабрасывать план, намечать, грубо штукатурить"
+- "run\tran\trun\tбежать, гнать, управлять, течь"
+- "sand-cast\tsand-cast\tsand-cast\tотливать металл в песчаную форму"
+- "saw\tsawed\tsawed / sawn\tпилить, распилить"
+- "say\tsaid\tsaid\tговорить, сказать"
+- "see\tsaw\tseen\tвидеть, смотреть"
+- "seek\tsought\tsought\tискать, добиваться"
+- "sell\tsold\tsold\tпродавать"
+- "send\tsent\tsent\tпосылать, отправлять"
+- "set\tset\tset\tпомещать, ставить"
+- "sew\tsewed\tsewn / sewed\tшить, штопать"
+- "shake\tshook\tshaken\tтрясти, встряхивать"
+- "shave\tshaved\tshaved / shaven\tбриться"
+- "shear\tsheared\tsheared / shorn\tрезать, выстригать, рассекать"
+- "shed\tshed\tshed\tпроливать, терять, сбрасывать"
+- "shine\tshined / shone\tshined / shone - сиять, светить"
+- "shit\tshit / shat / shitted\tshit/ shat / shitted\tкакать, гадить, срать"
+- "shoe\tshod\tshod\tобувать, подковывать, подбивать"
+- "shoot\tshot\tshot\tстрелять, охотиться"
+- "show\tshowed\tshown / showed - показывать, показываться, выставлять напоказ"
+- "shrink\tshrank / shrunk\tshrunk / shrunken\tуменьшать, уменьшаться, сжиматься,
+  давать усадку"
+- "shut\tshut\tshut\tзакрывать"
+- "sight-read\tsight-read\tsight-read\tиграть, петь с листа, читать ноты, текст с
+  листа"
+- "sing\tsang\tsung\tпеть"
+- "sink\tsank / sunk\tsunk\tтонуть, опускаться, погружаться"
+- "sit\tsat\tsat\tсидеть, сажать, находиться"
+- "slay\tslew / slayed\tslain / slayed - убивать, уничтожать"
+- "sleep\tslept\tslept\tспать"
+- "slide\tslid\tslid\tскользить, ползать, кататься"
+- "sling\tslung\tslung\tшвырять, вешать через плечо, подвешивать"
+- "slink\tslinked / slunk\tslinked / slunk\tкрасться, подкрадываться, рожать преждевременно"
+- "slit\tslit\tslit\tразрезать, перерезать"
+- "smell\tsmelled / smelt\tsmelled / smelt - пахнуть, нюхать"
+- "smite\tsmote\tsmitten\tпоражать, бить, наказывать"
+- "sneak\tsneaked / snuck\tsneaked / snuck\tкрасться, подкрадываться, красть, ускользать"
+- "sow\tsowed\tsown / sowed\tсеять, засевать, распространять"
+- "speak\tspoke\tspoken\tговорить"
+- "speed\tsped / speeded\tsped / speeded\tспешить, ускорять, торопить"
+- "spell\tspelled / spelt\tspelled / spelt - заколдовать; сменить, дать отдохнуть;
+  писать, произносить слово по буквам"
+- "spend\tspent\tspent\tтратить, истощать"
+- "spill\tspilled / spilt\tspilled / spilt - проливать, разливаться"
+- "spin\tspun\tspun\tпрясть, крутить, вертеть, плести"
+- "spit\tspit / spat\tspit / spat\tплевать, пронзать, натыкать, моросить"
+- "spoil\tspoiled / spoilt\tspoiled / spoilt - портить, баловать"
+- "spread\tspread\tspread\tраспространяться, расстилать"
+- "spring\tsprang / sprung\tsprung\tпрыгать, вскочить"
+- "stand\tstood\tstood\tстоять, быть расположенным"
+- "stave\tstaved / stove\tstaved / stove\tпроламывать, разбивать"
+- "steal\tstole\tstolen\tворовать, красть"
+- "stick\tstuck\tstuck\tвтыкать, колоть, приклеивать, липнуть"
+- "sting\tstung\tstung\tжалить, причинять боль, обманывать"
+- "stink\tstunk / stank\tstunk\tвонять, пахнуть"
+- "strew\tstrewed\tstrewn / strewed\tусеять, разбрасывать, посыпать"
+- "stride\tstrode\tstridden\tшагать, сидеть верхом"
+- "strike\tstruck\tstruck / stricken\tударять, поражать, бастовать"
+- "string\tstrung\tstrung\tсвязывать, натягивать, нанизывать"
+- "strive\tstrove / strived\tstriven / strived\tстремиться, стараться, пытаться"
+- "sublet\tsublet\tsublet\tсдавать в поднаём"
+- "sunburn\tsunburned / sunburnt\tsunburned / sunburnt - обгорать на солнце"
+- "swear\tswore\tsworn\tклясться, присягать, ругаться"
+- "sweat\tsweat / sweated\tsweat / sweated\tпотеть, сыреть, запотевать"
+- "sweep\tswept\tswept\tмести, прочищать, сметать, мчаться"
+- "swell\tswelled\tswollen / swelled\tпухнуть, раздуваться, набухать"
+- "swim\tswam\tswum\tплавать, плыть"
+- "swing\tswung\tswung\tкачать, размахивать"
+- "take\ttook\ttaken\tбрать, взять"
+- "teach\ttaught\ttaught\tобучать, учить"
+- "tear\ttore\ttorn\tрвать, сорвать, разорвать"
+- "telecast\ttelecast\ttelecast\tпередавать по телевидению"
+- "tell\ttold\ttold\tговорить, рассказывать, сообщать"
+- "test-drive\ttest-drove\ttest-driven\tделать пробную поездку, тестировать"
+- "test-fly\ttest-flew\ttest-flown\tиспытывать самолет в воздухе"
+- "think\tthought\tthought\tдумать, полагать"
+- "thrive\tthrove / thrived\tthrived / thriven\tпроцветать, преуспевать, буйно расти"
+- "throw\tthrew\tthrown\tкидать, бросать"
+- "thrust\tthrust\tthrust\tколоть, засовывать, толкать, лезть"
+- "tread\ttrod\ttrodden / trod\tидти, ступать, топтать, давить"
+- "typecast\ttypecast\ttypecast\tподбирать актеров по типажности"
+- "typeset\ttypeset\ttypeset\tнабирать текст для печати, определять тип"
+- "typewrite\ttypewrote\ttypewritten\tпечатать на пишущей машинке, набирать текст"
+- "unbend\tunbent\tunbent\tразгибаться, выпрямляться, смягчаться"
+- "unbind\tunbound\tunbound\tразвязать, распуска, ослаблять"
+- "unclothe\tunclothed / unclad\tunclothed / unclad - раздеваться, раздевать, обнажать"
+- "underbid\tunderbid\tunderbid\tперебивать цену, назначать более низкую цену"
+- "undercut\tundercut\tundercut\tподрезать, сбивать цены, делать подсечку"
+- "underfeed\tunderfed\tunderfed\tнедокармливать, недоедать"
+- "undergo\tunderwent\tundergone\tиспытывать, переносить"
+- "underlie\tunderlay\tunderlain\tподчеркивать, выделять"
+- "undersell\tundersold\tundersold\tпродавать дешевле других"
+- "underspend\tunderspent\tunderspent\tтратить недостаточно, очень мало"
+- "understand\tunderstood\tunderstood\tпонимать, осознавать"
+- "undertake\tundertook\tundertaken\tпредпринимать, гарантировать, совершать"
+- "underwrite\tunderwrote\tunderwritten\tподписывать, гарантировать, ручаться"
+- "undo\tundid\tundone\tрасстегивать, уничтожать, отменять, разбирать"
+- "unfreeze\tunfroze\tunfrozen\tразморозить, размораживаться"
+- "unhang\tunhung\tunhung\tснимать (висящее)"
+- "unhide\tunhid\tunhidden\tпоказывать скрытые элементы"
+- "unknit\tunknitted / unknit\tunknitted / unknit\tраспускать (вязанье), распутывать,
+  разъединять"
+- "unlearn\tunlearned / unlearnt\tunlearned / unlearnt - разучиться, забыть то, что
+  знал"
+- "unsew\tunsewed\tunsewn / unsewed\tраспарывать сшитое"
+- "unsling\tunslung\tunslung\tотвязывать, снимать, осовобождать от ремня"
+- "unspin\tunspun\tunspun\tраспускать, расплетать,распутывать"
+- "unstick\tunstuck\tunstuck\tотдирать, отклеивать, взлетать (самолет)"
+- "unstring\tunstrung\tunstrung\tснимать, ослаблять, распускать, огорчать"
+- "unweave\tunwove / unweaved\tunwoven / unweaved\tраспускать, расплетать (ткань)"
+- "unwind\tunwound\tunwound\tрасматывать, раскручивать, развивать"
+- "uphold\tupheld\tupheld\tподдерживать, помогать, удерживать"
+- "upset\tupset\tupset\tопрокидывать, расстраивать, огорчать"
+- "wake\twoke / waked\twoken / waked\tбудить, просыпаться"
+- "waylay\twaylaid\twaylaid\tподстерегать, устраивать засаду"
+- "wear\twore\tworn\tносить (одежду)"
+- "weave\twove / weaved\twoven / weaved\tткать, плести"
+- "wed\twed / wedded\twed / wedded\tвенчать, выдавать замуж, жениться, выходить замуж"
+- "weep\twept\twept\tплакать, тосковать, запотевать"
+- "wet\twet / wetted\twet / wetted - мочить, промочить, мокнуть"
+- "win\twon\twon\tвыигрывать, побеждать"
+- "wind\twound\twound\tчуять, дуть, наматывать, заводить (механизм), извиваться"
+- "withdraw\twithdrew\twithdrawn\tбрать назад, отнимать, отзывать, извлекать"
+- "withhold\twithheld\twithheld\tвоздерживаться, удерживать, скрывать"
+- "withstand\twithstood\twithstood\tустоять, выдерживать, сопротивляться"
+- "wring\twrung\twrung\tкрутить, терзать, выжимать, скручивать"
+- "write\twrote\twritten\tписать"

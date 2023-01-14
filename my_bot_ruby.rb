@@ -47,17 +47,37 @@ def receive_message
 
   update_id_now = json['result'][-1]['update_id']
   data = read_yml
-  update_id_last = data['update_id']
+  update_id_last = data[:update_id]
   return puts 'old message' if update_id_last == update_id_now
-  data['update_id'] = update_id_now
+  data[:update_id] = update_id_now
   File.write('common_list.yml', YAML.dump(data))
 
-  text_from_message = json['result'][-1]['message']['text']
+  @text_from_message = json['result'][-1]['message']['text']
 end
 
-def write_new_word
-  receive_message
+def write_to_yml
+  return puts 'write break - invalid format' unless @text_from_message =~ /^[write:]*[a-zA-Z\s'`]* - [а-яА-Я\s]*$/
+  @text_from_message.gsub!('write: ', '')
+
+  def choose_key
+    phrase = @text_from_message.split(' - ')[0]
+    words = phrase.split(' ')
+    words_count = words.length
+
+    return :my_english_words if words_count == 1
+    return :my_english_words if words_count == 2 && (words.first == 'a' || words.first == 'an' || words.first == 'the' || words.first == 'to' || words.first == 'of')
+    return :my_english_phrases if words_count >= 2
+  end
+  
+  return puts 'word already exists' if read_yml[choose_key].include?(@text_from_message)
+
+  send_telegram_message("write start: #{@text_from_message}")
+  puts "write start: #{@text_from_message}"
   data = read_yml
+  data[choose_key] << @text_from_message
+  File.write('common_list.yml', YAML.dump(data))
+  send_telegram_message("write done in: #{choose_key}")
+  puts "write done in: #{choose_key}"
 end
 
 def help
@@ -80,5 +100,29 @@ def start_send_telegram_message
   end
 end
 
-start_send_telegram_message
-receive_message
+def show
+  key = @text_from_message.split(' ').last
+  send_telegram_message(read_yml[key.to_sym].to_s)
+end
+
+def listener
+  receive_message
+  return puts 'not message' if @text_from_message.nil?
+
+  if @text_from_message.start_with?('write: ')
+    write_to_yml
+  elsif @text_from_message.start_with?('keys')
+    send_telegram_message(read_yml.keys.to_s)
+  elsif @text_from_message.start_with?('show')
+    show
+  elsif @text_from_message.start_with?('help')
+    help
+  elsif @text_from_message.start_with?('send')
+    send_telegram_message
+  else
+    send_telegram_message('invalid message')
+  end
+end
+
+listener
+# start_send_telegram_message
