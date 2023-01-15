@@ -111,7 +111,7 @@ def show
   send_telegram_message(read_yml[key.to_sym].to_s)
 end
 
-def custom_timer(number, text)
+def custom_timer
   # TODO: move write to yml to another method and rewrite it
   send_telegram_message(text) if Time.now == Time.now + number
 end
@@ -136,7 +136,7 @@ def listener
   elsif @text_from_message.start_with?('send')
     send_telegram_message
   elsif @text_from_message.start_with?('timer')
-    custom_timer(number, text)
+    custom_timer
   elsif @text_from_message.start_with?('mid')
     mid_timer
   else
