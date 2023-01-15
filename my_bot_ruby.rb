@@ -4,13 +4,15 @@ require 'yaml'
 require 'faraday'
 require 'json'
 
-ENV["TZ"] = 'Asia/Yekaterinburg'
+ENV['TZ'] = 'Asia/Yekaterinburg'
 TOKEN = ENV['TOKEN']
 FILE = 'common_list.yml'
 ADMIN_CHAT_ID = '85611094'
 
 # TODO: refactoring by crud: create, read, update, delete
-def read_yml; YAML.load_file(FILE).transform_keys!(&:to_sym) end
+def read_yml
+  YAML.load_file(FILE).transform_keys!(&:to_sym) 
+end
 
 def shuffle_some_words(count_words = 2, count_phrases = 1)
   shuffle_words = read_yml[:my_english_words].shuffle
@@ -19,7 +21,7 @@ def shuffle_some_words(count_words = 2, count_phrases = 1)
 end
 
 def format_message(words, header: false)
-  words.unshift("english words:")
+  words.unshift('english words:')
   words[0] = "*#{words[0]}*" if header
 
   words.flat_map { |x| [x, ''] }.tap(&:pop).join("\n")
@@ -49,6 +51,7 @@ def receive_message
   data = read_yml
   update_id_last = data[:update_id]
   return puts 'old message' if update_id_last == update_id_now
+
   data[:update_id] = update_id_now
   File.write('common_list.yml', YAML.dump(data))
 
@@ -56,28 +59,31 @@ def receive_message
 end
 
 def write_to_yml
-  return puts 'write break - invalid format' unless @text_from_message =~ /^[write:]*[a-zA-Z\s'`]* - [а-яА-Я\s]*$/
+  # TODO: fix regexp - incorrect if text: W: test -     
+  return puts 'write break - invalid format' unless @text_from_message =~ /^[Write|write:]*[a-zA-Z\s'`]* - [а-яА-Я\s]*$/
+
   @text_from_message.gsub!('write: ', '')
 
-  def choose_key
+  choose_key = lambda do
     phrase = @text_from_message.split(' - ')[0]
     words = phrase.split(' ')
     words_count = words.length
 
+    english_articles = %w[a an the to of]
     return :my_english_words if words_count == 1
-    return :my_english_words if words_count == 2 && (words.first == 'a' || words.first == 'an' || words.first == 'the' || words.first == 'to' || words.first == 'of')
+    return :my_english_words if words_count == 2 && english_articles.include?(words.first)
     return :my_english_phrases if words_count >= 2
   end
-  
-  return puts 'word already exists' if read_yml[choose_key].include?(@text_from_message)
+
+  return puts 'word already exists' if read_yml[choose_key.call].include?(@text_from_message)
 
   send_telegram_message("write start: #{@text_from_message}")
   puts "write start: #{@text_from_message}"
   data = read_yml
-  data[choose_key] << @text_from_message
+  data[choose_key.call] << @text_from_message
   File.write('common_list.yml', YAML.dump(data))
-  send_telegram_message("write done in: #{choose_key}")
-  puts "write done in: #{choose_key}"
+  send_telegram_message("write done in: #{choose_key.call}")
+  puts "write done in: #{choose_key.call}"
 end
 
 def help
@@ -89,7 +95,7 @@ def validation_user_message?(message)
 end
 
 def valid_send_time?
-  Time.now.hour.between?(11, 23)# && Time.now.min == 30
+  Time.now.hour.between?(11, 23) && Time.now.min == 30
 end
 
 def start_send_telegram_message
@@ -103,6 +109,16 @@ end
 def show
   key = @text_from_message.split(' ').last
   send_telegram_message(read_yml[key.to_sym].to_s)
+end
+
+def custom_timer(number, text)
+  # TODO: move write to yml to another method and rewrite it
+  send_telegram_message(text) if Time.now == Time.now + number
+end
+
+def mid_timer
+  # TODO: move write to yml to another method and rewrite it
+  send_telegram_message('mid') if Time.now == Time.now + 60
 end
 
 def listener
@@ -119,10 +135,14 @@ def listener
     help
   elsif @text_from_message.start_with?('send')
     send_telegram_message
+  elsif @text_from_message.start_with?('timer')
+    custom_timer(number, text)
+  elsif @text_from_message.start_with?('mid')
+    mid_timer
   else
     send_telegram_message('invalid message')
   end
 end
 
 listener
-# start_send_telegram_message
+start_send_telegram_message
