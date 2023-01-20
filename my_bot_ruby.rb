@@ -59,8 +59,8 @@ def receive_message
 end
 
 def write_to_yml
-  # TODO: fix regexp - incorrect if text: W: test -     
-  return puts 'write break - invalid format' unless @text_from_message =~ /^[Write|write:]*[a-zA-Z\s'`]* - [а-яА-Я\s]*$/
+  # TODO: refactoring regexp ^\/(Write|write)[:]([a-zA-Z\s'`]+)(\b[ ]-[ ])([а-яА-Я\s+]$)
+  return puts 'write break - invalid format' unless @text_from_message =~ /^\/Write:\s*[a-zA-Z\s'`.]+ - [а-яА-Я\s\.?]+$/
 
   @text_from_message.gsub!('write: ', '')
 
@@ -87,7 +87,7 @@ def write_to_yml
 end
 
 def help
-  %w[/start /words /stop /write_word /add_note]
+  puts %w[/start /words /stop /write_word /add_note]
 end
 
 def validation_user_message?(message)
@@ -125,19 +125,19 @@ def listener
   receive_message
   return puts 'not message' if @text_from_message.nil?
 
-  if @text_from_message.start_with?('write: ')
+  if @text_from_message.start_with?('/write: ')
     write_to_yml
-  elsif @text_from_message.start_with?('keys')
+  elsif @text_from_message.start_with?('/keys')
     send_telegram_message(read_yml.keys.to_s)
-  elsif @text_from_message.start_with?('show')
+  elsif @text_from_message.start_with?('/show')
     show
-  elsif @text_from_message.start_with?('help')
+  elsif @text_from_message.start_with?('/help')
     help
-  elsif @text_from_message.start_with?('send')
+  elsif @text_from_message.start_with?('/send')
     send_telegram_message
-  elsif @text_from_message.start_with?('timer')
+  elsif @text_from_message.start_with?('/timer')
     custom_timer
-  elsif @text_from_message.start_with?('mid')
+  elsif @text_from_message.start_with?('/mid')
     mid_timer
   else
     send_telegram_message('invalid message')
