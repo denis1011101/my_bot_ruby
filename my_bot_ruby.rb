@@ -60,7 +60,23 @@ end
 
 def write_to_yml
   # TODO: refactoring regexp ^\/(Write|write)[:]([a-zA-Z\s'`]+)(\b[ ]-[ ])([а-яА-Я\s+]$)
-  return puts 'write break - invalid format' unless @text_from_message =~ /^\/Write:\s*[a-zA-Z\s'`.]+ - [а-яА-Я\s\.?]+$/
+  # return puts 'write break - invalid format' unless @text_from_message =~ /^\/Write:\s*[a-zA-Z\s'`.]+ - [а-яА-Я\s\.?]+$/
+
+  input_validation = lambda do
+    return send_telegram_message('invalid message') if @text_from_message.empty? || @text_from_message.nil? ||
+                                                       @text_from_message != %r{^/(Write|write): }
+
+    @text_from_message.split(' - ')[0].split.each do |word|
+      return send_telegram_message('invalid message') unless word =~ /^[a-zA-Z]+$/
+    end
+    @text_from_message.split(' - ')[1].split.each do |word|
+      return send_telegram_message('invalid message') unless word =~ /^[а-яА-Я]+$/
+    end
+
+    true
+  end
+
+  return send_telegram_message('invalid message') unless input_validation.call
 
   @text_from_message.gsub!('write: ', '')
 
