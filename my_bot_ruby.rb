@@ -11,7 +11,7 @@ ADMIN_CHAT_ID = '85611094'
 
 # TODO: refactoring by crud: create, read, update, delete
 def read_yml
-  YAML.load_file(FILE).transform_keys!(&:to_sym) 
+  YAML.load_file(FILE).transform_keys!(&:to_sym)
 end
 
 def shuffle_some_words(count_words = 2, count_phrases = 1)
@@ -137,7 +137,24 @@ def mid_timer
   send_telegram_message('mid') if Time.now == Time.now + 60
 end
 
+def birthday_today?
+  time = Time.now
+  birthdays = read_yml[:birthdays]
+
+  birthdays.each do |birthday|
+    date = birthday.split(' - ').first
+    name = birthday.split(' - ').last
+    day, month, year = date.split('.')
+
+    if day.to_i == time.day && month.to_i == time.month
+      age = year.nil? ? 'unknown' : time.year - year.to_i
+      send_telegram_message("#{name}'s birthday today! #{age} years old")
+    end
+  end
+end
+
 def listener
+  birthday_today?
   receive_message
   return puts 'not message' if @text_from_message.nil?
 
