@@ -138,6 +138,7 @@ def mid_timer
 end
 
 def birthday_today?
+  # TODO: move const
   time = Time.now
   birthdays = read_yml[:birthdays]
 
@@ -154,6 +155,7 @@ def birthday_today?
 end
 
 def listener
+  # TODO: use valid_send_time method and add arguments
   birthday_today?
   receive_message
   return puts 'not message' if @text_from_message.nil?
