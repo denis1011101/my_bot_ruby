@@ -20,6 +20,30 @@ describe 'TelegramMessage' do
     end
   end
 
+  describe '#create_to_yml' do
+    it 'creates a new key-value pair in the YAML file' do
+      expect(YAML).to receive(:load_file).with(file).and_return({ my_english_words: %w[word1 word2 word3] })
+      expect(File).to receive(:write).with(file, YAML.dump(my_english_words: %w[word1 word2 word3 word4]))
+      create_to_yml(:my_english_words, %w[word4])
+    end
+  end
+
+  describe '#update_to_yml' do
+    it 'updates the value of the given key in the YAML file' do
+      expect(YAML).to receive(:load_file).with(file).and_return({ my_english_words: %w[word1 word2 word3] })
+      expect(File).to receive(:write).with(file, YAML.dump(my_english_words: %w[word4 word2 word3]))
+      update_to_yml(:my_english_words, %w[word4])
+    end
+  end
+
+  describe '#delete_to_yml' do
+    it 'deletes the given key-value pair from the YAML file' do
+      expect(YAML).to receive(:load_file).with(file).and_return({ my_english_words: %w[word1 word2 word3] })
+      expect(File).to receive(:write).with(file, YAML.dump({}))
+      delete_to_yml(:my_english_words)
+    end
+  end
+
   describe '#shuffle_some_words' do
     it 'shuffles the words from the YAML file' do
       expect(YAML).to receive(:load_file).with(file).and_return({ my_english_words: %w[word1 word2 word3] })

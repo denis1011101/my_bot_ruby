@@ -8,15 +8,35 @@ ENV['TZ'] = 'Asia/Yekaterinburg'
 TOKEN = ENV['TOKEN']
 FILE = 'common_list.yml'
 ADMIN_CHAT_ID = '85611094'
+TIME_NOW = Time.now
 
 # TODO: refactoring by crud: create, read, update, delete
 def read_yml
   YAML.load_file(FILE).transform_keys!(&:to_sym)
 end
 
+def create_to_yml(key, value)
+  data = read_yml[key]
+  data[key] << value
+  File.write(FILE, YAML.dump(data))
+end
+
+def update_to_yml(key, value)
+  data = read_yml[key]
+  data[key] = value
+  File.write(FILE, YAML.dump(data))
+end
+
+def delete_to_yml(key, value)
+  data = read_yml[key]
+  data[key] = value
+  File.write(FILE, YAML.dump(data))
+end
+
 def shuffle_some_words(count_words = 2, count_phrases = 1)
   shuffle_words = read_yml[:my_english_words].shuffle
   shuffle_phrases = read_yml[:my_english_phrases].shuffle
+
   shuffle_words[0...count_words] + shuffle_phrases[0...count_phrases]
 end
 
@@ -28,7 +48,7 @@ def format_message(words, header: false)
 end
 
 def send_telegram_message(message, chat_id: ADMIN_CHAT_ID)
-  puts 'send telegram message'
+  puts 'send telegram message: #{message}'
   Faraday.get("https://api.telegram.org/bot#{TOKEN}/sendMessage",
               { chat_id: chat_id, text: message, parse_mode: 'Markdown' })
 end
@@ -48,7 +68,7 @@ def receive_message
   return puts 'invalid chat' unless json['result'][-1]['message']['from']['id'] == ADMIN_CHAT_ID.to_i
 
   update_id_now = json['result'][-1]['update_id']
-  data = read_yml
+  data = read_yml[:update_id]
   update_id_last = data[:update_id]
   return puts 'old message' if update_id_last == update_id_now
 
@@ -61,6 +81,8 @@ end
 def write_to_yml
   # TODO: refactoring regexp ^\/(Write|write)[:]([a-zA-Z\s'`]+)(\b[ ]-[ ])([а-яА-Я\s+]$)
   # return puts 'write break - invalid format' unless @text_from_message =~ /^\/Write:\s*[a-zA-Z\s'`.]+ - [а-яА-Я\s\.?]+$/
+
+  # TODO: replace to ^[Ww]rite:\s*[a-zA-Z]+(\s+[a-zA-Z]+)*\s*(-|–)\s*[а-яА-Я]+(\s+[а-яА-Я]+)*$
 
   input_validation = lambda do
     return send_telegram_message('invalid message') if @text_from_message.empty? || @text_from_message.nil? ||
@@ -97,7 +119,7 @@ def write_to_yml
   puts "write start: #{@text_from_message}"
   data = read_yml
   data[choose_key.call] << @text_from_message
-  File.write('common_list.yml', YAML.dump(data))
+  File.write(FILE, YAML.dump(data))
   send_telegram_message("write done in: #{choose_key.call}")
   puts "write done in: #{choose_key.call}"
 end
@@ -111,7 +133,7 @@ def validation_user_message?(message)
 end
 
 def valid_send_time?
-  Time.now.hour.between?(11, 23) && Time.now.min == 30
+  TIME_NOW.hour.between?(11, 23) && TIME_NOW.min == 30
 end
 
 def start_send_telegram_message
@@ -129,17 +151,15 @@ end
 
 def custom_timer
   # TODO: move write to yml to another method and rewrite it
-  send_telegram_message(text) if Time.now == Time.now + number
+  send_telegram_message(text) if TIME_NOW == TIME_NOW + number
 end
 
 def mid_timer
   # TODO: move write to yml to another method and rewrite it
-  send_telegram_message('mid') if Time.now == Time.now + 60
+  send_telegram_message('mid') if TIME_NOW == TIME_NOW + 60
 end
 
 def birthday_today?
-  # TODO: move const
-  time = Time.now
   birthdays = read_yml[:birthdays]
 
   birthdays.each do |birthday|
@@ -147,7 +167,7 @@ def birthday_today?
     name = birthday.split(' - ').last
     day, month, year = date.split('.')
 
-    if day.to_i == time.day && month.to_i == time.month
+    if day.to_i == TIME_NOW.day && month.to_i == TIME_NOW.month
       age = year.nil? ? 'unknown' : time.year - year.to_i
       send_telegram_message("#{name}'s birthday today! #{age} years old")
     end
