@@ -65,15 +65,20 @@ def receive_message
 
   # when not messages a long time: my_bot_ruby.rb:44:in `receive_message': undefined method `[]' for nil:NilClass (NoMethodError)
 
-  return puts 'invalid chat' unless json['result'][-1]['message']['from']['id'] == ADMIN_CHAT_ID.to_i
+  # may be it's fix
 
+  return puts 'not message' if json['result'][-1]['message'].nil?
+
+  return puts 'invalid chat' unless json['result'][-1]['message']['from']['id'] == ADMIN_CHAT_ID.to_i
+  binding.break
   update_id_now = json['result'][-1]['update_id']
+  # erorr this
   data = read_yml[:update_id]
   update_id_last = data[:update_id]
   return puts 'old message' if update_id_last == update_id_now
 
-  data[:update_id] = update_id_now
-  File.write('common_list.yml', YAML.dump(data))
+  read_yml[:update_id] = update_id_now
+  File.write('common_list.yml', YAML.dump(read_yml))
 
   @text_from_message = json['result'][-1]['message']['text']
 end
@@ -178,7 +183,6 @@ def listener
   # TODO: use valid_send_time method and add arguments
   birthday_today?
   receive_message
-  return puts 'not message' if @text_from_message.nil?
 
   if @text_from_message.start_with?('/write: ')
     write_to_yml
