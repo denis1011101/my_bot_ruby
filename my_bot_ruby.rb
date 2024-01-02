@@ -48,7 +48,7 @@ def format_message(words, header: false)
 end
 
 def send_telegram_message(message, chat_id: ADMIN_CHAT_ID)
-  puts 'send telegram message: #{message}'
+  puts "send telegram message: #{message}"
   Faraday.get("https://api.telegram.org/bot#{TOKEN}/sendMessage",
               { chat_id: chat_id, text: message, parse_mode: 'Markdown' })
 end
@@ -60,24 +60,26 @@ def receive_message
   return puts 'not messages' if response.nil?
 
   json = JSON.parse(response.body)
-  # binding.break
+
   return puts 'invalid json' unless json['ok']
 
   # when not messages a long time: my_bot_ruby.rb:44:in `receive_message': undefined method `[]' for nil:NilClass (NoMethodError)
 
   # may be it's fix
 
-  return puts 'not message' if json['result'][-1]['message'].nil?
+  return puts 'not message' if json['result'].nil? || json['result'][-1].nil? || json['result'][-1]['message'].nil?
 
   return puts 'invalid chat' unless json['result'][-1]['message']['from']['id'] == ADMIN_CHAT_ID.to_i
-  binding.break
-  update_id_now = json['result'][-1]['update_id']
-  # erorr this
-  data = read_yml[:update_id]
-  update_id_last = data[:update_id]
-  return puts 'old message' if update_id_last == update_id_now
 
+  update_id_now = json['result'][-1]['update_id']
+
+  puts read_yml[:update_id]
+  puts update_id_now
+  return puts 'old message' if read_yml[:update_id] == update_id_now
+
+  # don't work
   read_yml[:update_id] = update_id_now
+  puts read_yml[:update_id]
   File.write('common_list.yml', YAML.dump(read_yml))
 
   @text_from_message = json['result'][-1]['message']['text']
@@ -164,43 +166,69 @@ def mid_timer
   send_telegram_message('mid') if TIME_NOW == TIME_NOW + 60
 end
 
-def birthday_today?
+def birthday_today
+  current_time = Time.now.strftime('%H.%M').to_f
+  return puts 'not birthday time or no birthday today' unless [13.30, 15.30, 21.30, 23.30].include?(current_time)
+
+  check_birthdays
+end
+
+def check_birthdays
   birthdays = read_yml[:birthdays]
 
   birthdays.each do |birthday|
-    date = birthday.split(' - ').first
-    name = birthday.split(' - ').last
-    day, month, year = date.split('.')
-
-    if day.to_i == TIME_NOW.day && month.to_i == TIME_NOW.month
-      age = year.nil? ? 'unknown' : time.year - year.to_i
-      send_telegram_message("#{name}'s birthday today! #{age} years old")
-    end
+    process_birthday(birthday)
   end
+end
+
+def process_birthday(birthday)
+  date, name = birthday.split(' - ')
+  day, month, year = date.split('.')
+
+  return unless birthday_today?(day, month)
+
+  age = year.nil? ? 'unknown' : Time.now.year - year.to_i
+  send_telegram_message("#{name}'s birthday today! #{age} years old")
+end
+
+def birthday_today?(day, month)
+  day.to_i == Time.now.day && month.to_i == Time.now.month
 end
 
 def listener
   # TODO: use valid_send_time method and add arguments
-  birthday_today?
-  receive_message
+  birthday_today
+  message = receive_message
 
-  if @text_from_message.start_with?('/write: ')
-    write_to_yml
-  elsif @text_from_message.start_with?('/keys')
-    send_telegram_message(read_yml.keys.to_s)
-  elsif @text_from_message.start_with?('/show')
-    show
-  elsif @text_from_message.start_with?('/help')
-    help
-  elsif @text_from_message.start_with?('/send')
-    send_telegram_message
-  elsif @text_from_message.start_with?('/timer')
-    custom_timer
-  elsif @text_from_message.start_with?('/mid')
-    mid_timer
-  else
-    send_telegram_message('invalid message')
+  return unless message
+
+  process_command(message)
+end
+
+def process_command(message)
+  command = determine_command(message)
+  send(command) if command
+end
+
+COMMANDS = {
+  '/write: ' => :write_to_yml,
+  '/keys' => :send_keys,
+  '/show' => :show,
+  '/help' => :help,
+  '/send' => :send_telegram_message,
+  '/timer' => :custom_timer,
+  '/mid' => :mid_timer
+}.freeze
+
+def determine_command(message)
+  COMMANDS.each do |command, method|
+    return method if message.start_with?(command)
   end
+  nil
+end
+
+def send_keys
+  send_telegram_message(read_yml.keys.to_s)
 end
 
 listener
