@@ -53,10 +53,10 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  faraday (~> 2.7, >= 2.7.2)
-  json (~> 2.6, >= 2.6.3)
-  rspec (~> 3.4)
-  rubocop (~> 1.39)
+  faraday
+  json
+  rspec
+  rubocop
 
 BUNDLED WITH
    2.4.1

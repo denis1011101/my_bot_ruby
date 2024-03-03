@@ -18,19 +18,19 @@ end
 def create_to_yml(key, value)
   data = read_yml[key]
   data[key] << value
-  File.write(FILE, YAML.dump(data))
+  write_yml(data).dump(data))
 end
 
 def update_to_yml(key, value)
   data = read_yml[key]
   data[key] = value
-  File.write(FILE, YAML.dump(data))
+  write_yml(data).dump(data))
 end
 
 def delete_to_yml(key, value)
   data = read_yml[key]
   data[key] = value
-  File.write(FILE, YAML.dump(data))
+  write_yml(data).dump(data))
 end
 
 def shuffle_some_words(count_words = 2, count_phrases = 1)
@@ -126,7 +126,7 @@ def write_to_yml
   puts "write start: #{@text_from_message}"
   data = read_yml
   data[choose_key.call] << @text_from_message
-  File.write(FILE, YAML.dump(data))
+  write_yml(data).dump(data))
   send_telegram_message("write done in: #{choose_key.call}")
   puts "write done in: #{choose_key.call}"
 end
@@ -139,10 +139,6 @@ def validation_user_message?(message)
   message.chat.id == ADMIN_CHAT_ID
 end
 
-def valid_send_time?
-  TIME_NOW.hour.between?(11, 23) && TIME_NOW.min == 30
-end
-
 def start_send_telegram_message
   if valid_send_time?
     send_telegram_message(format_message(shuffle_some_words, header: true))
@@ -151,19 +147,23 @@ def start_send_telegram_message
   end
 end
 
+def valid_send_time?
+  TIME_NOW.hour.between?(11, 23) && TIME_NOW.min == 30
+end
+
 def show
   key = @text_from_message.split(' ').last
   send_telegram_message(read_yml[key.to_sym].to_s)
 end
 
-def custom_timer
+def custom_timer(number)
   # TODO: move write to yml to another method and rewrite it
-  send_telegram_message(text) if TIME_NOW == TIME_NOW + number
+  send_telegram_message(text) if TIME_NOW + number == TIME_NOW
 end
 
 def mid_timer
   # TODO: move write to yml to another method and rewrite it
-  send_telegram_message('mid') if TIME_NOW == TIME_NOW + 60
+  send_telegram_message('mid') if TIME_NOW + 60 == TIME_NOW
 end
 
 def birthday_today
@@ -196,7 +196,6 @@ def birthday_today?(day, month)
 end
 
 def listener
-  # TODO: use valid_send_time method and add arguments
   birthday_today
   message = receive_message
 
