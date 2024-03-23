@@ -4,6 +4,7 @@ require_relative 'lib/yaml_manager'
 require_relative 'lib/message_formatter'
 require_relative 'lib/telegram_bot'
 require_relative 'lib/timer'
+require_relative 'lib/data_parser'
 require_relative 'config'
 
 yaml_manager = YamlManager.new(FILE)

@@ -37,7 +37,6 @@ describe YamlManager do
 
   describe '#create_to_yml' do
     it 'adds a new key-value pair to the yml file' do
-      skip
       manager.create_to_yml(key, value)
       expect(YAML.load_file(test_file)).to eq({ key => value })
     end

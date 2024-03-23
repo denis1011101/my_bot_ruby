@@ -4,6 +4,8 @@ source 'https://rubygems.org'
 
 gem 'faraday'
 gem 'json'
+gem 'nokogiri'
+gem 'net-http'
 
 group :development do
   gem 'rubocop'
