@@ -13,6 +13,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Set environment to development
+        run: echo "RAILS_ENV=test" >> $GITHUB_ENV
+
       - name: Set up Ruby 3.3.4
         uses: ruby/setup-ruby@v1
         with:
@@ -20,11 +23,11 @@ jobs:
             bundler-cache: true
 
       - name: Install dependencies
-        run: bundle install
+        run: make install
 
       - name: Run Rubocop
-        run: bundle exec rubocop
+        run: make lint
         continue-on-error: true
 
       - name: Run rspec
-        run: bundle exec rspec
+        run: make tests
