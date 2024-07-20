@@ -20,11 +20,11 @@ jobs:
             bundler-cache: true
 
       - name: Install dependencies
-        run: make install
+        run: bundle install
 
       - name: Run Rubocop
-        run: make lint
+        run: bundle exec rubocop
         continue-on-error: true
 
       - name: Run rspec
-        run: make tests
+        run: bundle exec rspec
