@@ -1,0 +1,16 @@
+current directory: /home/denis/my/my_bot_ruby/vendor/bundle/ruby/3.3.0/gems/json-2.7.2/ext/json
+/usr/share/rvm/rubies/ruby-3.3.4/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/denis/my/my_bot_ruby/vendor/bundle/ruby/3.3.0/gems/json-2.7.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240720-17601-u7kd2 sitelibdir\=./.gem.20240720-17601-u7kd2 clean
+
+current directory: /home/denis/my/my_bot_ruby/vendor/bundle/ruby/3.3.0/gems/json-2.7.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240720-17601-u7kd2 sitelibdir\=./.gem.20240720-17601-u7kd2
+make: Nothing to be done for 'all'.
+
+current directory: /home/denis/my/my_bot_ruby/vendor/bundle/ruby/3.3.0/gems/json-2.7.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240720-17601-u7kd2 sitelibdir\=./.gem.20240720-17601-u7kd2 install
+
+current directory: /home/denis/my/my_bot_ruby/vendor/bundle/ruby/3.3.0/gems/json-2.7.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240720-17601-u7kd2 sitelibdir\=./.gem.20240720-17601-u7kd2 clean

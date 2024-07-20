@@ -2,3 +2,4 @@
 .idea/*
 *.iml
 common_list.yml
+/.gem_rbs_collection/

@@ -1,0 +1,11 @@
+path: "vendor/rbs"
+
+sources:
+  - name: ruby/gem_rbs_collection
+    remote: https://github.com/ruby/gem_rbs_collection.git
+    revision: main
+    repo_dir: gems
+  - name: ruby/rbs
+    remote: https://github.com/ruby/rbs.git
+    revision: main
+    repo_dir: stdlib

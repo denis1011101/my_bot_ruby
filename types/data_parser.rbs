@@ -1,0 +1,7 @@
+# data_parser.rbs
+
+class DataParser
+  URL: String
+
+  def parse: () -> ({ usd_rate: String, moex_index: String } | { error: String })
+end

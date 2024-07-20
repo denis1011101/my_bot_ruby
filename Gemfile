@@ -2,17 +2,15 @@
 
 source 'https://rubygems.org'
 
+ruby '3.3.4'
+
 gem 'faraday'
 gem 'json'
 gem 'nokogiri'
-gem 'net-http'
 
-group :development do
+group :development, :test do
   gem 'rubocop'
-end
-
-group :test do
+  gem 'rbs'
   gem 'rspec'
+  gem 'steep'
 end
-
-# Debugger rdbg don't work with Ruby 3.2.0

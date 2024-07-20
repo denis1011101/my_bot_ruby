@@ -1,0 +1,27 @@
+current directory: /home/denis/my/my_bot_ruby/vendor/bundle/ruby/3.3.0/gems/rbs-3.5.2/ext/rbs_extension
+/usr/share/rvm/rubies/ruby-3.3.4/bin/ruby extconf.rb
+checking for whether -std=gnu99 is accepted as CFLAGS... yes
+creating Makefile
+
+current directory: /home/denis/my/my_bot_ruby/vendor/bundle/ruby/3.3.0/gems/rbs-3.5.2/ext/rbs_extension
+make DESTDIR\= sitearchdir\=./.gem.20240720-17601-828ywo sitelibdir\=./.gem.20240720-17601-828ywo clean
+
+current directory: /home/denis/my/my_bot_ruby/vendor/bundle/ruby/3.3.0/gems/rbs-3.5.2/ext/rbs_extension
+make DESTDIR\= sitearchdir\=./.gem.20240720-17601-828ywo sitelibdir\=./.gem.20240720-17601-828ywo
+compiling constants.c
+compiling lexer.c
+compiling lexstate.c
+compiling location.c
+compiling main.c
+compiling parser.c
+compiling parserstate.c
+compiling ruby_objs.c
+compiling unescape.c
+linking shared-object rbs_extension.so
+
+current directory: /home/denis/my/my_bot_ruby/vendor/bundle/ruby/3.3.0/gems/rbs-3.5.2/ext/rbs_extension
+make DESTDIR\= sitearchdir\=./.gem.20240720-17601-828ywo sitelibdir\=./.gem.20240720-17601-828ywo install
+/usr/bin/install -c -m 0755 rbs_extension.so ./.gem.20240720-17601-828ywo
+
+current directory: /home/denis/my/my_bot_ruby/vendor/bundle/ruby/3.3.0/gems/rbs-3.5.2/ext/rbs_extension
+make DESTDIR\= sitearchdir\=./.gem.20240720-17601-828ywo sitelibdir\=./.gem.20240720-17601-828ywo clean
