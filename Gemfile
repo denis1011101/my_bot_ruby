@@ -13,4 +13,5 @@ group :development, :test do
   gem 'rbs'
   gem 'rspec'
   gem 'steep'
+  gem 'executable-hooks'
 end

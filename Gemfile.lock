@@ -19,6 +19,7 @@ GEM
     csv (3.3.0)
     diff-lcs (1.5.1)
     drb (2.2.1)
+    executable-hooks (1.7.1)
     faraday (2.10.0)
       faraday-net_http (>= 2.0, < 3.2)
       logger
@@ -109,6 +110,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  executable-hooks
   faraday
   json
   nokogiri
