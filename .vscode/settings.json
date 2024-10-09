@@ -1,0 +1,18 @@
+{
+  "ruby.lsp.enabled": true,
+  "ruby.lsp.server.command": "bundle",
+  "ruby.lsp.server.args": [
+    "exec",
+    "ruby-lsp"
+  ],
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "ruby.useBundler": true,
+  "ruby.useLanguageServer": true,
+  "ruby.format": "rubocop",
+  "ruby.lint": {
+    "rubocop": true
+  }
+}

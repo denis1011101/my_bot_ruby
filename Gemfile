@@ -9,9 +9,11 @@ gem 'json'
 gem 'nokogiri'
 
 group :development, :test do
-  gem 'rubocop'
+  gem 'rubocop', require: false
   gem 'rbs'
   gem 'rspec'
   gem 'steep'
   gem 'executable-hooks'
+  gem 'ruby-lsp', require: false
+  gem 'freezolite', require: false
 end

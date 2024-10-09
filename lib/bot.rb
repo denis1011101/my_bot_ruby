@@ -1,5 +1,4 @@
-# frozen_string_literal: true
-
+require 'freezolite/auto'
 require_relative 'services/yaml_manager'
 require_relative 'services/message_formatter'
 require_relative 'services/telegram_bot'

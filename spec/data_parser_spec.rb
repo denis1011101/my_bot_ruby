@@ -9,12 +9,12 @@ RSpec.describe DataParser do
   end
 
 	it 'returns USD rate' do
-	  usd_rate = @result["https://ru.investing.com/currencies/usd-rub"]
+	  usd_rate = @result['https://ru.investing.com/currencies/usd-rub']
 	  expect(usd_rate).to match(/\d+,\d+/)
 	end
 
 	it 'returns MOEX index' do
-	  moex_index = @result["https://ru.investing.com/indices/mcx"]
+	  moex_index = @result['https://ru.investing.com/indices/mcx']
 	  expect(moex_index).to match(/\d+\.\d+,\d+/)
 	end
   end
