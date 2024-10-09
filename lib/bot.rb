@@ -5,6 +5,7 @@ require_relative 'services/message_formatter'
 require_relative 'services/telegram_bot'
 require_relative 'services/timer'
 require_relative 'services/data_parser'
+require_relative 'services/shuffler'
 require_relative '../config'
 
 # yaml_manager = YamlManager.new(FILE)
