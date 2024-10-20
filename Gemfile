@@ -7,6 +7,7 @@ ruby '3.3.4'
 gem 'faraday'
 gem 'json'
 gem 'nokogiri'
+gem 'psych'
 
 group :development, :test do
   gem 'rubocop', require: false

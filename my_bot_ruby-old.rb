@@ -174,8 +174,9 @@ def birthday_today
 end
 
 def check_birthdays
-  birthdays = read_yml[:birthdays]
-
+  birthdays = @yaml_manager.read_yml(:birthdays)
+  puts "Birthdays: #{birthdays.inspect}"
+  return puts 'no birthday' if birthdays.nil? || birthdays.empty?
   birthdays.each do |birthday|
     process_birthday(birthday)
   end

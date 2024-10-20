@@ -14,7 +14,9 @@ class BirthdayChecker
   private
 
   def check_birthdays
-    birthdays = @yaml_manager.read_yml[:birthdays]
+    birthdays = @yaml_manager.read_yml(:birthdays)
+    puts "Birthdays: #{birthdays}"
+    return puts 'no birthday' unless birthdays
 
     birthdays.each do |birthday|
       process_birthday(birthday)

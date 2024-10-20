@@ -1,14 +1,16 @@
 require 'faraday'
 require 'json'
 require 'yaml'
+require_relative 'yaml_manager'
 
 class TelegramBot
-  attr_reader :token, :admin_chat_id, :file
+  attr_reader :token, :admin_chat_id, :file, :yaml_manager
 
   def initialize(token, admin_chat_id, file)
     @token = token
     @admin_chat_id = admin_chat_id
     @file = file
+    @yaml_manager = YamlManager.new(file)
   end
 
   def send_message(message)
@@ -49,14 +51,13 @@ class TelegramBot
     update_id_now = json['result'][-1]['update_id']
     puts "Update ID: #{update_id_now}"
 
-    current_data = read_yml
-    puts "Current update ID in YAML: #{current_data[:update_id]}"
+    current_data = yaml_manager.read_yml(:update_id)
+    puts "Current update ID in YAML: #{current_data}"
     puts "New update ID: #{update_id_now}"
-    return puts 'old message' if current_data[:update_id] == update_id_now
+    return puts 'old message' if current_data == update_id_now
 
-    current_data[:update_id] = update_id_now
-    puts "Updated YAML data: #{current_data}"
-    File.write(@file, YAML.dump(current_data))
+    yaml_manager.write_yml(:update_id, update_id_now)
+    puts "Updated YAML data: #{yaml_manager.read_yml(:update_id)}"
 
     @text_from_message = json['result'][-1]['message']['text']
     puts "Message text: #{@text_from_message}"

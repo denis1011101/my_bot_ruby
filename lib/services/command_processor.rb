@@ -81,7 +81,7 @@ class CommandProcessor
     return unless number
 
     seconds = convert_to_seconds(number, unit)
-    @yaml_manager.write_yml(custom_timer: seconds)
+    @yaml_manager.write_yml(:custom_timer, seconds)
     check_and_send_message(seconds, "Custom timer message after #{seconds} seconds")
   end
 
