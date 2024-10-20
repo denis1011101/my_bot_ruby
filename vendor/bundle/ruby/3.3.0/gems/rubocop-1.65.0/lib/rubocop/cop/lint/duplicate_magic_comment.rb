@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 module RuboCop
   module Cop
@@ -18,12 +18,12 @@ module RuboCop
       #
       #   # bad
       #
-      #   # frozen_string_literal: true
-      #   # frozen_string_literal: true
+      #
+      #
       #
       #   # good
       #
-      #   # frozen_string_literal: true
+      #
       #
       class DuplicateMagicComment < Base
         include FrozenStringLiteral

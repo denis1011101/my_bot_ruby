@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 class << Diff::LCS
   def diff_traversal(method, seq1, seq2, callbacks, &block)

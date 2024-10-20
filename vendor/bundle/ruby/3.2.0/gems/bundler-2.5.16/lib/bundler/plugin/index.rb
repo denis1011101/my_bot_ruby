@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 module Bundler
   # Manages which plugins are installed and their sources. This also is supposed to map

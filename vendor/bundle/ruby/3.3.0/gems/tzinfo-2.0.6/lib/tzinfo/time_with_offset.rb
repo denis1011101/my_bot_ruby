@@ -1,5 +1,5 @@
 # encoding: UTF-8
-# frozen_string_literal: true
+
 
 module TZInfo
   # A subclass of `Time` used to represent local times. {TimeWithOffset} holds a

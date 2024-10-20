@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 module Bundler
   # A stub yaml serializer that can handle only hashes and strings (as of now).

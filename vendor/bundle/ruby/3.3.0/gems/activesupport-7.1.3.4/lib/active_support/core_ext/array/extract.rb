@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 class Array
   # Removes and returns the elements for which the block returns a true value.

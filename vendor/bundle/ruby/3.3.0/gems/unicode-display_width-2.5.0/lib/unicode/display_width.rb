@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 require_relative "display_width/constants"
 require_relative "display_width/index"
@@ -120,4 +120,3 @@ module Unicode
     end
   end
 end
-

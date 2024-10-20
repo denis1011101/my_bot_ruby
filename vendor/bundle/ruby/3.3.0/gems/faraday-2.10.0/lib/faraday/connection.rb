@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 module Faraday
   # Connection objects manage the default properties and the middleware

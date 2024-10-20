@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 class Object
   # Set and restore public attributes around a block.

@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 class Array
   # Splits or iterates over the array in groups of size +number+,

@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 module RuboCop
   # Common methods and behaviors for dealing with paths.

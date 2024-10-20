@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 module RuboCop
   # Allows specified configuration options to have an exclude limit

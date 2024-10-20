@@ -1,5 +1,5 @@
 # encoding: UTF-8
-# frozen_string_literal: true
+
 
 module TZInfo
   # Represents time zones that are defined by rules that set out when

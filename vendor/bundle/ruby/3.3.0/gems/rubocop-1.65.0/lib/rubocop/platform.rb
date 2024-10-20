@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 module RuboCop
   # This module provides information on the platform that RuboCop is being run

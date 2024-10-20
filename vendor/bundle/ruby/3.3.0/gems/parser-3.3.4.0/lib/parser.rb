@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 if RUBY_VERSION =~ /^1\.[89]\./
   require_relative 'parser/version'

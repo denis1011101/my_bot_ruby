@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 # typed: false
 
 module T::Props
@@ -120,7 +120,7 @@ module T::Props
         return if lazily_defined_methods.empty?
 
         # rubocop:disable Style/StringConcatenation
-        source = "# frozen_string_literal: true\n" + lazily_defined_methods.values.map(&:call).map(&:to_s).join("\n\n")
+        source = "\n" + lazily_defined_methods.values.map(&:call).map(&:to_s).join("\n\n")
         # rubocop:enable Style/StringConcatenation
 
         cls = decorated_class

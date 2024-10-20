@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 module Bundler
   def self.require_thor_actions

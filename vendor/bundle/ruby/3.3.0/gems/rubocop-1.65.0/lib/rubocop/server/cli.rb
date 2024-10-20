@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 require_relative '../arguments_env'
 require_relative '../arguments_file'

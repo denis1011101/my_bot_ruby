@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 module RuboCop
   # Take a string with embedded escapes, and convert the escapes as the Ruby

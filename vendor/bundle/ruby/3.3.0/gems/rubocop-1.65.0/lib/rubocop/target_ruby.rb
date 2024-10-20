@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 module RuboCop
   # The kind of Ruby that code inspected by RuboCop is written in.

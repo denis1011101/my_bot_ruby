@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 # Code copied from https://github.com/celluloid/celluloid-fsm
 

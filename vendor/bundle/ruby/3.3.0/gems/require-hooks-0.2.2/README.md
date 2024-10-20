@@ -70,7 +70,7 @@ The return value MUST be a result of calling the passed block.
 ```ruby
 RequireHooks.source_transform(patterns: ["/my_project/*.rb"], exclude_patterns: ["/my_project/vendor/*"]) do |path, source|
   source ||= File.read(path)
-  "# frozen_string_literal: true\n#{source}"
+  "\n#{source}"
 end
 ```
 

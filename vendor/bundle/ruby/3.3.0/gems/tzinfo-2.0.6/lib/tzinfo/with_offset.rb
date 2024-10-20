@@ -1,5 +1,5 @@
 # encoding: UTF-8
-# frozen_string_literal: true
+
 
 module TZInfo
   # The {WithOffset} module is included in {TimeWithOffset},

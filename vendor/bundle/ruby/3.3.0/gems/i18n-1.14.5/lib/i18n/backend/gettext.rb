@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 require 'i18n/gettext'
 require 'i18n/gettext/po_parser'

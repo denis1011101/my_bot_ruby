@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 module Faraday
   # Subclasses Struct with some special helpers for converting from a Hash to

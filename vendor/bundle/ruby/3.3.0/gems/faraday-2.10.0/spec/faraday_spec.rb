@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 RSpec.describe Faraday do
   it 'has a version number' do

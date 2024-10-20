@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 require_relative './sources/base'
 require_relative './sources/git'

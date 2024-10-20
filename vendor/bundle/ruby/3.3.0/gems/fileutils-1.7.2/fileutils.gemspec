@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 source_version = ["", "lib/"].find do |dir|
   begin

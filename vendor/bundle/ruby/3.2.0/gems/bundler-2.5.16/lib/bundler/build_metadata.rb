@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 module Bundler
   # Represents metadata from when the Bundler gem was built.

@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 class Module
   # Declares an attribute reader backed by an internally-named instance variable.

@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 module Bundler
   # Handles the installation of plugin in appropriate directories.

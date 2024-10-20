@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 # These aliases are for compatibility.
 module RuboCop

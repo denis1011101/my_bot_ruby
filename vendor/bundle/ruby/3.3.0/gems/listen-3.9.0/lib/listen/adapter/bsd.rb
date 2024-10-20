@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 # Listener implementation for BSD's `kqueue`.
 # @see http://www.freebsd.org/cgi/man.cgi?query=kqueue

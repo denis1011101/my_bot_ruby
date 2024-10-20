@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 # The Lint/RedundantCopEnableDirective and Lint/RedundantCopDisableDirective
 # cops need to be disabled so as to be able to provide a (bad) example of an

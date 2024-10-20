@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 module RuboCop
   # This class handles loading files (a.k.a. features in Ruby) specified

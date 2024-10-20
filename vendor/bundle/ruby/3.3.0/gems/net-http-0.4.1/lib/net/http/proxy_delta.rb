@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 module Net::HTTP::ProxyDelta   #:nodoc: internal use only
   private
 
@@ -14,4 +14,3 @@ module Net::HTTP::ProxyDelta   #:nodoc: internal use only
     use_ssl? ? path : "http://#{addr_port()}#{path}"
   end
 end
-

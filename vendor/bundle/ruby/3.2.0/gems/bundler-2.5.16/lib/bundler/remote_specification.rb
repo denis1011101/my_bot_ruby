@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 module Bundler
   # Represents a lazily loaded gem specification, where the full specification

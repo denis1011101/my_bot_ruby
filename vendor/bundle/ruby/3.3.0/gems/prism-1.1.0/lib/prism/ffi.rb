@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 # typed: ignore
 
 # This file is responsible for mirroring the API provided by the C extension by

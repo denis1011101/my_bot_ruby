@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 #
 # \HTTPGenericRequest is the parent of the Net::HTTPRequest class.
 #
@@ -411,4 +411,3 @@ class Net::HTTPGenericRequest
   end
 
 end
-

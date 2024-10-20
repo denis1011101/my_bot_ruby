@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 # typed: strict
 
 # NB: This is not actually a decorator. It's just named that way for consistency

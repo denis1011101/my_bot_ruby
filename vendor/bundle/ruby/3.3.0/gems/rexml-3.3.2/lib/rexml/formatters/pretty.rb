@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 require_relative 'default'
 
 module REXML
@@ -139,4 +139,3 @@ module REXML
     end
   end
 end
-

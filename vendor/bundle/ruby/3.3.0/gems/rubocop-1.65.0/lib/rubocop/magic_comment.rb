@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 module RuboCop
   # Parse different formats of magic comments.
@@ -250,7 +250,7 @@ module RuboCop
     # Simple comments can only specify one setting per comment.
     #
     # @example frozen string literal comments
-    #   comment1 = RuboCop::MagicComment.parse('# frozen_string_literal: true')
+    #   comment1 = RuboCop::MagicComment.parse('')
     #   comment1.frozen_string_literal # => true
     #   comment1.encoding              # => nil
     #

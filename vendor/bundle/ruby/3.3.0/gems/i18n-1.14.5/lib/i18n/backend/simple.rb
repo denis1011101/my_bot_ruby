@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 require 'i18n/backend/base'
 
@@ -21,7 +21,7 @@ module I18n
     class Simple
       module Implementation
         include Base
-        
+
         # Mutex to ensure that concurrent translations loading will be thread-safe
         MUTEX = Mutex.new
 

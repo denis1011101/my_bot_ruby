@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 module Parser
   # Stack that holds names of current arguments,

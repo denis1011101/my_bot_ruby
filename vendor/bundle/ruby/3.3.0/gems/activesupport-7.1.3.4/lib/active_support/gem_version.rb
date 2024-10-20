@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 module ActiveSupport
   # Returns the currently loaded version of Active Support as a +Gem::Version+.

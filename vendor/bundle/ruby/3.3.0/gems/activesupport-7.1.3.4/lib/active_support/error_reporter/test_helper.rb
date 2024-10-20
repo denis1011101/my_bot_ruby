@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 module ActiveSupport::ErrorReporter::TestHelper # :nodoc:
   class ErrorSubscriber

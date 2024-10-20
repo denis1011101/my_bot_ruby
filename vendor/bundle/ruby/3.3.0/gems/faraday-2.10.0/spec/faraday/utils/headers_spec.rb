@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 RSpec.describe Faraday::Utils::Headers do
   subject { Faraday::Utils::Headers.new }

@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 #
 # This code is based on https://github.com/fohte/rubocop-daemon.

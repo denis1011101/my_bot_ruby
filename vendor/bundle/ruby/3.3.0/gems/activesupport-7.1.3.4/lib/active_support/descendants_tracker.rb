@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 require "weakref"
 require "active_support/ruby_features"

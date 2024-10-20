@@ -1,5 +1,5 @@
 # encoding: UTF-8
-# frozen_string_literal: true
+
 
 module TZInfo
   # {TimezonePeriod} represents a period of time for a time zone where the same

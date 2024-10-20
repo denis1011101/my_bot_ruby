@@ -1,5 +1,5 @@
 # typed: true
-# frozen_string_literal: true
+
 
 module RubyIndexer
   # A PrefixTree is a data structure that allows searching for partial strings fast. The tree is similar to a nested

@@ -5252,7 +5252,7 @@ pm_interpolated_regular_expression_node_closing_set(pm_parser_t *parser, pm_inte
  * Note that this doesn't necessarily mean that the string will be frozen or
  * not; the instructions in CRuby will be either putobject or putstring,
  * depending on the combination of `--enable-frozen-string-literal`,
- * `# frozen_string_literal: true`, and whether or not there is interpolation.
+ * ``, and whether or not there is interpolation.
  *
  * PM_INTERPOLATED_STRING_NODE_FLAGS_FROZEN indicates that the string should be
  * explicitly frozen. This will only happen if the string is comprised entirely

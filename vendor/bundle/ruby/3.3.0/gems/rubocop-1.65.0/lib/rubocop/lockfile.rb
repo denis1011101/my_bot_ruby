@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 begin
   # We might not be running with `bundle exec`, so we need to pull in Bundler ourselves,

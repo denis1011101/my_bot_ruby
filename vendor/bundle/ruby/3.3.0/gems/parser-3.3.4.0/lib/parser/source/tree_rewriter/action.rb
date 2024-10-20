@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 module Parser
   module Source
@@ -6,7 +6,7 @@ module Parser
     # @api private
     #
     # Actions are arranged in a tree and get combined so that:
-    # 
+    #
     # * Children are strictly contained by their parent
     # * Siblings are all disjointed from one another and ordered
     # * Only actions with `replacement == nil` may have children

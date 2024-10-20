@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 unless 0.respond_to?(:positive?)
   class Fixnum # standard:disable Lint/UnifiedInteger

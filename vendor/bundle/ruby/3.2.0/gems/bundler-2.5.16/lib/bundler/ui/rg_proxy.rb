@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 require_relative "../ui"
 require "rubygems/user_interaction"

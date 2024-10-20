@@ -1,5 +1,5 @@
 # typed: strict
-# frozen_string_literal: true
+
 
 module RubyLsp
   # To register an add-on, inherit from this class and implement both `name` and `activate`

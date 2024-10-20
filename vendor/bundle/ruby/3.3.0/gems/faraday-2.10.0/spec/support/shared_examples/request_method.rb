@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 shared_examples 'proxy examples' do
   it 'handles requests with proxy' do

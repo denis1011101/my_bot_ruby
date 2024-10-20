@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 require_relative "<%= File.basename(config[:namespaced_path]) %>/version"
 <%- if config[:ext] -%>

@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 module RuboCop
   # This class represents the cache config of the caching RuboCop runs.

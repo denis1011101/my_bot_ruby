@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 module Bundler
   # This class contains all of the logic for determining the next version of a

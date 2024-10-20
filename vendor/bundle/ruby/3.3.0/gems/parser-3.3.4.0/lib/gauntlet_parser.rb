@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 require 'gauntlet'
 require_relative 'parser/all'

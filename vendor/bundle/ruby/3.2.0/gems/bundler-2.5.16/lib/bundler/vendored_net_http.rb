@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 # This defined? guard can be removed once RubyGems 3.4 support is dropped.
 #

@@ -1,5 +1,5 @@
 # -*- coding: us-ascii -*-
-# frozen_string_literal: true
+
 
 # == \Random number formatter.
 #

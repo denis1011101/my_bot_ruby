@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 require_relative "parser/lex_result"
 require_relative "parser/token"

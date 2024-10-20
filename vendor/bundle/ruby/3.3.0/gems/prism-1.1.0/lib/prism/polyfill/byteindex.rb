@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 # Polyfill for String#byteindex, which didn't exist until Ruby 3.2.
 if !("".respond_to?(:byteindex))

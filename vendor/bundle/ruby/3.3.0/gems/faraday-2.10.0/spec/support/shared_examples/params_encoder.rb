@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 shared_examples 'a params encoder' do
   it 'escapes safe buffer' do

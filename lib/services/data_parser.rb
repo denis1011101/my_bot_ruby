@@ -1,5 +1,3 @@
-# Frozen_string_literal: true
-
 require 'nokogiri'
 require 'net/http'
 require 'uri'
@@ -26,7 +24,7 @@ class DataParser
     end
 
     results
-  rescue => e
+  rescue StandardError => e
     { error: "Failed to parse data: #{e.message}" }
   end
 end

@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 require "active_support/core_ext/object/blank"
 require "active_support/number_helper/number_converter"

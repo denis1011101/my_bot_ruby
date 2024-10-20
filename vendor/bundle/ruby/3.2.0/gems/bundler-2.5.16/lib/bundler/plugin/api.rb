@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 module Bundler
   # This is the interfacing class represents the API that we intend to provide

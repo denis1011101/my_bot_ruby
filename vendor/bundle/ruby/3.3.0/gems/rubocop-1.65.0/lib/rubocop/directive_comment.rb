@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 module RuboCop
   # This class wraps the `Parser::Source::Comment` object that represents a

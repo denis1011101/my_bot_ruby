@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 RSpec.describe Faraday::Options do
   SubOptions = Class.new(Faraday::Options.new(:sub_a, :sub_b))

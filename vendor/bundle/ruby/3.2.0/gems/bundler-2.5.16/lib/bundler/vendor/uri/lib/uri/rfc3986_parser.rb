@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 module Bundler::URI
   class RFC3986_Parser # :nodoc:
     # Bundler::URI defined in RFC3986

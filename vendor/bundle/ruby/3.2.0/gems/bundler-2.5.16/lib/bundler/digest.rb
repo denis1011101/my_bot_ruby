@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 # This code was extracted from https://github.com/Solistra/ruby-digest which is under public domain
 module Bundler

@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 module ActiveSupport::ExecutionContext::TestHelper # :nodoc:
   def before_setup

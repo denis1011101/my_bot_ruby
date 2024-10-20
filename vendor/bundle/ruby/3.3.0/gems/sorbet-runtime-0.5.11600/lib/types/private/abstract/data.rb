@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 # typed: true
 
 # We need to associate data with abstract modules. We could add instance methods to them that

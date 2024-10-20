@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 class Module
   #   deprecate :foo, deprecator: MyLib.deprecator

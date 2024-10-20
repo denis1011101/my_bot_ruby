@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 module RuboCop
   module Cop
@@ -9,7 +9,7 @@ module RuboCop
     # @api private
     class Generator
       SOURCE_TEMPLATE = <<~RUBY
-        # frozen_string_literal: true
+
 
         module RuboCop
           module Cop
@@ -83,7 +83,7 @@ module RuboCop
       RUBY
 
       SPEC_TEMPLATE = <<~SPEC
-        # frozen_string_literal: true
+
 
         RSpec.describe RuboCop::Cop::%<department>s::%<cop_name>s, :config do
           let(:config) { RuboCop::Config.new }

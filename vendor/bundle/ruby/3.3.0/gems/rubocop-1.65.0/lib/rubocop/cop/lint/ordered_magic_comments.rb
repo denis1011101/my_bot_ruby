@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 module RuboCop
   module Cop
@@ -12,21 +12,21 @@ module RuboCop
       # @example
       #   # bad
       #
-      #   # frozen_string_literal: true
+      #
       #   # encoding: ascii
       #   p [''.frozen?, ''.encoding] #=> [true, #<Encoding:UTF-8>]
       #
       #   # good
       #
       #   # encoding: ascii
-      #   # frozen_string_literal: true
+      #
       #   p [''.frozen?, ''.encoding] #=> [true, #<Encoding:US-ASCII>]
       #
       #   # good
       #
       #   #!/usr/bin/env ruby
       #   # encoding: ascii
-      #   # frozen_string_literal: true
+      #
       #   p [''.frozen?, ''.encoding] #=> [true, #<Encoding:US-ASCII>]
       #
       class OrderedMagicComments < Base

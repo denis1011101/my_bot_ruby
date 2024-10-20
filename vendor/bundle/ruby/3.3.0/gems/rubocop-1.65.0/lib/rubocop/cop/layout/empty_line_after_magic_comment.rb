@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 module RuboCop
   module Cop
@@ -7,7 +7,7 @@ module RuboCop
       #
       # @example
       #   # good
-      #   # frozen_string_literal: true
+      #
       #
       #   # Some documentation for Person
       #   class Person
@@ -15,7 +15,7 @@ module RuboCop
       #   end
       #
       #   # bad
-      #   # frozen_string_literal: true
+      #
       #   # Some documentation for Person
       #   class Person
       #     # Some code

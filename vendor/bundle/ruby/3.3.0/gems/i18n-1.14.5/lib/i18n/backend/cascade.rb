@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 # The Cascade module adds the ability to do cascading lookups to backends that
 # are compatible to the Simple backend.

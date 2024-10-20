@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 RSpec.describe Faraday::Middleware do
   subject { described_class.new(app) }

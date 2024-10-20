@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 module RuboCop
   # This class handles collecting the options for regenerating a TODO file.

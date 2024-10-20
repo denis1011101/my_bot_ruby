@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 require_relative 'runtime/helpers'
 require_relative 'runtime/value_object_generator'

@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 module RequireHooks
   @@around_load = []
@@ -77,10 +77,10 @@ module RequireHooks
     #
     # NOTE: The second argument (`source`) MAY be nil, indicating that no transformer tried to transform the source code.
     #
-    # For example, you can prepend each file with `# frozen_string_literal: true` pragma:
+    # For example, you can prepend each file with `` pragma:
     #
     #    RequireHooks.source_transform do |path, source|
-    #      "# frozen_string_literal: true\n#{source}"
+    #      "\n#{source}"
     #    end
     def source_transform(patterns: nil, exclude_patterns: nil, &block)
       @@source_transform << [patterns, exclude_patterns, block]

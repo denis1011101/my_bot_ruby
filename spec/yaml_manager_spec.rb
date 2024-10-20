@@ -1,5 +1,3 @@
-# Frozen_string_literal: true
-
 require 'rspec'
 
 describe YamlManager do

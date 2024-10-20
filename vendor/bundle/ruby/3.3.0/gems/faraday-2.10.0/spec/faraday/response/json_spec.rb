@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 RSpec.describe Faraday::Response::Json, type: :response do
   let(:options) { {} }

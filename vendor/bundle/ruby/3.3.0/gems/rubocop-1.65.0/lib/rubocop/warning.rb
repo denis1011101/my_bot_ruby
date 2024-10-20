@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 module RuboCop
   # A Warning exception is different from an Offense with severity 'warning'

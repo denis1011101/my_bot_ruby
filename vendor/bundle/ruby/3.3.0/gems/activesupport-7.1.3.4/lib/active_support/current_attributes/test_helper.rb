@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 module ActiveSupport::CurrentAttributes::TestHelper # :nodoc:
   def before_setup

@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 module ActiveSupport
   # Provides +deep_merge+ and +deep_merge!+ methods. Expects the including class

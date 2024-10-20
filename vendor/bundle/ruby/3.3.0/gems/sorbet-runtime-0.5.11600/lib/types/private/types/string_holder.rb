@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 # typed: true
 
 # Holds a string. Useful for showing type aliases in error messages

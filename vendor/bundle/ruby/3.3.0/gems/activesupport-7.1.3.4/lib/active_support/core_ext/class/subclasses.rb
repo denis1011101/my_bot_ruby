@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 require "active_support/ruby_features"
 require "active_support/descendants_tracker"

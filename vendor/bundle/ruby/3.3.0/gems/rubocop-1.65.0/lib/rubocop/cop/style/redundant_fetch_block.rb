@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 module RuboCop
   module Cop
@@ -8,7 +8,7 @@ module RuboCop
       # In such cases `fetch(key, value)` method is faster than `fetch(key) { value }`.
       #
       # NOTE: The block string `'value'` in `hash.fetch(:key) { 'value' }` is detected
-      # when frozen string literal magic comment is enabled (i.e. `# frozen_string_literal: true`),
+      # when frozen string literal magic comment is enabled (i.e. ``),
       # but not when disabled.
       #
       # @safety

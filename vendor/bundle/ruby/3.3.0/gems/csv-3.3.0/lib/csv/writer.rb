@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 require_relative "input_record_separator"
 require_relative "row"

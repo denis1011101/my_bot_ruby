@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+
 
 require "active_support/log_subscriber"
 require "active_support/logger"
