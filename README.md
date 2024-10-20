@@ -1,4 +1,4 @@
-[![CI](https://github.com/denis1011101/my_bot_ruby/actions/workflows/main.yml/badge.svg)](https://github.com/denis1011101/my_bot_ruby/actions/workflows/main.yml)
+[![CI](https://github.com/denis1011101/my_bot_ruby/actions/workflows/CI.yml/badge.svg)](https://github.com/denis1011101/my_bot_ruby/actions/workflows/CI.yml)
 
 crontab -e:
 
