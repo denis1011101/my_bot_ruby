@@ -1,41 +1,106 @@
 # frozen_string_literal: true
 
+# BirthdayChecker class is responsible for checking birthdays and sending notifications about them.
 class BirthdayChecker
+  NOTIFICATION_TIMES = ['13:30', '15:30', '21:30', '23:30'].freeze
+  SECONDS_IN_WEEK = 7 * 24 * 60 * 60
+
+  Birthday = Struct.new(:date, :name, :day, :month, :year) do
+    def age
+      year ? Time.now.year - year : 'unknown'
+    end
+
+    def birthday_date
+      @birthday_date ||= Time.new(Time.now.year, month, day)
+    end
+
+    def birthday_today?
+      day == Time.now.day && month == Time.now.month
+    end
+
+    def birthday_in_week?
+      today = Time.now
+      next_week = today + SECONDS_IN_WEEK
+
+      birthday_this_year = Time.new(today.year, month, day)
+      birthday_next_year = Time.new(today.year + 1, month, day)
+
+      [birthday_this_year, birthday_next_year].any? do |date|
+        (today.to_date..next_week.to_date).include?(date.to_date)
+      end
+    end
+  end
+
   def initialize(yaml_manager, telegram_bot)
     @yaml_manager = yaml_manager
     @telegram_bot = telegram_bot
   end
 
-  def birthday_today
-    current_time = Time.now.strftime('%H.%M').to_f
-    return puts 'not birthday time or no birthday today' unless [13.30, 15.30, 21.30, 23.30].include?(current_time)
+  def check_birthdays
+    return unless notification_time?
+    return puts 'no birthday' if birthdays.empty?
 
-    check_birthdays
+    birthdays.each do |birthday|
+      send_notifications(birthday)
+    end
   end
 
   private
 
-  def check_birthdays
-    birthdays = @yaml_manager.read_yml(:birthdays)
-    puts "Birthdays: #{birthdays}"
-    return puts 'no birthday' unless birthdays
+  def notification_time?
+    NOTIFICATION_TIMES.include?(Time.now.strftime('%H:%M'))
+  end
 
-    birthdays.each do |birthday|
-      process_birthday(birthday)
+  def birthdays
+    @birthdays ||= parse_birthdays
+  end
+
+  def parse_birthdays
+    raw_birthdays = @yaml_manager.read_yml(:birthdays) || []
+    raw_birthdays.map do |birthday_string|
+      date, name = birthday_string.split(' - ')
+      day, month, year = date.split('.').map(&:to_i)
+      Birthday.new(date, name, day, month, year)
     end
   end
 
-  def process_birthday(birthday)
-    date, name = birthday.split(' - ')
-    day, month, year = date.split('.')
-
-    return unless birthday_today?(day, month)
-
-    age = year.nil? ? 'unknown' : Time.now.year - year.to_i
-    @telegram_bot.send_message("#{name}'s birthday today! #{age} years old")
+  def send_notifications(birthday)
+    if birthday.birthday_today?
+      send_today_notification(birthday)
+    elsif birthday.birthday_in_week?
+      send_weekly_notification(birthday)
+    end
   end
 
-  def birthday_today?(day, month)
-    day.to_i == Time.now.day && month.to_i == Time.now.month
+  def send_today_notification(birthday)
+    @telegram_bot.send_message(
+      "🎉 Сегодня день рождения у #{birthday.name}!#{age_message(birthday)}"
+    )
+  end
+
+  def send_weekly_notification(birthday)
+    @telegram_bot.send_message(
+      "📅 На этой неделе день рождения у #{birthday.name}!#{age_message(birthday)}"
+    )
+  end
+
+  def age_message(birthday)
+    birthday.age == 'unknown' ? '' : " Исполняется #{birthday.age} #{year_word_form(birthday.age)}!"
+  end
+
+  def birthday_age_message(birthday)
+    return '' if birthday.age == 'unknown'
+
+    "Исполняется #{birthday.age} #{year_word_form(birthday.age)}!"
+  end
+
+  def year_word_form(age)
+    return 'лет' if (11..14).include?(age % 100)
+
+    case age % 10
+    when 1 then 'год'
+    when 2..4 then 'года'
+    else 'лет'
+    end
   end
 end

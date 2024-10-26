@@ -15,7 +15,7 @@ command_processor = CommandProcessor.new(yaml_manager, telegram_bot, message_for
 birthday_checker = BirthdayChecker.new(yaml_manager, telegram_bot)
 
 def listener(birthday_checker, telegram_bot, command_processor)
-  birthday_checker.birthday_today
+  birthday_checker.check_birthdays
   message = telegram_bot.receive_message
 
   return unless message

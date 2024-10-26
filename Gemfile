@@ -11,6 +11,7 @@ gem 'psych'
 
 group :development, :test do
   gem 'rubocop', require: false
+  gem 'timecop', require: false
   gem 'rbs'
   gem 'rspec'
   gem 'steep'
