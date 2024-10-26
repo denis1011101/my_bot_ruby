@@ -3,6 +3,7 @@ require_relative 'lib/services/message_formatter'
 require_relative 'lib/services/telegram_bot'
 require_relative 'lib/services/command_processor'
 require_relative 'lib/services/birthday_checker'
+require_relative 'lib/services/shuffler'
 require_relative 'config'
 
 yaml_manager = YamlManager.new(FILE)
@@ -22,14 +23,16 @@ end
 
 def start_send_telegram_message(telegram_bot, message_formatter, yaml_manager)
   if valid_send_time?
-    telegram_bot.send_message(message_formatter.format_message(shuffle_some_words(yaml_manager), header: true))
+    shuffler = Shuffler.new(yaml_manager)
+    shuffled_words = shuffler.shuffle_some_words
+    telegram_bot.send_message(message_formatter.format_message(shuffled_words, header: true))
   else
     puts 'sleep'
   end
 end
 
 def valid_send_time?
-  TIME_NOW.hour.between?(11, 23) && TIME_NOW.min == 30
+  TIME_NOW.hour.between?(11, 23) && TIME_NOW.min == 04
 end
 
 listener(birthday_checker, telegram_bot, command_processor)

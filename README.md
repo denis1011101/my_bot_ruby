@@ -1,5 +1,9 @@
 [![CI](https://github.com/denis1011101/my_bot_ruby/actions/workflows/CI.yml/badge.svg)](https://github.com/denis1011101/my_bot_ruby/actions/workflows/CI.yml)
 
+This is my pets project for make life little bit easy!
+
+## Old information for deploy:
+
 crontab -e:
 
 */10 * * * * /bin/bash -l -c 'cd /home/my_bot_ruby && '\''./start.sh'\'''
