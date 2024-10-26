@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 # heavily based on Masao Mutoh's gettext String interpolation extension
 # http://github.com/mutoh/gettext/blob/f6566738b981fe0952548c421042ad1e0cdfb31e/lib/gettext/core_ext/string.rb

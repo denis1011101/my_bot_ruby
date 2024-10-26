@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 #
 # \Module \Base64 provides methods for:
 #

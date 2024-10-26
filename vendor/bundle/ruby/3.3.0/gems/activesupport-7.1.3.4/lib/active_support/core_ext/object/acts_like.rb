@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 class Object
   # Provides a way to check whether some class acts like some other class based on the existence of

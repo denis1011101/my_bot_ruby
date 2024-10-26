@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 # This class is the base class for \Net::HTTP response classes.
 #
@@ -735,3 +735,4 @@ class Net::HTTPResponse
   end
 
 end
+

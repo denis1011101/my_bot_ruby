@@ -1,5 +1,5 @@
 # typed: strict
-
+# frozen_string_literal: true
 
 module RubyLsp
   # The path to the `static_docs` directory, where we keep long-form static documentation

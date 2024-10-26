@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 # Represents a simplistic (non-contextual) change. Represents the removal or
 # addition of an element from either the old or the new sequenced

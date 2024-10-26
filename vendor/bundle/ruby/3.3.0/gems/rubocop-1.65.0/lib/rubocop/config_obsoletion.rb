@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 module RuboCop
   # This class handles obsolete configuration.

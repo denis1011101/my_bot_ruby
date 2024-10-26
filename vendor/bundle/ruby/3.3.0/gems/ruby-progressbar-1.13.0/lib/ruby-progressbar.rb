@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 require 'ruby-progressbar/base'
 require 'ruby-progressbar/refinements' if Module.

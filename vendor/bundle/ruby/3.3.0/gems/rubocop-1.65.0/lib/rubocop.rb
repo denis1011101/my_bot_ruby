@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 require 'English'
 before_us = $LOADED_FEATURES.dup

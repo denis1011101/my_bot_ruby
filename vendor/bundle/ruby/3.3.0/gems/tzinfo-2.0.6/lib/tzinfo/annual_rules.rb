@@ -1,5 +1,5 @@
 # encoding: UTF-8
-
+# frozen_string_literal: true
 
 module TZInfo
   # A set of rules that define when transitions occur in time zones with

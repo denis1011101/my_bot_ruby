@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 # Polyfill for String#unpack1 with the offset parameter. Not all Ruby engines
 # have Method#parameters implemented, so we check the arity instead if

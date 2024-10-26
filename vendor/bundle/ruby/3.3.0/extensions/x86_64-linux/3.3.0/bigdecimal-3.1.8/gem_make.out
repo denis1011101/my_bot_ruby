@@ -32,17 +32,17 @@ checking for RB_WARN_CATEGORY_DEPRECATED in ruby.h... yes
 creating Makefile
 
 current directory: /home/denis/my/my_bot_ruby/vendor/bundle/ruby/3.3.0/gems/bigdecimal-3.1.8/ext/bigdecimal
-make DESTDIR\= sitearchdir\=./.gem.20240720-18952-im26g2 sitelibdir\=./.gem.20240720-18952-im26g2 clean
+make DESTDIR\= sitearchdir\=./.gem.20241026-18436-k1xjl2 sitelibdir\=./.gem.20241026-18436-k1xjl2 clean
 
 current directory: /home/denis/my/my_bot_ruby/vendor/bundle/ruby/3.3.0/gems/bigdecimal-3.1.8/ext/bigdecimal
-make DESTDIR\= sitearchdir\=./.gem.20240720-18952-im26g2 sitelibdir\=./.gem.20240720-18952-im26g2
+make DESTDIR\= sitearchdir\=./.gem.20241026-18436-k1xjl2 sitelibdir\=./.gem.20241026-18436-k1xjl2
 compiling bigdecimal.c
 compiling missing.c
 linking shared-object bigdecimal.so
 
 current directory: /home/denis/my/my_bot_ruby/vendor/bundle/ruby/3.3.0/gems/bigdecimal-3.1.8/ext/bigdecimal
-make DESTDIR\= sitearchdir\=./.gem.20240720-18952-im26g2 sitelibdir\=./.gem.20240720-18952-im26g2 install
-/usr/bin/install -c -m 0755 bigdecimal.so ./.gem.20240720-18952-im26g2
+make DESTDIR\= sitearchdir\=./.gem.20241026-18436-k1xjl2 sitelibdir\=./.gem.20241026-18436-k1xjl2 install
+/usr/bin/install -c -m 0755 bigdecimal.so ./.gem.20241026-18436-k1xjl2
 
 current directory: /home/denis/my/my_bot_ruby/vendor/bundle/ruby/3.3.0/gems/bigdecimal-3.1.8/ext/bigdecimal
-make DESTDIR\= sitearchdir\=./.gem.20240720-18952-im26g2 sitelibdir\=./.gem.20240720-18952-im26g2 clean
+make DESTDIR\= sitearchdir\=./.gem.20241026-18436-k1xjl2 sitelibdir\=./.gem.20241026-18436-k1xjl2 clean

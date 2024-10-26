@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 # FIXME: Moving Rails department code to RuboCop Rails will remove
 # the following rubocop:disable comment.

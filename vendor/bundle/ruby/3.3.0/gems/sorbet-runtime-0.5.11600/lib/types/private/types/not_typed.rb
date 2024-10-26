@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 # typed: true
 
 # A placeholder for when an untyped thing must provide a type.

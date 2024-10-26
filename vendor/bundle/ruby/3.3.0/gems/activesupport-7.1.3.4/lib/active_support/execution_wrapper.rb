@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 require "active_support/error_reporter"
 require "active_support/callbacks"

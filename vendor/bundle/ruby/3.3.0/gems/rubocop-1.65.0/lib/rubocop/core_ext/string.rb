@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 # Extensions to the core String class
 class String

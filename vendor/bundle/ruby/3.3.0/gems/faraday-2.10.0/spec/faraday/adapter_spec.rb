@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 RSpec.describe Faraday::Adapter do
   let(:adapter) { Faraday::Adapter.new }

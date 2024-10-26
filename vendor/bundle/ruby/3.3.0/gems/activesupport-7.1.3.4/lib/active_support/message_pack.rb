@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 begin
   gem "msgpack", ">= 1.7.0"

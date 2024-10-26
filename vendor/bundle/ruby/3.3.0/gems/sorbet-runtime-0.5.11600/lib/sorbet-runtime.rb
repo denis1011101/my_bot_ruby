@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 # typed: true
 
 # This file is hand-crafted to encode the dependencies. They load the whole type

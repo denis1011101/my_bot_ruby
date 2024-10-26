@@ -1,5 +1,5 @@
 # encoding: UTF-8
-
+# frozen_string_literal: true
 
 module TZInfo
   # Base class for rules definining the transition between standard and daylight

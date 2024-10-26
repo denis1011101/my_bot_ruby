@@ -3,16 +3,16 @@ current directory: /home/denis/my/my_bot_ruby/vendor/bundle/ruby/3.3.0/gems/racc
 creating Makefile
 
 current directory: /home/denis/my/my_bot_ruby/vendor/bundle/ruby/3.3.0/gems/racc-1.8.0/ext/racc/cparse
-make DESTDIR\= sitearchdir\=./.gem.20240720-17601-tonne8 sitelibdir\=./.gem.20240720-17601-tonne8 clean
+make DESTDIR\= sitearchdir\=./.gem.20241026-18436-6durid sitelibdir\=./.gem.20241026-18436-6durid clean
 
 current directory: /home/denis/my/my_bot_ruby/vendor/bundle/ruby/3.3.0/gems/racc-1.8.0/ext/racc/cparse
-make DESTDIR\= sitearchdir\=./.gem.20240720-17601-tonne8 sitelibdir\=./.gem.20240720-17601-tonne8
+make DESTDIR\= sitearchdir\=./.gem.20241026-18436-6durid sitelibdir\=./.gem.20241026-18436-6durid
 compiling cparse.c
 linking shared-object racc/cparse.so
 
 current directory: /home/denis/my/my_bot_ruby/vendor/bundle/ruby/3.3.0/gems/racc-1.8.0/ext/racc/cparse
-make DESTDIR\= sitearchdir\=./.gem.20240720-17601-tonne8 sitelibdir\=./.gem.20240720-17601-tonne8 install
-/usr/bin/install -c -m 0755 cparse.so ./.gem.20240720-17601-tonne8/racc
+make DESTDIR\= sitearchdir\=./.gem.20241026-18436-6durid sitelibdir\=./.gem.20241026-18436-6durid install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20241026-18436-6durid/racc
 
 current directory: /home/denis/my/my_bot_ruby/vendor/bundle/ruby/3.3.0/gems/racc-1.8.0/ext/racc/cparse
-make DESTDIR\= sitearchdir\=./.gem.20240720-17601-tonne8 sitelibdir\=./.gem.20240720-17601-tonne8 clean
+make DESTDIR\= sitearchdir\=./.gem.20241026-18436-6durid sitelibdir\=./.gem.20241026-18436-6durid clean

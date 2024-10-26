@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 module RuboCop
   module Cop
@@ -33,7 +33,7 @@ module RuboCop
       #   # The `kebab_case` style will enforce that the frozen string literal
       #   # comment is written in kebab case. (Words separated by hyphens)
       #   # bad
-      #
+      #   # frozen_string_literal: true
       #
       #   module Baz
       #     # ...

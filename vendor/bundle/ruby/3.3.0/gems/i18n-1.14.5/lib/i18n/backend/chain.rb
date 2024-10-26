@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 module I18n
   module Backend
@@ -16,7 +16,7 @@ module I18n
     #
     # The implementation assumes that all backends added to the Chain implement
     # a lookup method with the same API as Simple backend does.
-    #
+    # 
     # Fallback translations using the :default option are only used by the last backend of a chain.
     class Chain
       module Implementation

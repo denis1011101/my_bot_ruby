@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'lib/my_bot_ruby/version'
 
 Gem::Specification.new do |spec|

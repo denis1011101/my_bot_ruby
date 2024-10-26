@@ -1,5 +1,5 @@
 # typed: true
-
+# frozen_string_literal: true
 
 module T::Configuration
   # Cache this comparisonn to avoid two allocations all over the place.

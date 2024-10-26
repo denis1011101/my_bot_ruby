@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 class Hash
   # Replaces the hash with only the given keys.

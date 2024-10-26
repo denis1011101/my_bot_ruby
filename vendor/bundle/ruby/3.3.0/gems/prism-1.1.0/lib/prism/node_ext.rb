@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 # Here we are reopening the prism module to provide methods on nodes that aren't
 # templated and are meant as convenience methods.

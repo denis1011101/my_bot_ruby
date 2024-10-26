@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 require "active_support/security_utils"
 require "active_support/messages/rotator"

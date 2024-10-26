@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 require 'mkmf'
 if RUBY_ENGINE == 'ruby'
   $INCFLAGS << " -I$(top_srcdir)" if $extmk

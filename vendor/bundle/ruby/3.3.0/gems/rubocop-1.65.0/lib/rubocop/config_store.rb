@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 module RuboCop
   # Handles caching of configurations and association of inspected

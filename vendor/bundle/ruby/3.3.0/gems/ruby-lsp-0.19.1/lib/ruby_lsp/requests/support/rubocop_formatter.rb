@@ -1,5 +1,5 @@
 # typed: strict
-
+# frozen_string_literal: true
 
 return unless defined?(RubyLsp::Requests::Support::RuboCopRunner)
 

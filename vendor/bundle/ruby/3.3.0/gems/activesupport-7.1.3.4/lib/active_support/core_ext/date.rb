@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 require "active_support/core_ext/date/acts_like"
 require "active_support/core_ext/date/blank"

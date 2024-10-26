@@ -1,11 +1,11 @@
-
+# frozen_string_literal: true
 
 module RuboCop
   module Cop
     module Style
       # Helps you transition from mutable string literals
       # to frozen string literals.
-      # It will add the `` magic comment to the top
+      # It will add the `# frozen_string_literal: true` magic comment to the top
       # of files to enable frozen string literals. Frozen string literals may be
       # default in future Ruby. The comment will be added below a shebang and
       # encoding comment. The frozen string literal comment is only valid in Ruby 2.3+.
@@ -31,7 +31,7 @@ module RuboCop
       #   end
       #
       #   # good
-      #
+      #   # frozen_string_literal: true
       #
       #   module Bar
       #     # ...
@@ -48,7 +48,7 @@ module RuboCop
       #   # The `never` will enforce that the frozen string literal comment does
       #   # not exist in a file.
       #   # bad
-      #
+      #   # frozen_string_literal: true
       #
       #   module Baz
       #     # ...
@@ -76,7 +76,7 @@ module RuboCop
       #   end
       #
       #   # good
-      #
+      #   # frozen_string_literal: true
       #
       #   module Bar
       #     # ...
@@ -90,7 +90,7 @@ module RuboCop
 
         minimum_target_ruby_version 2.3
 
-        MSG_MISSING_TRUE = 'Missing magic comment ``.'
+        MSG_MISSING_TRUE = 'Missing magic comment `# frozen_string_literal: true`.'
         MSG_MISSING = 'Missing frozen string literal comment.'
         MSG_UNNECESSARY = 'Unnecessary frozen string literal comment.'
         MSG_DISABLED = 'Frozen string literal comment must be set to `true`.'

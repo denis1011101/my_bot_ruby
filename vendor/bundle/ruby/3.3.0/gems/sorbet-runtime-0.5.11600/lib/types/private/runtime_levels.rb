@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 # typed: true
 
 # Used in `sig.checked(level)` to determine when runtime type checking

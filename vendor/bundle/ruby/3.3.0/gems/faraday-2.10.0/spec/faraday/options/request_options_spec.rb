@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 RSpec.describe Faraday::RequestOptions do
   subject(:options) { Faraday::RequestOptions.new }

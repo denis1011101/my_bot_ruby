@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 module RuboCop
   # This is a class that reads optional command line arguments to rubocop from environment variable.

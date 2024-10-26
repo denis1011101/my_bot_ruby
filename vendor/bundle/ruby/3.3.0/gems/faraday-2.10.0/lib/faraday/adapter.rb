@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 module Faraday
   # Base class for all Faraday adapters. Adapters are

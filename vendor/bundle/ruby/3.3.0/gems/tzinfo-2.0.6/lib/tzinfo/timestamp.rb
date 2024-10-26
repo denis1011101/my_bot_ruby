@@ -1,5 +1,5 @@
 # encoding: UTF-8
-
+# frozen_string_literal: true
 
 module TZInfo
   # A time represented as an `Integer` number of seconds since 1970-01-01

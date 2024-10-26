@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 module Faraday
   # Used to setup URLs, params, headers, and the request body in a sane manner.

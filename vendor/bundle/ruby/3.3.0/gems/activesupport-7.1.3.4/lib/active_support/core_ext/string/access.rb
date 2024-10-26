@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 class String
   # If you pass a single integer, returns a substring of one character at that

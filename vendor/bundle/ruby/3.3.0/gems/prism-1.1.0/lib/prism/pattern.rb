@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 module Prism
   # A pattern is an object that wraps a Ruby pattern matching expression. The

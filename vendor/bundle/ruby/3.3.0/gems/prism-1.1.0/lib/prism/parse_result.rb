@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 module Prism
   # This represents a source of Ruby code that has been parsed. It is used in

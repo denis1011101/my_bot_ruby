@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 module RuboCop
   # Handles validation of configuration, for example cop names, parameter

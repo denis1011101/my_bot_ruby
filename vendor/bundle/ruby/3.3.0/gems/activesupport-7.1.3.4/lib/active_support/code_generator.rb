@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 module ActiveSupport
   class CodeGenerator # :nodoc:
@@ -24,7 +24,7 @@ module ActiveSupport
 
       def apply(owner, path, line)
         unless @sources.empty?
-          @cache.module_eval("\n" + @sources.join(";"), path, line)
+          @cache.module_eval("# frozen_string_literal: true\n" + @sources.join(";"), path, line)
         end
         @methods.each do |name, as|
           owner.define_method(name, @cache.instance_method(as))

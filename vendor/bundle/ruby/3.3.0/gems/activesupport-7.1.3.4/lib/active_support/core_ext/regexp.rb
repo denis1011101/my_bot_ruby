@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 class Regexp
   # Returns +true+ if the regexp has the multiline flag set.

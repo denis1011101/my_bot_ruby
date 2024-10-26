@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 module RuboCop
   # Common functionality for finding names that are similar to a given name.

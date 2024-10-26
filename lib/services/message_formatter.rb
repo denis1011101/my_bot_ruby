@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class MessageFormatter
   def format_message(words, header: false)
     words.unshift('english words:')

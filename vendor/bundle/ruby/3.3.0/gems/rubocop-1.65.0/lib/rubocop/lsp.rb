@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 module RuboCop
   # The RuboCop's built-in LSP module.

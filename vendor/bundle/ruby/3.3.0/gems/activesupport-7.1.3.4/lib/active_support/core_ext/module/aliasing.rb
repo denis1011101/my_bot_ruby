@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 class Module
   # Allows you to make aliases for attributes, which includes

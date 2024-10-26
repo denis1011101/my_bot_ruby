@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 # HTTP/1.1 methods --- RFC2616
 
@@ -422,3 +422,4 @@ class Net::HTTP::Unlock < Net::HTTPRequest
   REQUEST_HAS_BODY = true
   RESPONSE_HAS_BODY = true
 end
+

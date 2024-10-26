@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 require_relative "sax/document"
 require_relative "sax/parser_context"

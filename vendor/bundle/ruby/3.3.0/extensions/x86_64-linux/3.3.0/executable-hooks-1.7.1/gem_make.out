@@ -5,28 +5,20 @@ bundler 2.5.11
 diff-lcs 1.5.1
 erb 4.0.3
 irb 1.13.1
-listen 3.9.0
-nokogiri 1.16.6
-parser 3.3.4.0
-racc 1.8.0
-rbs 3.5.2
 rdoc 6.6.3.1
-rspec-core 3.13.0
-rubocop 1.65.0
-steep 1.7.1
 
 current directory: /home/denis/my/my_bot_ruby/vendor/bundle/ruby/3.3.0/gems/executable-hooks-1.7.1/ext/wrapper_installer
-make DESTDIR\= sitearchdir\=./.gem.20240720-17707-agd3by sitelibdir\=./.gem.20240720-17707-agd3by clean
+make DESTDIR\= sitearchdir\=./.gem.20241026-18436-7g9txi sitelibdir\=./.gem.20241026-18436-7g9txi clean
 make: *** No rule to make target 'clean'.  Stop.
 
 current directory: /home/denis/my/my_bot_ruby/vendor/bundle/ruby/3.3.0/gems/executable-hooks-1.7.1/ext/wrapper_installer
-make DESTDIR\= sitearchdir\=./.gem.20240720-17707-agd3by sitelibdir\=./.gem.20240720-17707-agd3by
+make DESTDIR\= sitearchdir\=./.gem.20241026-18436-7g9txi sitelibdir\=./.gem.20241026-18436-7g9txi
 make: Nothing to be done for 'all'.
 
 current directory: /home/denis/my/my_bot_ruby/vendor/bundle/ruby/3.3.0/gems/executable-hooks-1.7.1/ext/wrapper_installer
-make DESTDIR\= sitearchdir\=./.gem.20240720-17707-agd3by sitelibdir\=./.gem.20240720-17707-agd3by install
+make DESTDIR\= sitearchdir\=./.gem.20241026-18436-7g9txi sitelibdir\=./.gem.20241026-18436-7g9txi install
 make: Nothing to be done for 'install'.
 
 current directory: /home/denis/my/my_bot_ruby/vendor/bundle/ruby/3.3.0/gems/executable-hooks-1.7.1/ext/wrapper_installer
-make DESTDIR\= sitearchdir\=./.gem.20240720-17707-agd3by sitelibdir\=./.gem.20240720-17707-agd3by clean
+make DESTDIR\= sitearchdir\=./.gem.20241026-18436-7g9txi sitelibdir\=./.gem.20241026-18436-7g9txi clean
 make: *** No rule to make target 'clean'.  Stop.

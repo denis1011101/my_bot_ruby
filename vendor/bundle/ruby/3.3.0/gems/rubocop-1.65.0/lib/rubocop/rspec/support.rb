@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 # Require this file to load code that supports testing using RSpec.
 

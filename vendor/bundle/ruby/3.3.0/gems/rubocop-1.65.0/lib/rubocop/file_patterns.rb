@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 module RuboCop
   # A wrapper around patterns array to perform optimized search.

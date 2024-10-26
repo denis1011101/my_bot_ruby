@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class BirthdayChecker
   def initialize(yaml_manager, telegram_bot)
     @yaml_manager = yaml_manager

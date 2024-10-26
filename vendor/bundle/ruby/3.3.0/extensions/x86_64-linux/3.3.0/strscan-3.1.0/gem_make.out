@@ -5,16 +5,16 @@ checking for rb_reg_onig_match() in ruby.h... yes
 creating Makefile
 
 current directory: /home/denis/my/my_bot_ruby/vendor/bundle/ruby/3.3.0/gems/strscan-3.1.0/ext/strscan
-make DESTDIR\= sitearchdir\=./.gem.20240720-17601-5l3urv sitelibdir\=./.gem.20240720-17601-5l3urv clean
+make DESTDIR\= sitearchdir\=./.gem.20241026-18436-1j4vn4 sitelibdir\=./.gem.20241026-18436-1j4vn4 clean
 
 current directory: /home/denis/my/my_bot_ruby/vendor/bundle/ruby/3.3.0/gems/strscan-3.1.0/ext/strscan
-make DESTDIR\= sitearchdir\=./.gem.20240720-17601-5l3urv sitelibdir\=./.gem.20240720-17601-5l3urv
+make DESTDIR\= sitearchdir\=./.gem.20241026-18436-1j4vn4 sitelibdir\=./.gem.20241026-18436-1j4vn4
 compiling strscan.c
 linking shared-object strscan.so
 
 current directory: /home/denis/my/my_bot_ruby/vendor/bundle/ruby/3.3.0/gems/strscan-3.1.0/ext/strscan
-make DESTDIR\= sitearchdir\=./.gem.20240720-17601-5l3urv sitelibdir\=./.gem.20240720-17601-5l3urv install
-/usr/bin/install -c -m 0755 strscan.so ./.gem.20240720-17601-5l3urv
+make DESTDIR\= sitearchdir\=./.gem.20241026-18436-1j4vn4 sitelibdir\=./.gem.20241026-18436-1j4vn4 install
+/usr/bin/install -c -m 0755 strscan.so ./.gem.20241026-18436-1j4vn4
 
 current directory: /home/denis/my/my_bot_ruby/vendor/bundle/ruby/3.3.0/gems/strscan-3.1.0/ext/strscan
-make DESTDIR\= sitearchdir\=./.gem.20240720-17601-5l3urv sitelibdir\=./.gem.20240720-17601-5l3urv clean
+make DESTDIR\= sitearchdir\=./.gem.20241026-18436-1j4vn4 sitelibdir\=./.gem.20241026-18436-1j4vn4 clean

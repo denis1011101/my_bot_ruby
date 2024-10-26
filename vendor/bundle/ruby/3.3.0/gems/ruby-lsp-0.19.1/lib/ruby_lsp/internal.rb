@@ -1,5 +1,5 @@
 # typed: strict
-
+# frozen_string_literal: true
 
 # If YARP is in the bundle, we have to remove it from the $LOAD_PATH because it contains a default export named `prism`
 # that will conflict with the actual Prism gem

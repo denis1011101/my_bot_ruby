@@ -3,14 +3,14 @@ current directory: /home/denis/my/my_bot_ruby/vendor/bundle/ruby/3.3.0/gems/json
 creating Makefile
 
 current directory: /home/denis/my/my_bot_ruby/vendor/bundle/ruby/3.3.0/gems/json-2.7.2/ext/json
-make DESTDIR\= sitearchdir\=./.gem.20240720-17601-u7kd2 sitelibdir\=./.gem.20240720-17601-u7kd2 clean
+make DESTDIR\= sitearchdir\=./.gem.20241026-18436-w39o30 sitelibdir\=./.gem.20241026-18436-w39o30 clean
 
 current directory: /home/denis/my/my_bot_ruby/vendor/bundle/ruby/3.3.0/gems/json-2.7.2/ext/json
-make DESTDIR\= sitearchdir\=./.gem.20240720-17601-u7kd2 sitelibdir\=./.gem.20240720-17601-u7kd2
+make DESTDIR\= sitearchdir\=./.gem.20241026-18436-w39o30 sitelibdir\=./.gem.20241026-18436-w39o30
 make: Nothing to be done for 'all'.
 
 current directory: /home/denis/my/my_bot_ruby/vendor/bundle/ruby/3.3.0/gems/json-2.7.2/ext/json
-make DESTDIR\= sitearchdir\=./.gem.20240720-17601-u7kd2 sitelibdir\=./.gem.20240720-17601-u7kd2 install
+make DESTDIR\= sitearchdir\=./.gem.20241026-18436-w39o30 sitelibdir\=./.gem.20241026-18436-w39o30 install
 
 current directory: /home/denis/my/my_bot_ruby/vendor/bundle/ruby/3.3.0/gems/json-2.7.2/ext/json
-make DESTDIR\= sitearchdir\=./.gem.20240720-17601-u7kd2 sitelibdir\=./.gem.20240720-17601-u7kd2 clean
+make DESTDIR\= sitearchdir\=./.gem.20241026-18436-w39o30 sitelibdir\=./.gem.20241026-18436-w39o30 clean

@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 class Logger
   # Default formatter for log messages.

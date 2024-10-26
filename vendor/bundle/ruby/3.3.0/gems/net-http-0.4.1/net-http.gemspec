@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 name = File.basename(__FILE__, ".gemspec")
 version = ["lib", Array.new(name.count("-")+1, "..").join("/")].find do |dir|

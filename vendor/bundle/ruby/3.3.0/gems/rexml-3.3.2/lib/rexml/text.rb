@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 require_relative 'security'
 require_relative 'entity'
 require_relative 'doctype'

@@ -30,18 +30,18 @@ ar: creating build/libprism.a
 creating Makefile
 
 current directory: /home/denis/my/my_bot_ruby/vendor/bundle/ruby/3.3.0/gems/prism-1.1.0/ext/prism
-make DESTDIR\= sitearchdir\=./.gem.20241009-20230-u7vree sitelibdir\=./.gem.20241009-20230-u7vree clean
+make DESTDIR\= sitearchdir\=./.gem.20241026-18436-xjrrfp sitelibdir\=./.gem.20241026-18436-xjrrfp clean
 
 current directory: /home/denis/my/my_bot_ruby/vendor/bundle/ruby/3.3.0/gems/prism-1.1.0/ext/prism
-make DESTDIR\= sitearchdir\=./.gem.20241009-20230-u7vree sitelibdir\=./.gem.20241009-20230-u7vree
+make DESTDIR\= sitearchdir\=./.gem.20241026-18436-xjrrfp sitelibdir\=./.gem.20241026-18436-xjrrfp
 compiling api_node.c
 compiling api_pack.c
 compiling extension.c
 linking shared-object prism/prism.so
 
 current directory: /home/denis/my/my_bot_ruby/vendor/bundle/ruby/3.3.0/gems/prism-1.1.0/ext/prism
-make DESTDIR\= sitearchdir\=./.gem.20241009-20230-u7vree sitelibdir\=./.gem.20241009-20230-u7vree install
-/usr/bin/install -c -m 0755 prism.so ./.gem.20241009-20230-u7vree/prism
+make DESTDIR\= sitearchdir\=./.gem.20241026-18436-xjrrfp sitelibdir\=./.gem.20241026-18436-xjrrfp install
+/usr/bin/install -c -m 0755 prism.so ./.gem.20241026-18436-xjrrfp/prism
 
 current directory: /home/denis/my/my_bot_ruby/vendor/bundle/ruby/3.3.0/gems/prism-1.1.0/ext/prism
-make DESTDIR\= sitearchdir\=./.gem.20241009-20230-u7vree sitelibdir\=./.gem.20241009-20230-u7vree clean
+make DESTDIR\= sitearchdir\=./.gem.20241026-18436-xjrrfp sitelibdir\=./.gem.20241026-18436-xjrrfp clean

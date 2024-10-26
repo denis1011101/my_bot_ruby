@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 # typed: true
 
 # Specialization of Union for the common case of the union of two simple types.

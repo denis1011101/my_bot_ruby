@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 module Faraday
   # FlatParamsEncoder manages URI params as a flat hash. Any Array values repeat

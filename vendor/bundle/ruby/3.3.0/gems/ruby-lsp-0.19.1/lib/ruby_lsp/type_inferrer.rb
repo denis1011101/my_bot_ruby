@@ -1,5 +1,5 @@
 # typed: strict
-
+# frozen_string_literal: true
 
 module RubyLsp
   # A minimalistic type checker to try to resolve types that can be inferred without requiring a type system or

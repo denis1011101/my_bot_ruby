@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 # typed: true
 
 class T::Private::DeclState

@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 RSpec.describe Faraday::Request::Json do
   let(:middleware) { described_class.new(->(env) { Faraday::Response.new(env) }) }

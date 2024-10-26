@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 shared_examples 'an adapter' do |**options|
   before { skip } if options[:skip]

@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 # https://jira.corp.stripe.com/browse/RUBYPLAT-1107
 # typed: false
 

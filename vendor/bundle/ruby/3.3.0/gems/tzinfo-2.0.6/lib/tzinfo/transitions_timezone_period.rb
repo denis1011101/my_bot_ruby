@@ -1,5 +1,5 @@
 # encoding: UTF-8
-
+# frozen_string_literal: true
 
 module TZInfo
   # Represents a period of time in a time zone where the same offset from UTC

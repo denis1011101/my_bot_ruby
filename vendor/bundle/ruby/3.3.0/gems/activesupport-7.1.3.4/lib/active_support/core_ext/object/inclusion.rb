@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 class Object
   # Returns true if this object is included in the argument.

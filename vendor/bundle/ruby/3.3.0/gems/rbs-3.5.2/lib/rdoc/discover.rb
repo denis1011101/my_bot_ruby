@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 begin
   gem 'rdoc', '~> 6.4'

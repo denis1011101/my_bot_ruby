@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 # Besides programming error exceptions like ArgumentError,
 # all public interface exceptions should be declared here and inherit from Listen::Error.

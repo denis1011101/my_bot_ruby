@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 class CSV
   # Note: Don't use this class directly. This is an internal class.

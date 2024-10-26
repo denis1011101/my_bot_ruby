@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 # load the C or Java extension
 begin

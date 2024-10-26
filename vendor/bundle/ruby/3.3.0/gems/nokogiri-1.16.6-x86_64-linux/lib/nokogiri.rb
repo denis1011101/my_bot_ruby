@@ -1,5 +1,5 @@
 # coding: utf-8
-
+# frozen_string_literal: true
 
 if defined?(RUBY_ENGINE) && RUBY_ENGINE == "jruby"
   require_relative "nokogiri/jruby/dependencies"

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'lib/services/yaml_manager'
 require_relative 'lib/services/message_formatter'
 require_relative 'lib/services/telegram_bot'

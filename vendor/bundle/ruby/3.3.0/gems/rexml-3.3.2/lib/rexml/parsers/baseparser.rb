@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 require_relative '../parseexception'
 require_relative '../undefinednamespaceexception'
 require_relative '../source'

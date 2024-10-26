@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 begin
   gem "redis", ">= 4.0.1"

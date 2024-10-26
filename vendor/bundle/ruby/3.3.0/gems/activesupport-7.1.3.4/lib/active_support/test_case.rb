@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 require "minitest"
 require "active_support/testing/tagged_logging"

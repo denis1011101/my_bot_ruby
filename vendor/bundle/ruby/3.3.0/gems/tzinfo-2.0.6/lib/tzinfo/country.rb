@@ -1,5 +1,5 @@
 # encoding: UTF-8
-
+# frozen_string_literal: true
 
 module TZInfo
   # {InvalidCountryCode} is raised by {Country#get} if the code given is not a

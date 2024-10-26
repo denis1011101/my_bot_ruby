@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 class Range
   # Compare two ranges and see if they overlap each other

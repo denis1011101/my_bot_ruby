@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 require "zlib"
 require "active_support/core_ext/kernel/reporting"

@@ -1,5 +1,5 @@
 # typed: strict
-
+# frozen_string_literal: true
 
 # NOTE: This module is intended to be used by addons for writing their own tests, so keep that in mind if changing.
 

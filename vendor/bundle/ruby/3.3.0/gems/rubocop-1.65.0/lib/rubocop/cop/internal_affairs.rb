@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 require_relative 'internal_affairs/cop_description'
 require_relative 'internal_affairs/create_empty_file'

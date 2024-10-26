@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 module ActiveSupport
   # Reads a YAML configuration file, evaluating any ERB, then

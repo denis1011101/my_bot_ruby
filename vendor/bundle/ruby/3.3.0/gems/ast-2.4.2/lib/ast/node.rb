@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 module AST
   # Node is an immutable class, instances of which represent abstract
