@@ -1,0 +1,25 @@
+current directory: /home/denis/my/my_bot_ruby/vendor/bundle/ruby/3.4.0/gems/executable-hooks-1.7.1/ext/wrapper_installer
+/usr/share/rvm/rubies/ruby-3.4.1/bin/ruby extconf.rb
+bundler 2.6.5
+bundler 2.5.16
+diff-lcs 1.5.1
+erb 4.0.4
+irb 1.14.3
+rdoc 6.10.0
+syntax_suggest 2.0.2
+
+current directory: /home/denis/my/my_bot_ruby/vendor/bundle/ruby/3.4.0/gems/executable-hooks-1.7.1/ext/wrapper_installer
+make DESTDIR\= sitearchdir\=./.gem.20250515-6089-p6bwqz sitelibdir\=./.gem.20250515-6089-p6bwqz clean
+make: *** No rule to make target 'clean'.  Stop.
+
+current directory: /home/denis/my/my_bot_ruby/vendor/bundle/ruby/3.4.0/gems/executable-hooks-1.7.1/ext/wrapper_installer
+make DESTDIR\= sitearchdir\=./.gem.20250515-6089-p6bwqz sitelibdir\=./.gem.20250515-6089-p6bwqz
+make: Nothing to be done for 'all'.
+
+current directory: /home/denis/my/my_bot_ruby/vendor/bundle/ruby/3.4.0/gems/executable-hooks-1.7.1/ext/wrapper_installer
+make DESTDIR\= sitearchdir\=./.gem.20250515-6089-p6bwqz sitelibdir\=./.gem.20250515-6089-p6bwqz install
+make: Nothing to be done for 'install'.
+
+current directory: /home/denis/my/my_bot_ruby/vendor/bundle/ruby/3.4.0/gems/executable-hooks-1.7.1/ext/wrapper_installer
+make DESTDIR\= sitearchdir\=./.gem.20250515-6089-p6bwqz sitelibdir\=./.gem.20250515-6089-p6bwqz clean
+make: *** No rule to make target 'clean'.  Stop.

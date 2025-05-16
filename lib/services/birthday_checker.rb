@@ -11,23 +11,28 @@ class BirthdayChecker
     end
 
     def birthday_date
-      @birthday_date ||= Time.new(Time.now.year, month, day)
+      today = Time.now
+      year = today.year
+      date = Time.new(year, month, day)
+
+      # Если день рождения уже прошел в этом году, берем дату на следующий год
+      date = Time.new(year + 1, month, day) if date < today
+
+      date
+    end
+
+    def days_until_birthday
+      today = Time.now.to_date
+      bday = birthday_date.to_date
+      (bday - today).to_i
     end
 
     def birthday_today?
-      day == Time.now.day && month == Time.now.month
+      days_until_birthday.zero?
     end
 
     def birthday_in_week?
-      today = Time.now
-      next_week = today + SECONDS_IN_WEEK
-
-      birthday_this_year = Time.new(today.year, month, day)
-      birthday_next_year = Time.new(today.year + 1, month, day)
-
-      [birthday_this_year, birthday_next_year].any? do |date|
-        (today.to_date..next_week.to_date).include?(date.to_date)
-      end
+      days_until_birthday.between?(1, 7)
     end
   end
 
@@ -79,8 +84,11 @@ class BirthdayChecker
   end
 
   def send_weekly_notification(birthday)
+    days = birthday.days_until_birthday
+    days_word = days_word_form(days)
+
     @telegram_bot.send_message(
-      "📅 На этой неделе день рождения у #{birthday.name}!#{age_message(birthday)}"
+      "📅 Через #{days} #{days_word} день рождения у #{birthday.name}!#{age_message(birthday)}"
     )
   end
 
@@ -88,10 +96,14 @@ class BirthdayChecker
     birthday.age == 'unknown' ? '' : " Исполняется #{birthday.age} #{year_word_form(birthday.age)}!"
   end
 
-  def birthday_age_message(birthday)
-    return '' if birthday.age == 'unknown'
+  def days_word_form(days)
+    return 'дней' if days >= 5 || (days >= 11 && days <= 19)
 
-    "Исполняется #{birthday.age} #{year_word_form(birthday.age)}!"
+    case days % 10
+    when 1 then 'день'
+    when 2..4 then 'дня'
+    else 'дней'
+    end
   end
 
   def year_word_form(age)
