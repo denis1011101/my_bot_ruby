@@ -16,7 +16,7 @@ jobs:
       cancel-in-progress: false
     env:
       TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
-      CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
       BROWSER_PATH: /usr/bin/chromium-browser
       BUNDLE_BUILD__NOKOGIRI: "--use-system-libraries"
     steps:
@@ -32,4 +32,4 @@ jobs:
         run: bundle install --jobs 4 --retry 3 --quiet
 
       - name: Run sender
-        run: bundle exec ./exe/sport_notify_bot send
+        run: bundle exec ruby bot.rb
