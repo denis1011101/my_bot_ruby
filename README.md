@@ -2,6 +2,12 @@
 
 This is my pets project for make life little bit easy!
 
+## Run
+
+```ruby
+bundle exec rai
+```
+
 ## Old information for deploy:
 
 crontab -e:

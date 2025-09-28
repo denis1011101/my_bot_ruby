@@ -1,8 +1,8 @@
 -include .env
 
-ifndef REMOTE_HOST
-$(error REMOTE_HOST is not set. Export REMOTE_HOST or create .env with REMOTE_HOST=...)
-endif
+# ifndef REMOTE_HOST
+# $(error REMOTE_HOST is not set. Export REMOTE_HOST or create .env with REMOTE_HOST=...)
+# endif
 
 install:
 	bundle install
