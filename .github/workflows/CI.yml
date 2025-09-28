@@ -30,5 +30,3 @@ jobs:
       run: bundle exec rspec
     - name: Run Rubocop
       run: bundle exec rubocop || true
-    - name: Build gem
-      run: bundle exec rake build

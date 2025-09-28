@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require_relative 'lib/my_bot_ruby/version'
+require_relative 'lib/version'
 
 Gem::Specification.new do |spec|
   spec.name = 'my_bot_ruby'
-  spec.version = my_bot_ruby::VERSION
+  spec.version = MyBotRuby::VERSION
   spec.authors = ['denis']
   spec.email = ['denisdenis9331@gmail.com']
 
