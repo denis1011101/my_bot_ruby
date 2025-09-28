@@ -13,7 +13,9 @@ RUN apk add --no-cache \
     libxml2-dev \
     libxslt-dev \
     pkgconfig \
-    tzdata
+    tzdata \
+    libffi-dev \
+    libyaml-dev
 
 RUN git config --global --add safe.directory '*'
 
