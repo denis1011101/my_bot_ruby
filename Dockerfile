@@ -15,7 +15,10 @@ RUN apk add --no-cache \
     pkgconfig \
     tzdata \
     libffi-dev \
-    libyaml-dev
+    libyaml \
+    libyaml-dev \
+    musl-dev \
+    yaml-dev
 
 RUN git config --global --add safe.directory '*'
 
