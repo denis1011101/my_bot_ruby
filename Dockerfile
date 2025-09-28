@@ -2,6 +2,7 @@
 FROM ruby:3.4.6-alpine
 
 RUN apk add --no-cache \
+    bash \
     chromium \
     nss \
     freetype \
