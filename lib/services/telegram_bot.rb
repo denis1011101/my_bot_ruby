@@ -35,66 +35,36 @@ class TelegramBot
     end
   end
 
-  # ...existing code...
-    def receive_message
-      puts 'receive message'
-      response = Faraday.get("https://api.telegram.org/bot#{@token}/getupdates")
-      if response.nil?
-        puts 'no response'
-        return nil
-      end
+  def receive_message
+    puts 'receive message'
+    response = Faraday.get("https://api.telegram.org/bot#{@token}/getupdates")
+    return puts 'not messages' if response.nil?
 
-      puts "HTTP status: #{response.status}"
-      puts "Response body: #{response.body.inspect}"
+    json = JSON.parse(response.body)
+    return puts 'invalid json' unless json['ok']
 
-      json = begin
-        JSON.parse(response.body)
-      rescue JSON::ParserError => e
-        puts "JSON parse error: #{e.message}"
-        return nil
-      end
+    return puts 'not message' if json['result'].nil? || json['result'][-1].nil? || json['result'][-1]['message'].nil?
 
-      unless json['ok']
-        puts "invalid json: ok=#{json['ok'].inspect}"
-        return nil
-      end
+    return puts 'invalid chat' unless json['result'][-1]['message']['from']['id'] == @admin_chat_id.to_i
 
-      results = json['result'] || []
-      return puts 'not message' if results.empty?
+    chat_id = json['result'][-1]['message']['chat']['id']
+    puts "Chat ID: #{chat_id}"
 
-      last = results[-1]
-      msg = last['message']
-      return puts 'not message' if msg.nil?
+    update_id_now = json['result'][-1]['update_id']
+    puts "Update ID: #{update_id_now}"
 
-      from_id = msg.dig('from', 'id')
-      chat_id = msg.dig('chat', 'id')
-      expected = @admin_chat_id.to_i
+    current_data = yaml_manager.read_yml(:update_id)
+    puts "Current update ID in YAML: #{current_data}"
+    puts "New update ID: #{update_id_now}"
+    return puts 'old message' if current_data == update_id_now
 
-      if expected == 0
-        puts "ADMIN_CHAT_ID is not set or invalid: #{@admin_chat_id.inspect}"
-        return nil
-      end
+    yaml_manager.write_yml(:update_id, update_id_now)
+    puts "Updated YAML data: #{yaml_manager.read_yml(:update_id)}"
 
-      unless from_id == expected || chat_id == expected
-        puts "invalid chat: from_id=#{from_id.inspect} chat_id=#{chat_id.inspect} expected=#{expected}"
-        return nil
-      end
-
-      update_id_now = last['update_id']
-      puts "Update ID: #{update_id_now}"
-
-      current_data = yaml_manager.read_yml(:update_id)
-      puts "Current update ID in YAML: #{current_data.inspect}"
-      return puts 'old message' if current_data == update_id_now
-
-      yaml_manager.write_yml(:update_id, update_id_now)
-      puts "Updated YAML data: #{yaml_manager.read_yml(:update_id).inspect}"
-
-      @text_from_message = msg['text']
-      puts "Message text: #{@text_from_message.inspect}"
-      @text_from_message
-    end
-  # ...existing code...
+    @text_from_message = json['result'][-1]['message']['text']
+    puts "Message text: #{@text_from_message}"
+    @text_from_message
+  end
 
   private
 
