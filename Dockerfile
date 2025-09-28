@@ -15,8 +15,6 @@ RUN apk add --no-cache \
     pkgconfig \
     tzdata \
     libffi-dev \
-    libyaml \
-    libyaml-dev \
     musl-dev \
     yaml-dev
 
