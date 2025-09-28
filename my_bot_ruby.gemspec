@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary = 'This is my personal telegram bot.'
   spec.homepage = 'https://github.com/denis1011101/my_bot_ruby/'
   spec.license = 'MIT'
-  spec.required_ruby_version = '= 3.2.3'
+  spec.required_ruby_version = '= 3.4.6'
 
   spec.metadata['allowed_push_host'] = 'http://localhost'
 
