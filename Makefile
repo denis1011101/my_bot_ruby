@@ -1,3 +1,5 @@
+SHELL := /bin/bash
+
 -include .env
 
 # ifndef REMOTE_HOST
@@ -14,6 +16,9 @@ tests:
 	bundle exec rspec --no-profile --format documentation
 
 start:
+	if [ -f .env ]; then \
+	  set -a; . .env; set +a; \
+	fi; \
 	bundle exec ruby bot.rb
 
 restart_crone:

@@ -32,4 +32,4 @@ jobs:
         run: bundle install --jobs 4 --retry 3 --quiet
 
       - name: Run sender
-        run: bundle exec ruby bot.rb
+        run: make start
