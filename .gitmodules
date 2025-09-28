@@ -1,0 +1,4 @@
+[submodule "data/secrets"]
+	path = data/secrets
+	url = git@m:denis1011101/my_bot_private_data.git
+	branch = main
