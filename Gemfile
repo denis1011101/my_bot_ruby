@@ -10,6 +10,7 @@ gem 'nokogiri'
 gem 'psych'
 
 group :development, :test do
+  gem 'rake'
   gem 'rubocop', require: false
   gem 'timecop', require: false
   gem 'rspec'
