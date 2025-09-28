@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-ruby '3.4.1'
+ruby '3.4.6'
 
 gem 'faraday'
 gem 'json'
@@ -12,7 +12,6 @@ gem 'psych'
 group :development, :test do
   gem 'rubocop', require: false
   gem 'timecop', require: false
-  gem 'rbs'
   gem 'rspec'
   gem 'steep'
   gem 'executable-hooks'

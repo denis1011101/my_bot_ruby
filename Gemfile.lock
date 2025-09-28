@@ -132,7 +132,6 @@ DEPENDENCIES
   json
   nokogiri
   psych
-  rbs
   rspec
   rubocop
   ruby-lsp
@@ -140,7 +139,7 @@ DEPENDENCIES
   timecop
 
 RUBY VERSION
-   ruby 3.4.1p0
+   ruby 3.4.6p54
 
 BUNDLED WITH
    2.5.16
