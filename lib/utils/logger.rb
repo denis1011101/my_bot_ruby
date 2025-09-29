@@ -1,8 +1,8 @@
 module Utils
-  def self.safe_Utils.safe_puts(message = nil)
+  def self.safe_puts(message = nil)
     env = ENV['APP_ENV'].to_s.downcase
     if ENV['GITHUB_ACTIONS'] == 'true' || env != 'production'
-      Utils.safe_puts message
+      puts message
     end
   end
 end
