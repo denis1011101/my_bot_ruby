@@ -34,7 +34,7 @@ def start_send_telegram_message(telegram_bot, message_formatter, yaml_manager)
 end
 
 def valid_send_time?
-  TIME_NOW.hour.between?(11, 23) && TIME_NOW.min.between?(25, 35)
+   true # TIME_NOW.hour.between?(11, 23) && TIME_NOW.min.between?(25, 45)
 end
 
 listener(birthday_checker, telegram_bot, command_processor)

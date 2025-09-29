@@ -20,10 +20,28 @@ jobs:
       BROWSER_PATH: /usr/bin/chromium-browser
       BUNDLE_BUILD__NOKOGIRI: "--use-system-libraries"
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout (with submodules via PAT)
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          token: ${{ secrets.PRIVATE_REPOS_TOKEN }}
+          persist-credentials: false
 
       - name: Fix git safe.directory
         run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
+
+      - name: Debug submodule content
+        run: |
+          echo "Submodule status:"
+          git submodule status --recursive || true
+          echo "List data/secrets:"
+          ls -la data/secrets || true
+          if [ -f data/secrets/common_list.yml ]; then
+            echo "common_list.yml present — head:"
+            head -n 20 data/secrets/common_list.yml
+          else
+            echo "common_list.yml missing"
+          fi
 
       - name: Add container platform to lockfile
         run: bundle lock --add-platform x86_64-linux-musl
