@@ -6,6 +6,7 @@ require_relative 'lib/services/telegram_bot'
 require_relative 'lib/services/command_processor'
 require_relative 'lib/services/birthday_checker'
 require_relative 'lib/services/shuffler'
+require_relative 'lib/utils/logger'
 require_relative 'config'
 
 yaml_manager = YamlManager.new(FILE)
@@ -29,7 +30,7 @@ def start_send_telegram_message(telegram_bot, message_formatter, yaml_manager)
     shuffled_words = shuffler.shuffle_some_words
     telegram_bot.send_message(message_formatter.format_message(shuffled_words, header: true))
   else
-    puts 'sleep'
+    Utils.safe_puts 'sleep'
   end
 end
 

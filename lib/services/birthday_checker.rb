@@ -43,7 +43,7 @@ class BirthdayChecker
 
   def check_birthdays
     return unless notification_time?
-    return puts 'no birthday' if birthdays.empty?
+    return Utils.safe_puts 'no birthday' if birthdays.empty?
 
     birthdays.each do |birthday|
       send_notifications(birthday)

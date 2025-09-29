@@ -17,6 +17,7 @@ jobs:
     env:
       TOKEN: ${{ secrets.TOKEN }}
       ADMIN_CHAT_ID: ${{ secrets.ADMIN_CHAT_ID }}
+      APP_ENV: production
       BROWSER_PATH: /usr/bin/chromium-browser
       BUNDLE_BUILD__NOKOGIRI: "--use-system-libraries"
     steps:

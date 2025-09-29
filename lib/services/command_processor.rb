@@ -23,10 +23,10 @@ class CommandProcessor
   def process_command(message)
     command = determine_command(message)
     if command
-      puts "Determined command: #{command}"
+      Utils.safe_puts "Determined command: #{command}"
       send(command, message)
     else
-      puts "No command determined for message: #{message}"
+      Utils.safe_puts "No command determined for message: #{message}"
     end
   end
 
@@ -35,7 +35,7 @@ class CommandProcessor
   def word(_message = nil)
     shuffler = Shuffler.new(@yaml_manager)
     words = shuffler.shuffle_some_words
-    puts "Words: #{words}"
+    Utils.safe_puts "Words: #{words}"
     formatted_message = @message_formatter.format_message(words, header: true)
     @telegram_bot.send_message(formatted_message)
   end
@@ -48,18 +48,18 @@ class CommandProcessor
   end
 
   def send_keys(_message = nil)
-    puts 'send_keys method called'
+    Utils.safe_puts 'send_keys method called'
     keys = @yaml_manager.all_keys
-    puts "Keys: #{keys}"
+    Utils.safe_puts "Keys: #{keys}"
     @telegram_bot.send_message(keys)
   end
 
   def show(message)
     key = extract_key_from_message(message)
     if key
-      puts "show method called for key: #{key}"
+      Utils.safe_puts "show method called for key: #{key}"
       value = @yaml_manager.show(key.to_sym)
-      puts "Value for key #{key}: #{value}"
+      Utils.safe_puts "Value for key #{key}: #{value}"
       @telegram_bot.send_message("Value for key #{key}: #{value}")
     else
       @telegram_bot.send_message('Please provide a key to show its value.')
