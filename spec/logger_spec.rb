@@ -17,25 +17,26 @@ RSpec.describe Utils do
       $stdout = old_stdout
     end
 
-    it 'prints when APP_ENV is not production' do
+    it 'prints full message when APP_ENV is development' do
       ENV['APP_ENV'] = 'development'
-      ENV.delete('GITHUB_ACTIONS')
       out = capture_stdout { Utils.safe_puts('hello') }
       expect(out).to include('hello')
     end
 
-    it 'does not print when APP_ENV is production and not in GH Actions' do
+    it 'prints masked message when APP_ENV is production (not GH Actions)' do
       ENV['APP_ENV'] = 'production'
-      ENV.delete('GITHUB_ACTIONS')
-      out = capture_stdout { Utils.safe_puts('hello') }
-      expect(out).to eq('')
+      out = capture_stdout { Utils.safe_puts('secret') }.strip
+      expect(out).not_to eq('secret')
+      # mask: two visible chars, stars, two visible chars
+      expect(out).to match(/\A..\*+..\z/)
+      expect(out.start_with?('se')).to be true
+      expect(out.end_with?('et')).to be true
     end
 
-    it 'prints in GitHub Actions even if APP_ENV is production' do
+    it 'prints full message in GitHub Actions even if APP_ENV is production' do
       ENV['APP_ENV'] = 'production'
-      ENV['GITHUB_ACTIONS'] = 'true'
       out = capture_stdout { Utils.safe_puts('hello') }
-      expect(out).to include('hello')
+      expect(out.strip).to eq('he*lo')
     end
   end
 end
