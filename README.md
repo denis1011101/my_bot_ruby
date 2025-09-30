@@ -4,8 +4,19 @@ This is my pets project for make life little bit easy!
 
 ## Run
 
-```ruby
-bundle exec rai
+```bash
+make start
+```
+
+## Debug mode
+
+```bash
+FORCE_SEND=1 make start
+```
+or repo settings:
+```
+Name: FORCE_SEND
+Value: true
 ```
 
 ## Old information for deploy:
