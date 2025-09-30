@@ -34,7 +34,14 @@ def start_send_telegram_message(telegram_bot, message_formatter, yaml_manager)
   end
 end
 
+def force_send?
+  v = ENV['FORCE_SEND']
+  return false if v.nil?
+  %w[1 true yes on].include?(v.downcase)
+end
+
 def valid_send_time?
+  return true if force_send?
   TIME_NOW.hour.between?(11, 23) && TIME_NOW.min.between?(25, 45)
 end
 
