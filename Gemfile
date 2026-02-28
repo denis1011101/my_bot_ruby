@@ -8,6 +8,7 @@ gem 'faraday'
 gem 'json'
 gem 'nokogiri', '~> 1.18'
 gem 'psych'
+gem 'stringio', '>= 3.1.2'
 
 group :development, :test do
   gem 'rake'
