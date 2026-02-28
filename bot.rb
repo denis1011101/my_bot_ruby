@@ -42,7 +42,8 @@ end
 
 def valid_send_time?
   return true if force_send?
-  TIME_NOW.hour.between?(11, 23) && TIME_NOW.min.between?(25, 45)
+  now = Time.now
+  now.hour.between?(11, 23) && now.min == 30 && (now.hour - 11).even?
 end
 
 listener(birthday_checker, telegram_bot, command_processor)
