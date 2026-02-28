@@ -6,7 +6,7 @@ ruby '4.0.1'
 
 gem 'faraday'
 gem 'json'
-gem 'nokogiri'
+gem 'nokogiri', '~> 1.18'
 gem 'psych'
 
 group :development, :test do
