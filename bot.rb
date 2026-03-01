@@ -5,6 +5,7 @@ require_relative 'lib/services/message_formatter'
 require_relative 'lib/services/telegram_bot'
 require_relative 'lib/services/command_processor'
 require_relative 'lib/services/birthday_checker'
+require_relative 'lib/services/reminder_checker'
 require_relative 'lib/services/shuffler'
 require_relative 'lib/utils/logger'
 require_relative 'config'
@@ -14,9 +15,11 @@ message_formatter = MessageFormatter.new
 telegram_bot = TelegramBot.new(TOKEN, ADMIN_CHAT_ID, FILE)
 command_processor = CommandProcessor.new(yaml_manager, telegram_bot, message_formatter)
 birthday_checker = BirthdayChecker.new(yaml_manager, telegram_bot)
+reminder_checker = ReminderChecker.new(yaml_manager, telegram_bot)
 
-def listener(birthday_checker, telegram_bot, command_processor)
+def listener(birthday_checker, reminder_checker, telegram_bot, command_processor)
   birthday_checker.check_birthdays
+  reminder_checker.check_reminders
   message = telegram_bot.receive_message
 
   return unless message
@@ -46,5 +49,5 @@ def valid_send_time?
   now.hour.between?(11, 23) && now.min == 30 && (now.hour - 11).even?
 end
 
-listener(birthday_checker, telegram_bot, command_processor)
+listener(birthday_checker, reminder_checker, telegram_bot, command_processor)
 start_send_telegram_message(telegram_bot, message_formatter, yaml_manager)
