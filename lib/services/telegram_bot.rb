@@ -4,6 +4,7 @@ require 'faraday'
 require 'json'
 require 'yaml'
 require_relative 'yaml_manager'
+require_relative 'state_manager'
 
 class TelegramBot
   attr_reader :token, :admin_chat_id, :file, :yaml_manager
@@ -13,6 +14,7 @@ class TelegramBot
     @admin_chat_id = admin_chat_id
     @file = file
     @yaml_manager = YamlManager.new(file)
+    @state_manager = StateManager.new
   end
 
   def send_message(message)
@@ -53,24 +55,16 @@ class TelegramBot
     update_id_now = json['result'][-1]['update_id']
     Utils.safe_puts "Update ID: #{update_id_now}"
 
-    current_data = yaml_manager.read_yml(:update_id)
-    Utils.safe_puts "Current update ID in YAML: #{current_data}"
+    current_data = @state_manager.read('update_id')
+    Utils.safe_puts "Current update ID: #{current_data}"
     Utils.safe_puts "New update ID: #{update_id_now}"
     return Utils.safe_puts 'old message' if current_data == update_id_now
 
-    yaml_manager.write_yml(:update_id, update_id_now)
-    Utils.safe_puts "Updated YAML data: #{yaml_manager.read_yml(:update_id)}"
+    @state_manager.write('update_id', update_id_now)
+    Utils.safe_puts "Updated update ID: #{update_id_now}"
 
     @text_from_message = json['result'][-1]['message']['text']
     Utils.safe_puts "Message text: #{@text_from_message}"
     @text_from_message
-  end
-
-  private
-
-  def read_yml
-    YAML.load_file(@file).transform_keys!(&:to_sym)
-  rescue Errno::ENOENT
-    {}
   end
 end

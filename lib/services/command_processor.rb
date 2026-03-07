@@ -6,8 +6,6 @@ require_relative 'shuffler'
 class CommandProcessor
   COMMANDS = {
     word: %w[word w],
-    add_note: %w[add_note n],
-    write_to_yml: %w[write w],
     send_keys: %w[keys k],
     show: %w[show s],
     help: %w[help h],
@@ -78,12 +76,11 @@ class CommandProcessor
     @telegram_bot.send_message("Available commands:\n#{formatted_commands}")
   end
 
+  DEFAULT_TIMER_SECONDS = 180
+
   def custom_timer(message)
     number, unit = extract_number_and_unit_from_message(message)
-    return unless number
-
-    seconds = convert_to_seconds(number, unit)
-    @yaml_manager.write_yml(:custom_timer, seconds)
+    seconds = number ? convert_to_seconds(number, unit) : DEFAULT_TIMER_SECONDS
     check_and_send_message(seconds, "Custom timer message after #{seconds} seconds")
   end
 

@@ -5,3 +5,4 @@ common_list.yml
 /.gem_rbs_collection/
 .env
 /logs/
+/tmp/

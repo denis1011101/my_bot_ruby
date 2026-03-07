@@ -15,42 +15,6 @@ class YamlManager
     nil
   end
 
-  def write_yml(key, value)
-    data = read_all_keys_with_values
-    data[key] = value
-    File.open(file, 'w') { |f| f.write(data.to_yaml) }
-  rescue Errno::EACCES
-    false
-  end
-
-  # Create a new value for a key
-  def create_to_yml(key, value)
-    data = read_yml(key) || []
-    data << value
-    write_yml(key, data)
-  end
-
-  # Update a value for a key
-  def update_to_yml(key, old_value, new_value)
-    data = read_yml(key)
-    return unless data
-
-    index = data.index(old_value)
-    return unless index
-
-    data[index] = new_value
-    write_yml(key, data)
-  end
-
-  # Delete a value for a key
-  def delete_to_yml(key, value)
-    data = read_yml(key)
-    return unless data
-
-    data.delete(value)
-    write_yml(key, data)
-  end
-
   # all keys
   def all_keys
     read_all_keys_with_values.keys

@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require_relative 'state_manager'
+
 # ReminderChecker checks for reminders that match the current time and sends notifications.
 # Supports two reminder lists:
 # - weekly: repeats every week, format "thu 13:30 - Text"
@@ -7,6 +9,7 @@
 class ReminderChecker
   WEEKLY_KEY = :'reminders-weekly'
   ONE_TIME_KEY = :'reminders-one_time'
+  FIRED_STATE_KEY = 'fired_one_time_reminders'
 
   OneTimeReminder = Struct.new(:raw, :text, :day, :month, :year, :hour, :minute) do
     def time_match?(now)
@@ -37,31 +40,40 @@ class ReminderChecker
   def initialize(yaml_manager, telegram_bot)
     @yaml_manager = yaml_manager
     @telegram_bot = telegram_bot
+    @state_manager = StateManager.new
   end
 
   def check_reminders
     now = Time.now
     reminders_data = normalized_reminders_data
-    one_time_triggered = parse_one_time_reminders(reminders_data[:one_time]).select { |r| r.time_match?(now) }
+    raw_strings = reminders_data[:one_time]
+
+    one_time_triggered = process_one_time_reminders(raw_strings, now)
     weekly_triggered = parse_weekly_reminders(reminders_data[:weekly]).select { |r| r.time_match?(now) }
-    triggered = one_time_triggered + weekly_triggered
+    return Utils.safe_puts 'no reminders' if one_time_triggered.empty? && weekly_triggered.empty?
 
-    return Utils.safe_puts 'no reminders' if triggered.empty?
-
-    triggered.each do |reminder|
+    weekly_triggered.each do |reminder|
       @telegram_bot.send_message("🔔 Напоминание: #{reminder.text}")
     end
-
-    remove_triggered_one_time(reminders_data, one_time_triggered)
   end
 
   private
 
-  def remove_triggered_one_time(reminders_data, triggered_one_time)
-    return if triggered_one_time.empty?
+  def process_one_time_reminders(raw_strings, now)
+    @state_manager.synchronize do |data|
+      one_time_reminders = parse_one_time_reminders(raw_strings)
+      matching = one_time_reminders.select { |r| r.time_match?(now) }
+      fired = ((data[FIRED_STATE_KEY] || []) & raw_strings)
+      data[FIRED_STATE_KEY] = fired
 
-    remaining = reminders_data[:one_time] - triggered_one_time.map(&:raw)
-    @yaml_manager.write_yml(ONE_TIME_KEY, remaining)
+      triggered = matching.reject { |r| fired.include?(r.raw) }
+      triggered.each do |reminder|
+        @telegram_bot.send_message("🔔 Напоминание: #{reminder.text}")
+      end
+
+      data[FIRED_STATE_KEY] = fired + triggered.map(&:raw)
+      triggered
+    end
   end
 
   def normalized_reminders_data
@@ -72,7 +84,7 @@ class ReminderChecker
   end
 
   def parse_one_time_reminders(raw)
-    raw.filter_map { |value| parse_one_time(value) }
+    raw.filter_map { |value| parse_one_time(value) if value }
   end
 
   def parse_weekly_reminders(raw)

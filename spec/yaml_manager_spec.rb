@@ -29,35 +29,4 @@ describe YamlManager do
       expect(manager.read_yml(:non_existent_key)).to be_nil
     end
   end
-
-  describe '#write_yml' do
-    it 'writes data to the yml file' do
-      manager.write_yml(key, value)
-      expect(YAML.load_file(test_file)).to eq({ key => value })
-    end
-  end
-
-  describe '#create_to_yml' do
-    it 'adds a new key-value pair to the yml file' do
-      manager.create_to_yml(key, value)
-      expect(YAML.load_file(test_file)).to eq({ key => [value] })
-    end
-  end
-
-  describe '#update_to_yml' do
-    it 'updates the value of a key in the yml file' do
-      new_value = 'new_test_value'
-      manager.create_to_yml(key, value)
-      manager.update_to_yml(key, value, new_value)
-      expect(YAML.load_file(test_file)).to eq({ key => [new_value] })
-    end
-  end
-
-  describe '#delete_to_yml' do
-    it 'deletes a key-value pair from the yml file' do
-      manager.create_to_yml(key, value)
-      manager.delete_to_yml(key, value)
-      expect(YAML.load_file(test_file)).to eq({ key => [] })
-    end
-  end
 end
