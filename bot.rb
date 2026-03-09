@@ -33,7 +33,7 @@ def start_send_telegram_message(telegram_bot, message_formatter, yaml_manager)
     shuffled_words = shuffler.shuffle_some_words
     telegram_bot.send_message(message_formatter.format_message(shuffled_words, header: true))
   else
-    Utils.safe_puts 'sleep'
+    Utils.log 'sleep'
   end
 end
 

@@ -1,7 +1,7 @@
 require_relative 'spec_helper'
 
 RSpec.describe Utils do
-  describe '.safe_puts' do
+  describe '.log' do
     around do |example|
       original_env = ENV.to_hash
       example.run
@@ -19,24 +19,20 @@ RSpec.describe Utils do
 
     it 'prints full message when APP_ENV is development' do
       ENV['APP_ENV'] = 'development'
-      out = capture_stdout { Utils.safe_puts('hello') }
+      out = capture_stdout { Utils.log('hello') }
       expect(out).to include('hello')
     end
 
-    it 'prints masked message when APP_ENV is production (not GH Actions)' do
+    it 'prints full message when APP_ENV is production' do
       ENV['APP_ENV'] = 'production'
-      out = capture_stdout { Utils.safe_puts('secret') }.strip
-      expect(out).not_to eq('secret')
-      # mask: two visible chars, stars, two visible chars
-      expect(out).to match(/\A..\*+..\z/)
-      expect(out.start_with?('se')).to be true
-      expect(out.end_with?('et')).to be true
+      out = capture_stdout { Utils.log('secret') }.strip
+      expect(out).to eq('secret')
     end
 
-    it 'prints full message in GitHub Actions even if APP_ENV is production' do
-      ENV['APP_ENV'] = 'production'
-      out = capture_stdout { Utils.safe_puts('hello') }
-      expect(out.strip).to eq('he*lo')
+    it 'prints full message when APP_ENV is not set' do
+      ENV.delete('APP_ENV')
+      out = capture_stdout { Utils.log('hello') }
+      expect(out.strip).to eq('hello')
     end
   end
 end

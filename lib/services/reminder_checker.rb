@@ -50,7 +50,7 @@ class ReminderChecker
 
     one_time_triggered = process_one_time_reminders(raw_strings, now)
     weekly_triggered = parse_weekly_reminders(reminders_data[:weekly]).select { |r| r.time_match?(now) }
-    return Utils.safe_puts 'no reminders' if one_time_triggered.empty? && weekly_triggered.empty?
+    return Utils.log 'no reminders' if one_time_triggered.empty? && weekly_triggered.empty?
 
     weekly_triggered.each do |reminder|
       @telegram_bot.send_message("🔔 Напоминание: #{reminder.text}")

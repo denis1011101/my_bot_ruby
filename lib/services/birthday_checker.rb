@@ -11,19 +11,19 @@ class BirthdayChecker
     end
 
     def birthday_date
-      today = Time.now
+      today = Time.now.to_date
       year = today.year
-      date = Time.new(year, month, day)
+      date = Date.new(year, month, day)
 
       # Если день рождения уже прошел в этом году, берем дату на следующий год
-      date = Time.new(year + 1, month, day) if date < today
+      date = Date.new(year + 1, month, day) if date < today
 
       date
     end
 
     def days_until_birthday
       today = Time.now.to_date
-      bday = birthday_date.to_date
+      bday = birthday_date
       (bday - today).to_i
     end
 
@@ -43,7 +43,7 @@ class BirthdayChecker
 
   def check_birthdays
     return unless notification_time?
-    return Utils.safe_puts 'no birthday' if birthdays.empty?
+    return Utils.log 'no birthday' if birthdays.empty?
 
     birthdays.each do |birthday|
       send_notifications(birthday)

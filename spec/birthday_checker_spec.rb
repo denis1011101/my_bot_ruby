@@ -45,6 +45,12 @@ RSpec.describe BirthdayChecker do
         expect(telegram_bot).not_to receive(:send_message).with(/Алексей Иванов/)
         checker.check_birthdays
       end
+
+      it 'sends a today notification even after midnight on the birthday date' do
+        allow(Time).to receive(:now).and_return(Time.new(2024, 10, 26, 13, 30))
+        expect(telegram_bot).to receive(:send_message).with(/Сегодня день рождения у Тест Пользователь/)
+        checker.check_birthdays
+      end
     end
 
     context 'when checking at non-notification time' do
