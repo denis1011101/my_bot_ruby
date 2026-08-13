@@ -37,13 +37,11 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     logger (1.6.0)
-    mini_portile2 (2.8.9)
     minitest (5.27.0)
     mutex_m (0.2.0)
     net-http (0.4.1)
       uri
-    nokogiri (1.18.3)
-      mini_portile2 (~> 2.8.2)
+    nokogiri (1.19.4-x86_64-linux-gnu)
       racc (~> 1.4)
     parallel (1.25.1)
     parser (3.3.4.0)
@@ -52,7 +50,7 @@ GEM
     prism (1.1.0)
     psych (5.1.2)
       stringio
-    racc (1.8.0)
+    racc (1.8.1)
     rainbow (3.1.1)
     rake (13.3.0)
     rb-fsevent (0.11.2)
@@ -142,7 +140,7 @@ DEPENDENCIES
   timecop
 
 RUBY VERSION
-  ruby 4.0.1p0
+  ruby 4.0.6
 
 BUNDLED WITH
   4.0.7
